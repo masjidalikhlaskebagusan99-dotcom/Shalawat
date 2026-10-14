@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kategori Doa & Sholawat - Al-Ikhlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:auto}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a0a2e 0%,#2d1b4e 30%,#1a0a2e 60%,#0d0520 100%);min-height:100vh;color:#fff}
+.page-header{background:rgba(26,10,46,0.95);padding:20px 30px;border-bottom:2px solid rgba(201,168,76,0.3);text-align:center;backdrop-filter:blur(10px);position:sticky;top:0;z-index:100}
+.page-header .brand{font-size:1.8rem;font-weight:700;background:linear-gradient(135deg,#c9a84c,#e8d48b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:5px}
+.page-header .tagline{color:#ccc;font-size:0.9rem;letter-spacing:1px}
+.sub-hero{text-align:center;padding:50px 20px 30px;max-width:1000px;margin:0 auto;position:relative}
+.sub-hero::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(201,168,76,0.1) 0%,transparent 70%);border-radius:50%;z-index:0}
+.sub-hero .sub-arabic{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:2.8rem;font-weight:600;color:#c9a84c;margin-bottom:15px;direction:rtl;text-shadow:0 3px 15px rgba(201,168,76,0.3);position:relative;z-index:1;line-height:1.8}
+.sub-hero h2{font-size:2.4rem;font-weight:700;margin-bottom:15px;background:linear-gradient(135deg,#fff 0%,#e8d48b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;position:relative;z-index:1}
+.sub-hero .sub-subtitle{color:#ccc;font-size:1.05rem;max-width:700px;margin:0 auto;position:relative;z-index:1;line-height:1.7}
+.split-wrapper{max-width:1400px;margin:0 auto;padding:0 30px 60px;position:relative}
+.filter-tabs-sticky{position:sticky;top:85px;z-index:90;background:linear-gradient(135deg,rgba(26,10,46,0.98) 0%,rgba(45,27,78,0.95) 100%);backdrop-filter:blur(12px);border:1px solid rgba(201,168,76,0.3);border-radius:15px 15px 0 0;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;box-shadow:0 4px 20px rgba(0,0,0,0.4),0 0 0 1px rgba(201,168,76,0.1);margin-bottom:0}
+.filter-tabs-sticky::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#c9a84c,#e8d48b,#c9a84c,transparent)}
+.filter-tabs-left{display:flex;align-items:center;gap:10px;flex-wrap:wrap;flex:1}
+.filter-tabs-label{color:#c9a84c;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;display:flex;align-items:center;gap:6px;padding-right:10px;border-right:1px solid rgba(201,168,76,0.2);white-space:nowrap}
+.filter-tabs-label .label-icon{font-size:1rem}
+.filter-tab{padding:9px 20px;background:rgba(201,168,76,0.08);border:1.5px solid rgba(201,168,76,0.25);border-radius:20px;color:#e8d48b;font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.3s;font-family:inherit;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.filter-tab:hover{background:rgba(201,168,76,0.18);border-color:#c9a84c;transform:translateY(-2px);color:#fff}
+.filter-tab.active{background:linear-gradient(135deg,#c9a84c,#e8d48b);color:#1a0a2e;border-color:#c9a84c;box-shadow:0 4px 15px rgba(201,168,76,0.4)}
+.filter-tab .tab-count{background:rgba(26,10,46,0.25);color:inherit;padding:2px 7px;border-radius:10px;font-size:0.7rem;font-weight:700;min-width:20px;text-align:center}
+.filter-tabs-right{display:flex;align-items:center;gap:8px}
+.filter-status-mini{color:#888;font-size:0.75rem;font-style:italic;display:flex;align-items:center;gap:5px}
+.filter-status-mini .status-dot{width:6px;height:6px;background:#2ecc71;border-radius:50%;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}
+.split-container{display:flex;gap:25px;align-items:flex-start;background:transparent;margin-top:0}
+.split-sidebar{width:340px;flex-shrink:0;background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.2);border-top:none;border-radius:0 0 0 15px;padding:15px;max-height:calc(100vh - 180px);overflow-y:auto;position:sticky;top:140px}
+.split-sidebar::-webkit-scrollbar{width:6px}
+.split-sidebar::-webkit-scrollbar-track{background:rgba(0,0,0,0.2);border-radius:10px}
+.split-sidebar::-webkit-scrollbar-thumb{background:rgba(201,168,76,0.4);border-radius:10px}
+.split-sidebar::-webkit-scrollbar-thumb:hover{background:#c9a84c}
+.split-sidebar h4{color:#c9a84c;font-size:0.85rem;text-transform:uppercase;letter-spacing:1.5px;margin:18px 0 10px;padding-bottom:8px;border-bottom:1px solid rgba(201,168,76,0.2);display:flex;align-items:center;gap:8px}
+.split-sidebar h4:first-of-type{margin-top:0}
+.split-sidebar h4 .section-count{margin-left:auto;background:rgba(201,168,76,0.2);color:#c9a84c;padding:2px 8px;border-radius:10px;font-size:0.7rem;font-weight:700;text-transform:none;letter-spacing:0}
+.sub-search{width:100%;margin-bottom:10px;padding:12px 18px;border-radius:25px;border:1px solid rgba(201,168,76,0.3);background:rgba(0,0,0,0.3);color:#fff;font-size:15px;outline:none;font-family:inherit}
+.sub-search:focus{border-color:#c9a84c}
+.split-btn{display:flex;align-items:center;gap:10px;width:100%;padding:11px 14px;margin-bottom:6px;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.15);border-radius:10px;color:#e8d48b;cursor:pointer;text-align:left;transition:all 0.3s;font-size:0.85rem;font-family:inherit}
+.split-btn:hover{background:rgba(201,168,76,0.18);border-color:#c9a84c;transform:translateX(5px);color:#fff}
+.split-btn.active{background:linear-gradient(135deg,#c9a84c,#e8d48b);color:#1a0a2e;font-weight:600;border-color:#c9a84c;box-shadow:0 4px 15px rgba(201,168,76,0.3)}
+.split-btn .btn-icon{font-size:1.1rem;flex-shrink:0}
+.split-btn .btn-text{flex:1;line-height:1.3}
+.split-btn .btn-count{background:rgba(201,168,76,0.2);color:#c9a84c;padding:2px 8px;border-radius:10px;font-size:0.72rem;font-weight:700;flex-shrink:0}
+.split-btn.active .btn-count{background:rgba(26,10,46,0.2);color:#1a0a2e}
+.split-detail{flex:1;min-width:0;background:rgba(255,255,255,0.02);border:1px solid rgba(201,168,76,0.15);border-top:none;border-radius:0 0 15px 0;padding:30px;min-height:600px;max-height:calc(100vh - 180px);overflow-y:auto;position:sticky;top:140px;scroll-behavior:smooth}
+.split-detail::-webkit-scrollbar{width:6px}
+.split-detail::-webkit-scrollbar-track{background:rgba(0,0,0,0.2);border-radius:10px}
+.split-detail::-webkit-scrollbar-thumb{background:rgba(201,168,76,0.4);border-radius:10px}
+.split-welcome{text-align:center;padding:80px 30px;color:#888}
+.split-welcome .welcome-icon{font-size:5rem;margin-bottom:20px;opacity:0.5}
+.split-welcome h3{color:#c9a84c;font-size:1.5rem;margin-bottom:10px}
+.split-welcome p{font-size:0.95rem;line-height:1.7}
+.show-sidebar-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;padding:14px 24px;background:linear-gradient(135deg,#c9a84c,#e8d48b);color:#1a0a2e;border:none;border-radius:30px;font-size:0.95rem;font-weight:700;cursor:pointer;transition:all 0.3s;font-family:inherit;box-shadow:0 4px 15px rgba(201,168,76,0.4)}
+.show-sidebar-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(201,168,76,0.5)}
+.tag-buttons-container{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:20px 0;padding:15px;background:rgba(0,0,0,0.3);border-radius:12px;border:1px solid rgba(201,168,76,0.2)}
+.tag-button{padding:10px 20px;background:rgba(26,10,46,0.8);border:1.5px solid rgba(46,204,113,0.4);border-radius:25px;color:#e8d48b;font-size:0.88rem;font-weight:600;cursor:pointer;transition:all 0.3s;font-family:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.tag-button:hover{background:rgba(46,204,113,0.15);border-color:#2ecc71;color:#fff;transform:translateY(-2px);box-shadow:0 4px 12px rgba(46,204,113,0.3)}
+.doa-item-card,.sholawat-item-card{background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.2);border-radius:12px;padding:20px;margin-bottom:15px;transition:all 0.3s;scroll-margin-top:20px}
+.doa-item-card:hover,.sholawat-item-card:hover{border-color:#c9a84c;background:rgba(201,168,76,0.06)}
+.doa-item-card h4,.sholawat-item-card h4{color:#e8d48b;font-size:1.05rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.doa-item-card .doa-arab,.sholawat-item-card .sholawat-arab,.sholawat-item-card .syiir-verse{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.5rem;color:#c9a84c;direction:rtl;text-align:right;line-height:2;padding:15px;background:rgba(0,0,0,0.2);border-radius:8px;margin-bottom:10px;white-space:pre-line}
+.doa-item-card .doa-latin-text,.sholawat-item-card .sholawat-latin-text,.sholawat-item-card .syiir-latin-verse{color:#e8d48b;font-style:italic;font-size:0.9rem;margin-bottom:8px;line-height:1.8;white-space:pre-line}
+.sholawat-item-card .syiir-latin-verse{padding:12px;background:rgba(201,168,76,0.05);border-left:3px solid rgba(201,168,76,0.4);border-radius:0 8px 8px 0}
+.doa-item-card .doa-arti,.sholawat-item-card .sholawat-desc,.sholawat-item-card .syiir-translation{color:#ccc;font-size:0.88rem;line-height:1.7;margin-bottom:8px;white-space:pre-line}
+.doa-item-card .doa-ref,.sholawat-item-card .sholawat-ref{margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);color:#888;font-size:0.78rem}
+.sholawat-badge{display:inline-block;background:rgba(201,168,76,0.15);color:#c9a84c;padding:3px 10px;border-radius:10px;font-size:0.72rem;font-weight:600;margin-left:8px}
+.sholawat-badge.syair{background:rgba(155,89,182,0.15);color:#bb86fc}
+.sholawat-badge.rangkaian{background:rgba(46,204,113,0.15);color:#2ecc71}
+.doa-rangkaian-card{background:linear-gradient(135deg,rgba(201,168,76,0.06),rgba(45,27,78,0.4));border:1px solid rgba(201,168,76,0.4);border-radius:15px;padding:25px;margin-bottom:20px;position:relative;overflow:hidden;scroll-margin-top:20px}
+.doa-rangkaian-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#c9a84c,#e8d48b,#c9a84c)}
+.doa-rangkaian-card .rangkaian-header{display:flex;align-items:center;gap:10px;margin-bottom:18px;padding-bottom:12px;border-bottom:1px dashed rgba(201,168,76,0.3)}
+.doa-rangkaian-card .rangkaian-header .rangkaian-icon{width:40px;height:40px;background:linear-gradient(135deg,#c9a84c,#e8d48b);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#1a0a2e;flex-shrink:0}
+.doa-rangkaian-card .rangkaian-header h4{color:#e8d48b;font-size:1.15rem;font-weight:700;margin:0;line-height:1.3}
+.doa-rangkaian-card .rangkaian-header .rangkaian-badge{margin-left:auto;padding:3px 10px;background:rgba(201,168,76,0.2);border:1px solid rgba(201,168,76,0.4);border-radius:12px;font-size:0.68rem;color:#c9a84c;font-weight:700;letter-spacing:0.5px;white-space:nowrap}
+.doa-bagian-item{position:relative;padding:15px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-left:3px solid rgba(201,168,76,0.5);border-radius:0 10px 10px 0;transition:all 0.3s}
+.doa-bagian-item:hover{background:rgba(201,168,76,0.07);border-left-color:#c9a84c;transform:translateX(3px)}
+.doa-bagian-item .bagian-label{display:flex;align-items:center;gap:8px;color:#e8d48b;font-size:0.9rem;font-weight:600;margin-bottom:10px}
+.doa-bagian-item .bagian-label .bagian-num{width:22px;height:22px;background:rgba(201,168,76,0.25);border:1px solid rgba(201,168,76,0.5);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.7rem;color:#e8d48b;font-weight:700;flex-shrink:0}
+.doa-bagian-item .bagian-arab{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.4rem;color:#c9a84c;direction:rtl;text-align:right;line-height:2;padding:12px 15px;background:rgba(0,0,0,0.25);border-radius:8px;margin-bottom:8px}
+.doa-bagian-item .bagian-latin{color:#e8d48b;font-style:italic;font-size:0.88rem;line-height:1.6;margin-bottom:8px}
+.doa-bagian-item .bagian-arti{color:#ccc;font-size:0.87rem;line-height:1.6;padding:10px 12px;background:rgba(201,168,76,0.06);border-radius:6px}
+.doa-rangkaian-penutup{margin-top:18px;padding:18px;background:linear-gradient(135deg,rgba(201,168,76,0.12),rgba(45,27,78,0.5));border:1px solid rgba(201,168,76,0.4);border-radius:10px;text-align:center}
+.doa-rangkaian-penutup .penutup-label{color:#e8d48b;font-size:0.9rem;font-weight:700;margin-bottom:10px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;gap:6px}
+.doa-rangkaian-penutup .penutup-arab{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.4rem;color:#c9a84c;direction:rtl;line-height:2;margin-bottom:8px;padding:10px;background:rgba(0,0,0,0.3);border-radius:8px}
+.doa-rangkaian-penutup .penutup-latin{color:#e8d48b;font-style:italic;font-size:0.85rem;margin-bottom:6px}
+.doa-rangkaian-penutup .penutup-arti{color:#ccc;font-size:0.85rem;line-height:1.6;max-width:550px;margin:0 auto}
+.doa-rangkaian-card .rangkaian-ref{margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.08);color:#888;font-size:0.75rem;text-align:right;font-style:italic}
+.sub-info{background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:18px 22px;margin:20px 0;color:#ccc;font-size:0.92rem;line-height:1.7}
+.sub-info strong{color:#c9a84c}
+.filter-status{background:linear-gradient(135deg,rgba(201,168,76,0.1),rgba(45,27,78,0.4));border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:12px 18px;margin-bottom:20px;display:flex;align-items:center;gap:10px;color:#e8d48b;font-size:0.88rem;font-weight:600}
+.filter-status .fs-icon{width:32px;height:32px;background:linear-gradient(135deg,#c9a84c,#e8d48b);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#1a0a2e;flex-shrink:0}
+.filter-status .fs-text{flex:1}
+.filter-status .fs-count{background:rgba(201,168,76,0.2);color:#c9a84c;padding:4px 12px;border-radius:15px;font-size:0.78rem;font-weight:700}
+.empty-state{text-align:center;padding:60px 30px;color:#888}
+.empty-state .empty-icon{font-size:4rem;margin-bottom:15px;opacity:0.4}
+.empty-state h4{color:#c9a84c;font-size:1.2rem;margin-bottom:8px}
+.empty-state p{font-size:0.9rem;line-height:1.6}
+@keyframes contentFadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.content-fade-in > *{animation:contentFadeIn 0.3s ease forwards}
+.toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(100px);background:linear-gradient(135deg,#0d6e3f,#084a2a);color:#fff;padding:12px 24px;border-radius:30px;box-shadow:0 6px 20px rgba(0,0,0,0.3);font-size:0.9rem;font-weight:600;z-index:9999;opacity:0;transition:all 0.3s ease;pointer-events:none;border:1px solid rgba(201,168,76,0.3)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+/* ====== SHOLAWAT RANGKAIAN (MULTI-BAGIAN) ====== */
+.sholawat-rangkaian-card{background:linear-gradient(135deg,rgba(46,204,113,0.06),rgba(45,27,78,0.4));border:1px solid rgba(46,204,113,0.4);border-radius:15px;padding:25px;margin-bottom:20px;position:relative;overflow:hidden;scroll-margin-top:20px}
+.sholawat-rangkaian-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#2ecc71,#27ae60,#2ecc71)}
+.sholawat-rangkaian-card .rangkaian-header{display:flex;align-items:center;gap:10px;margin-bottom:18px;padding-bottom:12px;border-bottom:1px dashed rgba(46,204,113,0.3)}
+.sholawat-rangkaian-card .rangkaian-header .rangkaian-icon{width:40px;height:40px;background:linear-gradient(135deg,#2ecc71,#27ae60);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;flex-shrink:0}
+.sholawat-rangkaian-card .rangkaian-header h4{color:#e8d48b;font-size:1.15rem;font-weight:700;margin:0;line-height:1.3}
+.sholawat-rangkaian-card .rangkaian-header .rangkaian-badge{margin-left:auto;padding:3px 10px;background:rgba(46,204,113,0.2);border:1px solid rgba(46,204,113,0.4);border-radius:12px;font-size:0.68rem;color:#2ecc71;font-weight:700;letter-spacing:0.5px;white-space:nowrap}
+.sholawat-bagian-item{position:relative;padding:15px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-left:3px solid rgba(46,204,113,0.5);border-radius:0 10px 10px 0;transition:all 0.3s}
+.sholawat-bagian-item:hover{background:rgba(46,204,113,0.07);border-left-color:#2ecc71;transform:translateX(3px)}
+.sholawat-bagian-item .bagian-label{display:flex;align-items:center;gap:8px;color:#e8d48b;font-size:0.9rem;font-weight:600;margin-bottom:10px}
+.sholawat-bagian-item .bagian-label .bagian-num{width:22px;height:22px;background:rgba(46,204,113,0.25);border:1px solid rgba(46,204,113,0.5);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.7rem;color:#2ecc71;font-weight:700;flex-shrink:0}
+.sholawat-bagian-item .bagian-arab{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.4rem;color:#c9a84c;direction:rtl;text-align:right;line-height:2;padding:12px 15px;background:rgba(0,0,0,0.25);border-radius:8px;margin-bottom:8px}
+.sholawat-bagian-item .bagian-latin{color:#e8d48b;font-style:italic;font-size:0.88rem;line-height:1.6;margin-bottom:8px}
+.sholawat-bagian-item .bagian-arti{color:#ccc;font-size:0.87rem;line-height:1.6;padding:10px 12px;background:rgba(46,204,113,0.06);border-radius:6px}
+.sholawat-rangkaian-penutup{margin-top:18px;padding:18px;background:linear-gradient(135deg,rgba(46,204,113,0.12),rgba(45,27,78,0.5));border:1px solid rgba(46,204,113,0.4);border-radius:10px;text-align:center}
+.sholawat-rangkaian-penutup .penutup-label{color:#e8d48b;font-size:0.9rem;font-weight:700;margin-bottom:10px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;gap:6px}
+.sholawat-rangkaian-penutup .penutup-arab{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.4rem;color:#c9a84c;direction:rtl;line-height:2;margin-bottom:8px;padding:10px;background:rgba(0,0,0,0.3);border-radius:8px}
+.sholawat-rangkaian-penutup .penutup-latin{color:#e8d48b;font-style:italic;font-size:0.85rem;margin-bottom:6px}
+.sholawat-rangkaian-penutup .penutup-arti{color:#ccc;font-size:0.85rem;line-height:1.6;max-width:550px;margin:0 auto}
+.sholawat-rangkaian-card .rangkaian-ref{margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.08);color:#888;font-size:0.75rem;text-align:right;font-style:italic}
+@media (max-width:900px){
+.split-wrapper{padding:0 15px 30px}
+.filter-tabs-sticky{top:75px;padding:10px 12px;border-radius:12px 12px 0 0}
+.filter-tabs-label{display:none}
+.filter-tab{padding:8px 14px;font-size:0.78rem;flex:1;justify-content:center;min-width:0}
+.filter-tab .tab-count{font-size:0.62rem;padding:1px 5px}
+.filter-status-mini{display:none}
+.split-container{flex-direction:column;gap:15px}
+.split-sidebar{width:100%;max-height:none;position:relative;top:0;border-radius:0 0 15px 15px;border-top:1px solid rgba(201,168,76,0.2)}
+.split-detail{max-height:none;position:relative;top:0;border-radius:15px;border-top:1px solid rgba(201,168,76,0.15)}
+.sub-hero .sub-arabic{font-size:2rem}
+.sub-hero h2{font-size:1.8rem}
+.tag-buttons-container{gap:6px;padding:10px}
+.tag-button{padding:8px 14px;font-size:0.78rem}
+.doa-item-card .doa-arab,.sholawat-item-card .sholawat-arab,.sholawat-item-card .syiir-verse{font-size:1.2rem;padding:12px}
+.doa-bagian-item .bagian-arab,.sholawat-bagian-item .bagian-arab{font-size:1.2rem}
+.sholawat-rangkaian-card{padding:15px}
+.sholawat-rangkaian-card .rangkaian-header h4{font-size:0.95rem}
+.sholawat-bagian-item{padding:12px 10px}
+.sholawat-bagian-item .bagian-arab{font-size:1.1rem;padding:10px 12px}
+.sholawat-bagian-item .bagian-latin{font-size:0.78rem}
+.sholawat-bagian-item .bagian-arti{font-size:0.78rem;padding:8px 10px}
+.sholawat-bagian-item .bagian-label{font-size:0.8rem}
+.sholawat-rangkaian-penutup{padding:14px 12px}
+.sholawat-rangkaian-penutup .penutup-arab{font-size:1.1rem}
+}
+@media (max-width:480px){
+.page-header .brand{font-size:1.4rem}
+.sub-hero .sub-arabic{font-size:1.6rem}
+.sub-hero h2{font-size:1.4rem}
+.split-detail{padding:15px}
+.filter-tabs-sticky{padding:8px 10px;gap:6px}
+.filter-tab{padding:7px 10px;font-size:0.72rem;gap:4px}
+.tag-button{padding:6px 12px;font-size:0.72rem}
+}
+</style>
+</head>
+<body>
+<div class="page-header">
+<div class="brand">☪ Doa & Sholawat</div>
+<div class="tagline">Koleksi Doa & Sholawat Ahlussunnah wal Jamaah</div>
+</div>
+<section class="sub-hero">
+<div class="sub-arabic">الصَّلَوَاتُ وَالدَّعَوَات</div>
+<h2>Kategori Doa & Sholawat</h2>
+<p class="sub-subtitle">Kumpulan doa-doa mustajabah dari Al-Qur'an, Hadis, dan karya para ulama, serta sholawat-sholawat termasyhur kepada Nabi Muhammad ﷺ</p>
+</section>
+<div class="split-wrapper">
+<div class="filter-tabs-sticky" id="filterTabsSticky">
+<div class="filter-tabs-left">
+<div class="filter-tabs-label"><span class="label-icon"></span><span>Filter</span></div>
+<button class="filter-tab active" data-filter="all" onclick="filterKategori('all',this)">📋 Semua <span class="tab-count" id="countAll">0</span></button>
+<button class="filter-tab" data-filter="doa" onclick="filterKategori('doa',this)">🤲 Doa <span class="tab-count" id="countDoa">0</span></button>
+<button class="filter-tab" data-filter="sholawat" onclick="filterKategori('sholawat',this)"> Sholawat <span class="tab-count" id="countSholawat">0</span></button>
+<button class="filter-tab" data-filter="syiir" onclick="filterKategori('syiir',this)">🎶 Syiir <span class="tab-count" id="countSyiir">0</span></button>
+</div>
+<div class="filter-tabs-right">
+<div class="filter-status-mini"><span class="status-dot"></span><span id="filterStatusText">Aktif: Semua Kategori</span></div>
+</div>
+</div>
+<div class="split-container" id="splitContainer">
+<aside class="split-sidebar">
+<input type="text" id="searchInput" class="sub-search" placeholder="🔍 Cari doa / sholawat / syiir..." onkeyup="renderList()">
+<div id="doaListContainer"></div>
+<div id="sholawatListContainer"></div>
+</aside>
+<main class="split-detail" id="detailPanel">
+<div class="split-welcome">
+<div class="welcome-icon">🤲</div>
+<h3>Pilih Kategori</h3>
+<p>Klik salah satu kategori di panel sebelah kiri untuk melihat kumpulan doa dan sholawat.<br>Gunakan tombol filter di atas untuk memfilter berdasarkan jenis konten.<br><br>
+<em>"Dan Tuhanmu berfirman: Berdoalah kepada-Ku, niscaya akan Aku perkenankan bagimu."</em><br>— QS. Ghafir: 60</p>
+</div>
+<div id="dynamicTagButtons"></div>
+<div class="sub-info" style="margin-top:30px;">
+<strong>📌 Keutamaan Doa & Sholawat:</strong><br>
+• Doa adalah otak ibadah — senjata utama seorang mukmin<br>
+• Bersholawat sekali kepada Nabi ﷺ, Allah bersholawat (memberi rahmat) 10 kali<br>
+• Orang yang paling banyak bersholawat paling berhak mendapat syafaat
+</div>
+</main>
+</div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+// ============================================================
+// ✅ DATA TOMBOL TAG (GAMBAR 300.PNG) - DINAMIS & MUDAH DIUBAH
+// ============================================================
+var tagButtonsData = [
+{ icon: '📖', text: 'Al-Quran', link: 'alquran.html' },
+{ icon: '👳', text: 'Syekh Abdul Qadir', link: 'syekh-abdul-qadir.html' },
+{ icon: '📚', text: 'Biografi Para Waliyullah', link: 'biografi-waliyullah.html' },
+{ icon: '📗', text: 'Futuh Al-Ghaib', link: 'futuh-alghaib.html' },
+{ icon: '✨', text: 'Karomah Para Waliyullah', link: 'karomah-waliyullah.html' },
+{ icon: '', text: 'Nasihat', link: 'nasihat.html' },
+{ icon: '', text: 'Iman', link: 'iman.html' },
+{ icon: '🛡️', text: 'Taqwa', link: 'taqwa.html' },
+{ icon: '🕌', text: 'Ibadah', link: 'ibadah.html' },
+{ icon: '📿', text: 'Dzikir', link: 'dzikir.html' },
+{ icon: '🙏', text: 'Sholat', link: 'sholat.html' },
+{ icon: '🌙', text: 'Puasa', link: 'puasa.html' },
+{ icon: '🕋', text: 'Haji', link: 'haji.html' },
+{ icon: '💰', text: 'Zakat', link: 'zakat.html' },
+{ icon: '💝', text: 'Sedekah', link: 'sedekah.html' }
+];
+// ============================================================
+// ✅ FUNGSI RENDER TOMBOL TAG (DINAMIS)
+// ============================================================
+function renderTagButtons() {
+var container = document.getElementById('dynamicTagButtons');
+if (!container) return;
+var html = '<div class="tag-buttons-container">';
+for (var i = 0; i < tagButtonsData.length; i++) {
+var btn = tagButtonsData[i];
+html += '<a href="' + btn.link + '" class="tag-button">';
+html += '<span>' + btn.icon + '</span>';
+html += '<span>' + btn.text + '</span>';
+html += '</a>';
+}
+html += '</div>';
+container.innerHTML = html;
+}
+// ============================================================
+// ✅ FUNGSI TAMBAH TOMBOL BARU
+// ============================================================
+function tambahTagButton(icon, text, link) {
+tagButtonsData.push({ icon: icon, text: text, link: link });
+renderTagButtons();
+console.log('✅ Tombol baru ditambahkan: ' + text);
+}
+// ============================================================
+// ✅ FUNGSI HAPUS TOMBOL BERDASARKAN INDEX
+// ============================================================
+function hapusTagButton(index) {
+if (index >= 0 && index < tagButtonsData.length) {
+var removed = tagButtonsData.splice(index, 1)[0];
+renderTagButtons();
+console.log('🗑️ Tombol dihapus: ' + removed.text);
+} else {
+console.log('⚠️ Index tidak valid: ' + index);
+}
+}
+// ============================================================
+// ✅ FUNGSI HAPUS TOMBOL BERDASARKAN NAMA TEXT
+// ============================================================
+function hapusTagButtonByText(text) {
+for (var i = 0; i < tagButtonsData.length; i++) {
+if (tagButtonsData[i].text === text) {
+tagButtonsData.splice(i, 1);
+renderTagButtons();
+console.log('🗑️ Tombol dihapus: ' + text);
+return;
+}
+}
+console.log('⚠️ Tombol tidak ditemukan: ' + text);
+}
+// ============================================================
+// ✅ DATA DOA
+// ============================================================
+var doaKategoriData = [
+{id:'doa-quran',icon:'📖',nama:'Doa Dari Al-Quran',desc:'Doa-doa mustajabah dari Al-Qur\'an.',doa:[
+{judul:'Doa Mohon Kebaikan Dunia Akhirat',arab:'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',latin:'Rabbanâ âtinâ fiddunyâ hasanah wa fil âkhirati hasanah wa qinâ \'adzâbannâr',arti:'Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan peliharalah kami dari siksa neraka.',ref:'QS. Al-Baqarah: 201'},
+{judul:'Doa Mohon Ampunan & Rahmat',arab:'رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً',latin:'Rabbanâ lâ tuzigh qulûbanâ ba\'da idz hadaitanâ wa hab lanâ min ladunka rahmah',arti:'Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah rahmat dari sisi-Mu.',ref:'QS. Ali Imran: 8'}
+]},
+{id:'doa-muhammad',icon:'🕌',nama:'Doa Nabi Muhammad ﷺ',desc:'Doa-doa dari Rasulullah ﷺ.',doa:[
+{judul:'Doa Memohon Ilmu Bermanfaat',arab:'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا',latin:'Allâhumma innî as\'aluka \'ilman nâfi\'an wa rizqan thayyiban wa \'amalan mutaqabbalan',arti:'Ya Allah, aku memohon ilmu yang bermanfaat, rezeki yang baik, dan amal yang diterima.',ref:'HR. Ibnu Majah'},
+{judul:'Doa Perlindungan dari Kesusahan',arab:'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَالْعَجْزِ وَالْكَسَلِ',latin:'Allâhumma innî a\'ûdzu bika minal hammi wal hazani wal \'ajzi wal kasali',arti:'Ya Allah, aku berlindung kepada-Mu dari kegelisahan, kesedihan, kelemahan, dan kemalasan.',ref:'HR. Bukhari'}
+]},
+{id:'doa-nabi',icon:'🕋',nama:'Doa Para Nabi',desc:'Doa-doa para Nabi dan Rasul.',doa:[
+{judul:'Doa Nabi Adam AS',arab:'رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ',latin:'Rabbanâ zhalamnâ anfusanâ wa illam taghfir lanâ wa tarhamnâ lanakûnanna minal khâsirîn',arti:'Ya Tuhan kami, kami telah menzalimi diri kami sendiri. Jika Engkau tidak mengampuni kami, niscaya kami termasuk orang-orang yang merugi.',ref:'QS. Al-A\'raf: 23'},
+{judul:'Doa Nabi Yunus AS',arab:'لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ',latin:'Lâ ilâha illâ anta subhânaka innî kuntu minazh-zhâlimîn',arti:'Tidak ada Tuhan selain Engkau, Maha Suci Engkau, sesungguhnya aku termasuk orang-orang yang zalim.',ref:'QS. Al-Anbiya: 87'}
+]},
+{id:'doa-harian',icon:'🤲',nama:'Doa-doa Harian',desc:'Doa-doa aktivitas sehari-hari sesuai sunnah.',doa:[
+{judul:'Doa Masuk Rumah',arab:'اَللّٰهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ الْمَوْلَجِ وَخَيْرَ الْمَخْرَجِ بِاسْمِ اللهِ وَلَجْنَا، وبِاسْمِ اللهِ خَرَجْنَا',latin:'Allâhumma innî as\'aluka khairal maulaji wa khairal makhraji, bismillâhi walajnâ wa bismillâhi kharajnâ',arti:'Ya Allah, aku memohon kepada-Mu sebaik-baik tempat masuk dan sebaik-baik tempat keluar. Atas nama-Mu kami masuk dan atas nama-Mu kami keluar.',ref:'HR. Abu Daud'},
+{judul:'Doa Sebelum Makan',arab:'اَللّٰهُمَّ بَارِكْ لَنَا فِيْمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ',latin:'Allâhumma bârik lanâ fîmâ razaqtanâ waqinâ \'adzâban nâr',arti:'Ya Allah, berkahilah apa yang telah Engkau anugerahkan kepada kami dan jagalah kami dari siksa neraka.',ref:'HR. Abu Daud'},
+{judul:'Doa Keluar Rumah',arab:'بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ',latin:'Bismillâhi tawakkaltu \'alallâhi wa lâ haula wa lâ quwwata illâ billâh',arti:'Dengan nama Allah, aku bertawakkal kepada Allah. Tiada daya dan kekuatan kecuali dengan pertolongan Allah.',ref:'HR. Abu Daud & Tirmidzi'}
+]},
+{id:'doa-rizki',icon:'💰',nama:'Doa Mengharap Rizki',desc:'Doa-doa memohon rizki yang halal dan berkah.',doa:[
+{judul:'Doa Mudah Raih Rezeki',arab:'اَللّٰهُمَّ إِنِّي أَسْأَلُكَ أَنْ تَرْزُقَنِيْ رِزْقًا حَلَالًا وَاسِعًا طَيِّبًا',latin:'Allâhumma innî as-aluka an tarzuqanî rizqan halâlan wâsi\'an thayyiban',arti:'Ya Allah aku mohon kepadamu limpahan rezeki yang halal, luas, dan baik.',ref:'Kumpulan Amalan Ahlu Sunnah'},
+{judul:'Doa Terhindar dari Utang',arab:'اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ',latin:'Allâhumma innî a\'ûdzu bika min ghalabatid daini wa qahrir rijâl',arti:'Ya Allah, aku berlindung kepada-Mu dari lilitan utang dan tekanan orang-orang.',ref:'HR. Abu Daud'}
+]},
+{id:'dzikir-aurad',icon:'',nama:'Dzikir Aurod',desc:'Kumpulan dzikir, wirid, dan aurad pilihan dari para ulama Ahlussunnah wal Jamaah.',doa:[
+{judul:'Wirid Bakda Shalat Fardhu', icon:'🕌', ref:'Wirid Bakda Shalat Fardhu',
+bagian:[
+{label:'Istighfar', arab:'أَسْتَغْفِرُ اللهَ الْعَظِـيْمَ لِيْ وَلِوَالِدَيَّ وَلِأَصْحَابِ الْحُقُوْقِ عَلَيَّ وَلِجَمِيْعِ الْمُؤْمِنِيْنَ وَالْمُؤْمِنَاتِ وَالْمُسْلِمِيْنَ وَالْمُسْلِمَاتِ الْأَحْيَاءِ مِنْهُمْ وَالْأَمْوَاتِ ×٣', arti:'Aku memohon ampunan kepada Allah yang Mahaagung, untuk diriku sendiri, kedua orang tuaku, sahabat-sahabat yang aku masih memiliki hak atasku, semua kaum mukmin dan muslim, baik yang masih hidup ataupun yang telah wafat. (3x)'},
+{label:'Tahlil', arab:'لَاإِلٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِيْ وَيُمِيْتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرٌ ×٣', arti:'Tiada Tuhan yang haq disembah kecuali Allah semata, tiada sekutu baginya. Hanya milik-Nya segala kerajaan dan hanya milik-Nya segala puji, Dzat yang menghidupkan dan yang mematikan. Dialah Dzat yang kuasa atas segala sesuatu. (3x)'},
+{label:'Doa keselamatan', arab:'اَللّٰهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ وَإِلَيْكَ يَعُوْدُ السَّلَامُ فَحَيِّنَا رَبَّنَا بِالسَّلَامِ وَأَدْخِلْنَا الْـجَنَّةَ دَارَ السَّلَامِ تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ يَا ذَاالْـجَلَالِ وَاْلإِكْرَامِ', arti:'Ya Allah Engkaulah Dzat yang memberi keselamatan, dari-Mu keselamatan datang, dan kepada-Mu segala keselamatan kembali. Maka hidupkanlah kami ya Allah dengan selamat, masukkan kami ke dalam surga rumah keselamatan, Engkaulah Dzat yang Mahasuci, wahai Tuhan kami, dan Engkaulah Dzat yang Mahaluhur, wahai Tuhan yang memiliki keagungan dan kemuliaan.'},
+{label:'Taawudz dan Al-Fatihah', arab:'أَعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ، اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ', arti:'Aku berlindung kepada Allah dari setan yang terlontar. Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Segala puji bagi Allah, Tuhan semesta alam.'},
+{label:'Al-Ikhlas (3x)', arab:'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ هُوَ اللّٰهُ اَحَدٌۚ، اَللّٰهُ الصَّمَدُۚ، لَمْ يَلِدْ وَلَمْ يُوْلَدْۙ، وَلَمْ يَكُنْ لَّهٗ كُفُوًا اَحَـــــدٌ ×٣', arti:'Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Katakanlah: "Dialah Allah Yang Maha Esa. Allah Dzat yang menjadi tumpuan segala permohonan. Ia tidak beranak dan tidak pula diperanakkan. Dan tidak ada siapa pun yang sebanding dengan-Nya." (3x)'},
+{label:'Al-Falaq', arab:'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ اَعُوْذُ بِرَبِّ الْفَلَقِۙ، مِنْ شَرِّ مَـــا خَلَقَۙ', arti:'Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Katakanlah: "Aku berlindung kepada Tuhan yang menciptakan cahaya subuh. Dari kejahatan makhluk-makhluk yang Ia ciptakan.'},
+{label:'An-Nas', arab:'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ اَعُوْذُ بِرَبِّ النَّاسِۙ، مَلِكِ النَّـــاسِۙ، اِلٰهِ النَّاسِۙ', arti:'Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Katakanlah: "Aku berlindung kepada Tuhan pemelihara manusia. Yang Menguasai manusia. Tuhannya manusia.'},
+{label:'Ayat Kursi', arab:'اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ', arti:'Allah, tidak ada tuhan selain Dia. Yang Mahahidup, Yang terus menerus mengurus makhluk-Nya.'},
+{label:'Tasbih, tahmid, takbir', arab:'سُبْحَانَ اللهِ ×٣٣ اَلْحَمْدُ لِلّٰهِ ×٣٣ اَللهُ أَكْبَرُ ×٣٣', arti:'Mahasuci Allah (33x). Segala puji bagi Allah (33x). Allah Mahabesar (33x).'},
+{label:'Shalawat kepada Nabi', arab:'اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَرَسُوْلِكَ النَّبِيِّ الْأُمِّـيِّ وَعَلى اٰلِهِ وَصَحْبِهِ وَسَلِّمْ', arti:'Ya Allah, limpahkanlah rahmat dan keselamatan kepada junjungan kami Nabi Muhammad sebagai hamba dan utusan-Mu yang ummi, beserta keluarga dan sahabatnya.'},
+{label:'Hasbunallah', arab:'وَحَسْبُنَا اللهُ وَنِعْمَ الْوَكِيْلُ، لَاحَوْلَ وَلَاقُوَّةَ إِلَّابِاللهِ الْعَلِيِّ الْعَظِيْمِ', arti:'Cukuplah Allah menjadi penolong kami dan Allah adalah sebaik-baik yang diserahi. Tiada daya dan tiada kekuatan melainkan dengan pertolongan Allah yang Mahatinggi dan Mahaagung.'}
+],
+penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
+}
+]}
+];
+// ============================================================
+// ✅ DATA SHOLAWAT & SYIIR
+// ============================================================
+var sholawatKategoriData = [
+{id:'sholawat-ibrahimiyah',jenis:'sholawat',icon:'🎵',nama:'Sholawat Ibrahimiyah',desc:'Sholawat yang dibaca dalam tahiyyat akhir sholat fardhu.',sholawat:[
+{judul:'🎵 Sholawat Ibrahimiyah',arab:'اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ',latin:'Allâhumma shalli \'alâ sayyidinâ Muhammad wa \'alâ âli sayyidinâ Muhammad, kamâ shallaita \'alâ sayyidinâ Ibrâhîm wa \'alâ âli sayyidinâ Ibrâhîm',arti:'Ya Allah, limpahkanlah sholawat kepada junjungan kami Nabi Muhammad dan kepada keluarga junjungan kami Nabi Muhammad, sebagaimana Engkau telah melimpahkan sholawat kepada junjungan kami Ibrahim.',ref:'HR. Bukhari & Muslim'}
+]},
+{id:'sholawat-fatih',jenis:'sholawat',icon:'🎵',nama:'Sholawat Fatih',desc:'Sholawat ini dinamakan "Al-Fatih" (Sang Pembuka) karena dipercaya sebagai wasilah (perantara) untuk membuka pintu-pintu rahmat, menghilangkan kesulitan, dan mendapatkan cahaya spiritual dari Allah SWT.',sholawat:[
+{judul:' Sholawat Fatih (Lengkap)',arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ الْفَاتِحِ لِمَا أُغْلِقَ، وَالْخَاتِمِ لِمَا سَبَقَ، النَّاصِرِ الْحَقَّ بِالْحَقِّ، وَالْهَادِي إِلَى صِرَاطِكَ الْمُسْتَقِيمِ، وَعَلَى آلِهِ وَأَصْحَابِهِ حَقَّ قَدْرِهِ وَمِقْدَارِهِ الْعَظِيمِ',latin:'Allāhumma ṣalli wa sallim wa bārik ‘alā sayyidinā Muammadinil fātiḥi limā ughliqa, wal khātimi limā sabaqa, an-nāṣiril ḥaqqa bil ḥaqqi, wal hādī ilā ṣirāṭikal mustaqīm, wa ‘alā ālihī wa aṣābihī ḥaqqa qadrihī wa miqdārihil ‘aẓīm.',arti:'Ya Allah, limpahkanlah shalawat yang sempurna dan curahkanlah salam kesejahteraan yang penuh kepada junjungan kami Nabi Muhammad, yang dengan sebab beliau semua kesulitan dapat terpecahkan.',ref:'Sayyid Muhammad Syamsuddin bin Abil Hasan Al-Bakri'}
+]},
+{id:'sholawat-nariyah',jenis:'sholawat',icon:'🎵',nama:'Sholawat Nariyah',desc:'Sholawat termasyhur untuk membuka pintu rezeki dan menghilangkan kesusahan.',sholawat:[
+{judul:'🎵 Sholawat Nariyah (Lengkap)',arab:'اَللّٰهُمَّ صَلِّ صَلَاةً كَامِلَةً وَسَلِّمْ سَلَامًا تَامًّا عَلَى سَيِّدِنَا مُحَمَّدٍ الَّذِيْ تَنْحَلُّ بِهِ الْعُقَدُ وَتَنْفَرِجُ بِهِ الْكُرَبُ',latin:'Allāhumma ṣalli alātan kāmilatan wa sallim salāman tāmman ‘alā sayyidinā Muḥammadin alladzī tanallu bihil-‘uqadu wa tanfariju bihil-kurabu',arti:'Ya Allah, limpahkanlah shalawat yang sempurna dan curahkanlah salam kesejahteraan yang penuh kepada junjungan kami Nabi Muhammad, yang dengan sebab beliau semua kesulitan dapat terpecahkan.',ref:'Sayyid Muhammad bin Alawi Al-Maliki'}
+]},
+{id:'sholawat-munjiyat',jenis:'sholawat',icon:'🎵',nama:'Sholawat Munjiyat',desc:'Sholawat penyelamat dari segala bencana dan bahaya.',sholawat:[
+{judul:'🎵 Sholawat Munjiyat',arab:'اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلاَةً تُنْجِيْنَا بِهَا مِنْ جَمِيْعِ الْأَهْوَالِ وَالْآفَاتِ',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadin ṣalātan tunjīnā bihā min jamī’il aḥwāli wal-āfāti',arti:'Ya Allah, limpahkanlah sholawat kepada junjungan kami Nabi Muhammad dengan sholawat yang menyelamatkan kami dari segala keadaan dan bencana.',ref:'Kitab Al-Ahwâz'}
+]},
+{id:'sholawat-Luthf',jenis:'sholawat',icon:'🎵',nama:'Sholawat Luthfil Khofi atau Sholawat Kelembutan',desc:'Sholawat ini disusun oleh Syaikh Abdul Wahab asy-Sya\'roni (nama lengkap: Abdul Wahab bin Ahmad bin Ali asy-Sya\'roni al-Anshari al-Mishri). Beliau adalah seorang ulama besar, ahli fiqih, dan sufi (wali quthub) asal Mesir. Beliau lahir pada tahun 899 H (1493 M) dan wafat pada tahun 973 H (1552 M) di Mesir',sholawat:[
+{judul:'🎵 Sholawat Ibrahimiyah',arab:'اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ صَلَاةَ أَهْلِ السَّمٰوَاتِ وَالْأَرَضِينَ عَلَيْهِ، وَأَجْرِ يَا مَوْلَانَا لُطْفَكَ الْخَفِيَّ فِي أَمْرِي، وَأَرِنِي سِرَّ جَمِيلِ صُنْعِكَ فِيمَا آمُلُهُ مِنْكَ يَا اللهُ، يَا سَمِيعُ، يَا قَرِيبُ، يَا رَبَّ الْعَالَمِينَ',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadin wa ‘alā ālihī ṣalāta ahlis-samāwāti wal-arāḍīna ‘alayh, wa ajri yā mawlānā luṭfakal-khafiyya fī amrī, wa arinī sirra jamīli ṣun‘ika fīmā āmuluhu minka yā Allāh, yā Samī‘u, yā Qarību, yā Rabbal-‘ālamīn',arti:'Ya Allah, limpahkanlah rahmat (shalawat) kepada junjungan kami Nabi Muhammad ﷺ dan kepada keluarganya, sebagaimana rahmat yang dilimpahkan oleh para penghuni langit dan bumi kepadanya. Dan berlakulah, wahai Tuanku, kelembutan-Mu yang tersembunyi dalam urusanku, serta tampakkanlah kepadaku rahasia keindahan perbuatan-Mu dalam sesuatu yang kuharapkan dari-Mu. Ya Allah, Wahai Dzat Yang Maha Mendengar, Wahai Dzat Yang Mahadekat, Wahai Tuhan seluruh alam.',ref:'Syaikh Abdul Wahab asy-Sya\'roni (nama lengkap: Abdul Wahab bin Ahmad bin Ali asy-Sya\'roni al-Anshari al-Mishri).'}
+]},
+{id:'sholawat-burdah',jenis:'sholawat',icon:'🎵',nama:'Qasidah Burdah',desc:'Qasidah termasyhur karya Imam Al-Bushiri.',sholawat:[
+{judul:'🎵 Bait Pembuka Qasidah Burdah',arab:'أَمِنْ تَذَكُّرِ جِيرَانٍ بِذِي سَلَمِ *** مَزَجْتَ دَمْعًا جَرَى مِنْ مُقْلَةٍ بِدَمِ',latin:'Amin tadzakkuri jîrânin bidzî salam *** mazajta dam\'an jarâ min muqlatin bidam',arti:'Apakah karena mengingat tetangga di Dzi Salam *** engkau campurkan air mata yang mengalir dari mata dengan darah',ref:'Imam Al-Bushiri · Qasidah Burdah'},
+{judul:' Bait Inti Pujian kepada Nabi',arab:'مُحَمَّدٌ سَيِّدُ الْكَوْنَيْنِ وَالثَّقَلَيْنِ *** وَالْفَرِيْقَيْنِ مِنْ عُرْبٍ وَمِنْ عَجَمِ',latin:'Muhammadun sayyidul kaunaini wats-tsaqalain *** wal farîqaini min \'urbin wa min \'ajam',arti:'Muhammad adalah penghulu dua alam dan dua beban *** dan dua golongan dari bangsa Arab dan non-Arab',ref:'Imam Al-Bushiri · Qasidah Burdah'}
+]},
+{id:'sholawat-busyro',jenis:'sholawat',icon:'🎵',nama:'Sholawat Al-Busyro',desc:'Sholawat kabar gembira untuk melancarkan rezeki.',sholawat:[
+{judul:'🎵 Sholawat Al-Busyro',arab:'اَللّٰهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ صَاحِبِ الْبُشْرَى، صَلَاةً تُبَشِّرُنَا بِهَا',latin:'Allâhumma shalli wa sallim \'alâ Sayyidinâ Muhammadin shâhibil busyrâ, shalâtan tubasysyirunâ bihâ',arti:'Ya Allah, limpahkanlah shalawat dan keselamatan kepada junjungan kami Nabi Muhammad, pembawa kabar gembira, dengan suatu shalawat yang dengannya Engkau memberi kabar gembira kepada kami.',ref:'Ijazah Rasulullah '}
+]},
+{id:'sholawat-taisir',jenis:'sholawat',icon:'🎵',nama:'Sholawat Taisir',desc:'Membukakan pintu rezeki dan memudahkan segala urusan.',sholawat:[
+{judul:' Sholawat Taisir',arab:'اَللّٰهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، صَلَاةً تَفْتَحُ لَنَا بِهَا أَبْوَابَ الرِّضَى وَالتَّيْسِيْرِ',latin:'Allâhumma shalli wa sallim \'alâ sayyidinâ Muhammadin wa \'alâ âli sayyidinâ Muhammad, sholâtan taftahu lanâ bihâ abwâbar ridhâ wat taisîr',arti:'Ya Allah, limpahkanlah shalawat dan salam kepada junjungan kami Nabi Muhammad, dengan suatu shalawat yang Engkau bukakan untuk kami pintu-pintu keridhaan dan kemudahan.',ref:'Syaikh Muhammad bin Ahmad Al-Yusi'}
+]},
+{id:'sholawat-tibbil-qulub',jenis:'sholawat',icon:'🎵',nama:'Sholawat Tibbil Qulub',desc:'Sholawat untuk penyembuh hati dan badan.',sholawat:[
+{judul:'🎵 Sholawat Tibbil Qulub',arab:'اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ طِبِّ الْقُلُوْبِ وَدَوَائِهَا، وَعَافِيَةِ الْأَبْدَانِ وَشِفَائِهَا',latin:'Allâhumma shalli \'alâ sayyidinâ Muhammad thibbil qulûbi wa dawâ\'ihâ, wa \'âfiyatil abdhâni wa syifâ\'ihâ',arti:'Ya Allah, limpahkanlah sholawat kepada junjungan kami Nabi Muhammad sebagai obat hati dan penyembuhnya, sebagai kesehatan badan dan kesembuhannya.',ref:'Kitab Dalâilul Khairât'}
+]},
+// ============================================================
+// ✅ SHOLAWAT DENGAN BAGIAN-BAGIAN (MULTI-SHOLAWAT DALAM 1 JUDUL)
+// ============================================================
+{id:'sholawat-Ya Rabbi Sholi \'ala Muhammad-lengkap',jenis:'sholawat',icon:'🕌',nama:'Sholawat Ya Robbi Sholli \'Ala Muhammad',desc:'Pengarangnya :Syekh Wajihuddin Abdurrahman bin Muhammad bin Umar ad-Diba\'i asy-Syaibani al-Yamani az-Zabidi asy-Syafi\'i Beliau dilahirkan di kota Zabid, Yaman, pada tanggal 4 Muharram 866 H (bertepatan dengan tahun 1462 M / abad ke-15 M) dan wafat pada tahun 944 H (1538 M). demikian, beliau hidup dan berkarya tepat pada peralihan abad ke-9 Hijriah / abad ke-15 Masehi menuju abad ke-10 H / 16 M.',sholawat:[
+{judul:'🎵 Ya Robbi Sholli \'Ala Muhammad(12 Bagian Lengkap)',icon:'🕌',ref:' Syekh Wajihuddin Abdurrahman bin Muhammad bin Umar ad-Diba\'i asy-Syaibani al-Yamani az-Zabidi asy-Syafi\'i',
+bagian:[
+{label:'Bagian 1: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ صَلِّ عَلَى مُحَمَّدْ ، يَا رَبِّ صَلِّ وَسَلِّمْ عَلَيْهِ',latin:'Allâhumma shalli \'alâ Muhammadin wa \'alâ âli Muhammad',arti:'Ya Allah, limpahkanlah shalawat kepada Muhammad dan kepada keluarga Muhammad.'},
+{label:'Bagian 2: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ بَلِّغْهُ الْوَسِيلَةْ ، يَا رَبِّ خُصَّهُ بِالْفَضِيلَةْ',latin:'Kamâ shallaita \'alâ Ibrâhîma wa \'alâ âli Ibrâhîm',arti:'Sebagaimana Engkau telah melimpahkan shalawat kepada Ibrahim dan kepada keluarga Ibrahim.'},
+{label:'Bagian 3: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ وَارْضَ عَنِ الصَّحَابَةْ ، يَا رَبِّ وَارْضَ عَنِ السُّلَالَةْ',latin:'Allâhumma bârik \'alâ Muhammadin wa \'alâ âli Muhammad kamâ bârakta \'alâ Ibrâhîma wa \'alâ âli Ibrâhîm',arti:'Ya Allah, limpahkanlah barakah kepada Muhammad dan kepada keluarga Muhammad, sebagaimana Engkau telah melimpahkan barakah kepada Ibrahim dan kepada keluarga Ibrahim.'},
+{label:'Bagian 4: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ وَارْضَ عَنِ الْمَشَايِخْ ، يَا رَبِّ فَارْحَمْ وَالِدِينَا',latin:'Innaka hamîdun majîd',arti:'Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.'},
+{label:'Bagian 5: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ وَارْحَمْنَا جَمِيْعًا ، يَا رَبِّ وَارْحَمْ كُلَّ مُسْلِمْ',latin:'Allâhumma shalli \'alâ Muhammadin wa \'alâ âli Muhammad',arti:'Ya Allah, limpahkanlah shalawat kepada Muhammad dan kepada keluarga Muhammad.'},
+{label:'Bagian 6: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ وَاغْفِرْ لِكُلِّ مُذْنِبْ ، يَا رَبِّ لَا تَقْطَعْ رَجَانَا',latin:'Kamâ shallaita \'alâ Ibrâhîma wa \'alâ âli Ibrâhîm',arti:'Sebagaimana Engkau telah melimpahkan shalawat kepada Ibrahim dan kepada keluarga Ibrahim.'},
+{label:'Bagian 7: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ يَا سَامِعْ دُعَانَا ، يَا رَبِّ بَلِّغْنَا نَزُوْرُهْ',latin:'Allâhumma bârik \'alâ Muhammadin wa \'alâ âli Muhammad kamâ bârakta \'alâ Ibrâhîma wa \'alâ âli Ibrâhîm',arti:'Ya Allah, limpahkanlah barakah kepada Muhammad dan kepada keluarga Muhammad, sebagaimana Engkau telah melimpahkan barakah kepada Ibrahim dan kepada keluarga Ibrahim.'},
+{label:'Bagian 8: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ تَغْشَانَا بِنُوْرِهِ ، يَا رَبِّ حِفْظَانُكَ وَأَمَانُكَ',latin:'Innaka hamîdun majîd',arti:'Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.'},
+{label:'Bagian 9: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ وَاسْكِنَّا جِنَانَكَ ، يَا رَبِّ أَجِرْنَا مِنْ عَذَابِكَ',latin:'Allâhumma shalli \'alâ Muhammadin wa \'alâ âli Muhammad',arti:'Ya Allah, limpahkanlah shalawat kepada Muhammad dan kepada keluarga Muhammad.'},
+{label:'Bagian 10: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ وَارْزُقْنَا الشَّهَادَةْ ، يَا رَبِّ حِطْنَا بِالسَّعَادَةْ',latin:'Kamâ shallaita \'alâ Ibrâhîma wa \'alâ âli Ibrâhîm',arti:'Sebagaimana Engkau telah melimpahkan shalawat kepada Ibrahim dan kepada keluarga Ibrahim.'},
+{label:'Bagian 11: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ وَاصْلِحْ كُلَّ مُصْلِحْ ، يَا رَبِّ وَاكْفِ كُلَّ مُؤْذِيْ',latin:'Allâhumma bârik \'alâ Muhammadin wa \'alâ âli Muhammad kamâ bârakta \'alâ Ibrâhîma wa \'alâ âli Ibrâhîm',arti:'Ya Allah, limpahkanlah barakah kepada Muhammad dan kepada keluarga Muhammad, sebagaimana Engkau telah melimpahkan barakah kepada Ibrahim dan kepada keluarga Ibrahim.'},
+{label:'Bagian 12: Ya Robbi Sholli \'Ala Muhammad',arab:'يَا رَبِّ نَخْتِمْ بِالْمُشَفَّعْ ، يَا رَبِّ صَلِّ عَلَيْهِ وَسَلِّمْ',latin:'Innaka hamîdun majîd',arti:'Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.'}
+],
+penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
+}
+]},
+{id:'sholawat-badar',jenis:'sholawat',icon:'🎵',nama:'Sholawat Badar 4 bagian',desc:'Dipopulerkan oleh Syekh Yusuf al-Makassari (lahir 1626 M / 1036 H – wafat 1699 M / 1110 H). Beliau adalah seorang ulama besar, sufi, dan Pahlawan Nasional Indonesia asal Sulawesi Selatan yang hidup tepat pada peralihan abad ke-11 Hijriah / abad ke-17 Masehi. Syekh Yusuf dikenal mengajarkan tarekat Khalwatiyah dan menggunakan dzikir serta sholawat (termasuk Sholawat Badar) sebagai bagian dari gerakan spiritual dan perlawanan terhadap penjajahan. ',sholawat:[
+{judul:'🎵 Sholawat Badar (4 Variasi)',icon:'🕌',ref:'Berbagai Sumber',
+bagian:[
+{label:'Variasi 1: Shalawat Badar',arab:'صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى طهَ رَسُوْلِ اللهِ',latin:'Sholaatullaah salaamullaah ‘alaa Thoohaa rosuulillaah.',arti:'Rahmat dan keselamatan Allah, semoga tetap tercurah kepada Nabi Thoha (Muhammad), utusan Allah.'},
+{label:'Variasi 2: Shalawat Badar',arab:'صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى يس حَبِيْبِ اللهِ',latin:'Sholaatullaah salaamullaah ‘alaa Yaa Siin habiibillaah.',arti:'Rahmat dan keselamatan Allah, semoga tetap tercurah kepada Nabi Yasin, kekasih Allah.'},
+{label:'Variasi 3: Shalawat Badar',arab:'تَوَسَّلْنَا بِبِسْمِ اللهِ وَبِالْهَادِي رَسُوْلِ اللهِ',latin:'Tawassalnaa bibismillaah wa bil haadii rosuulillaah.',arti:'Kami berwasilah (mengharapkan perantara) dengan menyebut nama Allah dan kepada Sang Pemberi Petunjuk, utusan Allah.'},
+{label:'Variasi 3: Shalawat Badar',arab:'وَكُلِّ مُجَاهِدٍ للهِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Wa kulli mujaahidin lillaahi bi ahlil badri yaa Allaah.',arti:'Dan kepada setiap orang yang berjihad karena Allah, demi keberkahan para sahabat Ahli Badar, wahai Allah.'}
+],
+penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
+}
+]},
+{id:'sholawat-munjiyat-2versi',jenis:'sholawat',icon:'🎵',nama:'Sholawat Munjiyat (2 Versi)',desc:'Dua versi Sholawat Munjiyat: versi pendek untuk bacaan cepat dan versi lengkap untuk bacaan khusyuk.',sholawat:[
+{judul:'🎵 Sholawat Munjiyat (2 Versi)',icon:'🕌',ref:'Kitab Dalâilul Khairât & Al-Ahwâz',
+bagian:[
+{label:'Versi 1: Pendek (Untuk Bacaan Cepat)',arab:'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ صَلَاةً تُنْجِينَا بِهَا مِنْ جَمِيعِ الْأَهْوَالِ وَالْآفَاتِ',latin:'Allâhumma shalli \'alâ Muhammadin shalâtan tunjînâ bihâ min jamî\'il ahwâli wal âfât',arti:'Ya Allah, limpahkanlah shalawat kepada Muhammad dengan shalawat yang menyelamatkan kami dari segala keadaan dan bencana.'},
+{label:'Versi 2: Lengkap (Untuk Bacaan Khusyuk)',arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةً تُنْجِينَا بِهَا مِنْ جَمِيْعِ الْأَهْوَالِ وَالْآفَاتِ وَتَقْضِي لَنَا بِهَا جَمِيْعَ الْحَاجَاتِ وَتُطَهِّرُنَا بِهَا مِنْ جَمِيْعِ السَّيِّئَاتِ وَتَرْفَعُنَا بِهَا عِنْدَكَ أَعْلَى الدَّرَجَاتِ وَتُبَلِّغُنَا بِهَا أَقْصَى الْغَايَاتِ مِنْ جَمِيْعِ الْخَيْرَاتِ فِي الْحَيَاةِ وَبَعْدَ الْمَمَاتِ',latin:'Allâhumma shalli \'alâ sayyidinâ Muhammadin shalâtan tunjînâ bihâ min jamî\'il ahwâli wal âfâti wa taqdhî lanâ bihâ jamî\'al hâjâti wa tuthahhirunâ bihâ min jamî\'is sayyi\'âti wa tarfa\'unâ bihâ \'indaka a\'lad darajâti wa tuballighunâ bihâ aqshal ghâyâti min jamî\'il khairâti fil hayâti wa ba\'dal mamâti',arti:'Ya Allah, limpahkanlah shalawat kepada junjungan kami Muhammad dengan shalawat yang menyelamatkan kami dari segala keadaan dan bencana, yang menunaikan bagi kami segala hajat, yang menyucikan kami dari segala keburukan, yang mengangkat kami ke derajat tertinggi, dan yang menyampaikan kami ke puncak segala kebaikan di kehidupan dan setelah kematian.'}
+],
+penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
+}
+]},
+{id:'syiir-ya-lal-wathan',jenis:'syiir',icon:'🎶',nama:'Syiir Ya Lal Wathan',desc:'Syiir nasional-religius karya KH. Anwar Mansyur Pekalongan.',syiir:[
+{judul:'🎶 Syiir Ya Lal Wathan',arab:'يَا لَلْوَطَنْ يَا لَلْوَطَنْ يَا لَلْوَطَنْ\nمَوْلَانَا النَّبِيُّ شَفِيْعُ الْأُمَم\nعَلَى اللهِ صَلَّ يَا لَلْوَطَنْ',latin:'Yâ lal wathan yâ lal wathan yâ lal wathan\nMaulânân nabiyyu syafî\'ul umam\n\'Alallâhi shalla yâ lal wathan',arti:'Demi tanah air, demi tanah air, demi tanah air\nTuan kami Nabi, penolong umat\nKepada Allah bersholawatlah, demi tanah air',ref:'KH. Anwar Mansyur · Pekalongan'}
+]},
+{id:'syiir-tholaal-badru',jenis:'syiir',icon:'🎶',nama:'Syiir Thola\'al Badru',desc:'Syiir penyambutan Nabi Muhammad  saat hijrah ke Madinah.',syiir:[
+{judul:'🎶 Thola\'al Badru \'Alaina',arab:'طَلَعَ الْبَدْرُ عَلَيْنَا *** مِنْ ثَنِيَّاتِ الْوَدَاعِ\nوَجَبَ الشُّكْرُ عَلَيْنَا *** مَا دَعَا لِلَّهِ دَاعِ',latin:'Thola\'al badru \'alainâ *** min tsaniyyâtil wadâ\'\nWajabas syukru \'alainâ *** mâ da\'â lillâhi dâ\'',arti:'Bulan purnama telah terbit kepada kami *** dari bukit-bukit Wada\'\nWajib bersyukur atas kami *** selama ada yang menyeru kepada Allah',ref:'Syiir Klasik · Abad ke-7 M'}
+]},
+{id:'syiir-ahlan-wa-sahlan',jenis:'syiir',icon:'🎵',nama:'Syiir Ahlan Wa Sahlan',desc:'Syiir penyambutan bulan Ramadhan.',syiir:[
+{judul:'🎶 Ahlan Wa Sahlan',arab:'أَهْلًا وَسَهْلًا يَا شَهْرَ رَمَضَانْ *** أَهْلًا وَسَهْلًا يَا شَهْرَ الْإِحْسَانْ\nمَرْحَبًا مَرْحَبًا بِالشَّهْرِ الْكَرِيْمْ *** شَهْرِ الصِّيَامِ وَقِرَاءَةِ الْقُرْآنْ',latin:'Ahlan wa sahlan yâ syahra Ramadhân *** ahlan wa sahlan yâ syahral ihsân\nMarhaban marhaban bisy syahril karîm *** syahris shiyâmi wa qirâ\'atil qur\'ân',arti:'Selamat datang wahai bulan Ramadhan *** selamat datang wahai bulan kebaikan\nSelamat datang, selamat datang wahai bulan mulia *** bulan puasa dan bacaan Al-Qur\'an',ref:'Syiir Penyambutan Ramadhan'}
+]}
+];
+var currentFilter = 'all';
+function filterKategori(filter, btn){
+currentFilter = filter;
+var tabs = document.querySelectorAll('.filter-tab');
+for(var i=0;i<tabs.length;i++) tabs[i].classList.remove('active');
+btn.classList.add('active');
+renderList();
+var filterNames = {'all':'📋 Semua Kategori','doa':' Doa Saja','sholawat':' Sholawat Saja','syiir':'🎶 Syiir Saja'};
+var filterIcons = {'all':'📋','doa':'🤲','sholawat':'🎵','syiir':'🎶'};
+var activeBtns = document.querySelectorAll('.split-btn.active');
+for(var i=0;i<activeBtns.length;i++) activeBtns[i].classList.remove('active');
+var detail = document.getElementById('detailPanel');
+var totalItems = hitungTotalFilter(filter);
+detail.innerHTML = '<div class="split-welcome">' +
+'<div class="welcome-icon">' + filterIcons[filter] + '</div>' +
+'<h3>Filter: ' + filterNames[filter] + '</h3>' +
+'<p>Menampilkan <strong style="color:#c9a84c;">' + totalItems + ' kategori</strong>.<br>Klik salah satu kategori di panel sebelah kiri untuk melihat isinya.</p>' +
+'</div>' +
+'<div id="dynamicTagButtons"></div>' +
+'<div class="sub-info" style="margin-top:30px;">' +
+'<strong>📌 Keutamaan Doa & Sholawat:</strong><br>' +
+'• Doa adalah otak ibadah — senjata utama seorang mukmin<br>' +
+'• Bersholawat sekali kepada Nabi ﷺ, Allah bersholawat (memberi rahmat) 10 kali<br>' +
+'• Orang yang paling banyak bersholawat paling berhak mendapat syafaat' +
+'</div>';
+detail.scrollTop = 0;
+renderTagButtons();
+var statusText = document.getElementById('filterStatusText');
+if(statusText) statusText.textContent = 'Aktif: ' + filterNames[filter];
+showToast(filterNames[filter] + ' (' + totalItems + ' kategori)');
+}
+function hitungTotalFilter(filter){
+if(filter === 'all') return doaKategoriData.length + sholawatKategoriData.length;
+else if(filter === 'doa') return doaKategoriData.length;
+else if(filter === 'sholawat'){
+var count = 0;
+for(var i=0;i<sholawatKategoriData.length;i++) if(sholawatKategoriData[i].jenis === 'sholawat') count++;
+return count;
+} else if(filter === 'syiir'){
+var count = 0;
+for(var i=0;i<sholawatKategoriData.length;i++) if(sholawatKategoriData[i].jenis === 'syiir') count++;
+return count;
+}
+return 0;
+}
+function updateTabCounters(){
+var totalAll = doaKategoriData.length + sholawatKategoriData.length;
+var totalDoa = doaKategoriData.length;
+var totalSholawat = 0, totalSyiir = 0;
+for(var i=0;i<sholawatKategoriData.length;i++){
+if(sholawatKategoriData[i].jenis === 'sholawat') totalSholawat++;
+else if(sholawatKategoriData[i].jenis === 'syiir') totalSyiir++;
+}
+var elAll = document.getElementById('countAll');
+var elDoa = document.getElementById('countDoa');
+var elSholawat = document.getElementById('countSholawat');
+var elSyiir = document.getElementById('countSyiir');
+if(elAll) elAll.textContent = totalAll;
+if(elDoa) elDoa.textContent = totalDoa;
+if(elSholawat) elSholawat.textContent = totalSholawat;
+if(elSyiir) elSyiir.textContent = totalSyiir;
+}
+function renderList(){
+var search = (document.getElementById('searchInput').value || '').toLowerCase();
+var doaContainer = document.getElementById('doaListContainer');
+var sholawatContainer = document.getElementById('sholawatListContainer');
+var doaHtml = '';
+var showDoa = (currentFilter === 'all' || currentFilter === 'doa');
+if(showDoa){
+var doaCount = 0, matchedDoa = [];
+for(var i=0;i<doaKategoriData.length;i++){
+var k = doaKategoriData[i];
+var match = !search || k.nama.toLowerCase().indexOf(search)!==-1;
+if(match){ doaCount++; matchedDoa.push(k); }
+}
+if(doaCount > 0){
+doaHtml += '<h4>🤲 Kategori Doa <span class="section-count">' + doaCount + '</span></h4>';
+for(var i=0;i<matchedDoa.length;i++){
+var k = matchedDoa[i];
+doaHtml += '<button class="split-btn" data-id="'+k.id+'" data-type="doa" onclick="tampilkanKategori(\''+k.id+'\',\'doa\',this)">';
+doaHtml += '<span class="btn-icon">'+k.icon+'</span>';
+doaHtml += '<span class="btn-text">'+k.nama+'</span>';
+doaHtml += '<span class="btn-count">'+k.doa.length+'</span>';
+doaHtml += '</button>';
+}
+} else if(search){
+doaHtml += '<h4> Kategori Doa</h4>';
+doaHtml += '<div class="empty-state"><div class="empty-icon">🔍</div><h4>Tidak Ditemukan</h4><p>Tidak ada kategori doa yang cocok dengan pencarian "'+search+'"</p></div>';
+}
+}
+doaContainer.innerHTML = doaHtml;
+var sholHtml = '';
+var showSholawat = (currentFilter === 'all' || currentFilter === 'sholawat');
+var showSyiir = (currentFilter === 'all' || currentFilter === 'syiir');
+if(showSholawat){
+var sholCount = 0, matchedSholawat = [];
+for(var i=0;i<sholawatKategoriData.length;i++){
+var k = sholawatKategoriData[i];
+if(k.jenis !== 'sholawat') continue;
+var match = !search || k.nama.toLowerCase().indexOf(search)!==-1;
+if(match){ sholCount++; matchedSholawat.push(k); }
+}
+if(sholCount > 0){
+sholHtml += '<h4>🎵 Kategori Sholawat <span class="section-count">' + sholCount + '</span></h4>';
+for(var i=0;i<matchedSholawat.length;i++){
+var k = matchedSholawat[i];
+sholHtml += '<button class="split-btn" data-id="'+k.id+'" data-type="sholawat" onclick="tampilkanKategori(\''+k.id+'\',\'sholawat\',this)">';
+sholHtml += '<span class="btn-icon">'+k.icon+'</span>';
+sholHtml += '<span class="btn-text">'+k.nama+'</span>';
+sholHtml += '<span class="btn-count">'+k.sholawat.length+'</span>';
+sholHtml += '</button>';
+}
+} else if(search){
+sholHtml += '<h4>🎵 Kategori Sholawat</h4>';
+sholHtml += '<div class="empty-state"><div class="empty-icon">🔍</div><h4>Tidak Ditemukan</h4><p>Tidak ada sholawat yang cocok dengan pencarian "'+search+'"</p></div>';
+}
+}
+if(showSyiir){
+var syiirCount = 0, matchedSyiir = [];
+for(var i=0;i<sholawatKategoriData.length;i++){
+var k = sholawatKategoriData[i];
+if(k.jenis !== 'syiir') continue;
+var items = k.syiir || [];
+var match = !search || k.nama.toLowerCase().indexOf(search)!==-1;
+if(match){ syiirCount++; matchedSyiir.push(k); }
+}
+if(syiirCount > 0){
+sholHtml += '<h4>🎶 Kategori Syiir <span class="section-count">' + syiirCount + '</span></h4>';
+for(var i=0;i<matchedSyiir.length;i++){
+var k = matchedSyiir[i];
+var items = k.syiir || [];
+sholHtml += '<button class="split-btn" data-id="'+k.id+'" data-type="syiir" onclick="tampilkanKategori(\''+k.id+'\',\'syiir\',this)">';
+sholHtml += '<span class="btn-icon">'+k.icon+'</span>';
+sholHtml += '<span class="btn-text">'+k.nama+'</span>';
+sholHtml += '<span class="btn-count">'+items.length+'</span>';
+sholHtml += '</button>';
+}
+} else if(search && !showSholawat){
+sholHtml += '<h4>🎶 Kategori Syiir</h4>';
+sholHtml += '<div class="empty-state"><div class="empty-icon">🔍</div><h4>Tidak Ditemukan</h4><p>Tidak ada syiir yang cocok dengan pencarian "'+search+'"</p></div>';
+}
+}
+sholawatContainer.innerHTML = sholHtml;
+}
+function tampilkanKategori(id, type, btn){
+var allBtns = document.querySelectorAll('.split-btn.active');
+for(var i=0;i<allBtns.length;i++) allBtns[i].classList.remove('active');
+btn.classList.add('active');
+var detail = document.getElementById('detailPanel');
+var html = '<button class="show-sidebar-btn" onclick="kembaliWelcome()">☰ Kembali ke Daftar Kategori</button>';
+var filterNames = {'doa':{icon:'🤲',label:'Doa'},'sholawat':{icon:'🎵',label:'Sholawat'},'syiir':{icon:'🎶',label:'Syiir'}};
+var filterInfo = filterNames[type];
+if(type === 'doa'){
+var k = null;
+for(var i=0;i<doaKategoriData.length;i++) if(doaKategoriData[i].id === id){ k = doaKategoriData[i]; break; }
+if(!k) return;
+html += '<div class="filter-status"><div class="fs-icon">'+filterInfo.icon+'</div><div class="fs-text">'+filterInfo.label+' · '+k.nama+'</div><div class="fs-count">'+k.doa.length+' item</div></div>';
+html += '<h3 style="color:#e8d48b;font-size:1.4rem;margin-bottom:8px;">'+k.icon+' '+k.nama+'</h3>';
+html += '<p style="color:#888;font-size:0.9rem;margin-bottom:20px;">'+k.desc+'</p>';
+for(var i=0;i<k.doa.length;i++){
+var d = k.doa[i];
+if(d.bagian && d.bagian.length > 0) html += renderDoaRangkaian(d);
+else html += renderDoaTunggal(d);
+}
+} else if(type === 'sholawat' || type === 'syiir'){
+var k = null;
+for(var i=0;i<sholawatKategoriData.length;i++) if(sholawatKategoriData[i].id === id){ k = sholawatKategoriData[i]; break; }
+if(!k) return;
+var items = type === 'sholawat' ? k.sholawat : (k.syiir || []);
+html += '<div class="filter-status"><div class="fs-icon">'+filterInfo.icon+'</div><div class="fs-text">'+filterInfo.label+' · '+k.nama+'</div><div class="fs-count">'+items.length+' item</div></div>';
+html += '<h3 style="color:#e8d48b;font-size:1.4rem;margin-bottom:8px;">'+k.icon+' '+k.nama+'</h3>';
+html += '<p style="color:#888;font-size:0.9rem;margin-bottom:20px;">'+k.desc+'</p>';
+for(var i=0;i<items.length;i++){
+var s = items[i];
+// ✅ DETEKSI: Apakah sholawat ini memiliki bagian-bagian?
+if(s.bagian && s.bagian.length > 0){
+html += renderSholawatRangkaian(s);
+} else {
+html += '<div class="sholawat-item-card">';
+html += '<h4>'+s.judul+'<span class="sholawat-badge'+(type==='syiir'?' syair':'')+'">'+(type==='syiir'?'SYIIR':'SHOLAWAT')+'</span></h4>';
+if(type === 'syiir'){
+html += '<div class="sholawat-arab syiir-verse">'+s.arab+'</div>';
+if(s.latin) html += '<div class="syiir-latin-verse"><strong>Latin:</strong> '+s.latin+'</div>';
+if(s.arti) html += '<div class="syiir-translation"><strong>Arti:</strong> '+s.arti+'</div>';
+} else {
+html += '<div class="sholawat-arab">'+s.arab+'</div>';
+if(s.latin) html += '<div class="sholawat-latin-text"><strong>Latin:</strong> '+s.latin+'</div>';
+if(s.arti) html += '<div class="sholawat-desc"><strong>Arti:</strong> '+s.arti+'</div>';
+}
+if(s.ref) html += '<div class="sholawat-ref">📖 '+s.ref+'</div>';
+html += '</div>';
+}
+}
+}
+detail.innerHTML = html;
+detail.classList.add('content-fade-in');
+setTimeout(function(){ detail.classList.remove('content-fade-in'); }, 350);
+detail.scrollTop = 0;
+}
+function renderDoaTunggal(d){
+var html = '<div class="doa-item-card">';
+html += '<h4>🤲 '+d.judul+'</h4>';
+html += '<div class="doa-arab">'+d.arab+'</div>';
+if(d.latin) html += '<div class="doa-latin-text">'+d.latin+'</div>';
+if(d.arti) html += '<div class="doa-arti"><strong>Arti:</strong> '+d.arti+'</div>';
+if(d.ref) html += '<div class="doa-ref">📖 '+d.ref+'</div>';
+html += '</div>';
+return html;
+}
+function renderDoaRangkaian(d){
+var html = '';
+var iconRangkaian = d.icon || '📿';
+var jumlahBagian = d.bagian.length;
+html += '<div class="doa-rangkaian-card">';
+html += '<div class="rangkaian-header"><div class="rangkaian-icon">'+iconRangkaian+'</div><h4>'+d.judul+'</h4><span class="rangkaian-badge">RANGKAIAN · '+jumlahBagian+' BAGIAN</span></div>';
+for(var j=0;j<d.bagian.length;j++){
+var b = d.bagian[j];
+var nomor = j+1;
+html += '<div class="doa-bagian-item">';
+html += '<div class="bagian-label"><span class="bagian-num">'+nomor+'</span>'+((b.label)?b.label:'Bagian '+nomor)+'</div>';
+html += '<div class="bagian-arab">'+b.arab+'</div>';
+if(b.latin) html += '<div class="bagian-latin">'+b.latin+'</div>';
+if(b.arti) html += '<div class="bagian-arti">'+b.arti+'</div>';
+html += '</div>';
+}
+if(d.penutup){
+html += '<div class="doa-rangkaian-penutup">';
+html += '<div class="penutup-label">🌟 PENUTUP 🌟</div>';
+html += '<div class="penutup-arab">'+d.penutup.arab+'</div>';
+if(d.penutup.latin) html += '<div class="penutup-latin">'+d.penutup.latin+'</div>';
+if(d.penutup.arti) html += '<div class="penutup-arti">'+d.penutup.arti+'</div>';
+html += '</div>';
+}
+if(d.ref) html += '<div class="rangkaian-ref">📖 '+d.ref+'</div>';
+html += '</div>';
+return html;
+}
+// ============================================================
+// ✅ FUNGSI BARU: RENDER SHOLAWAT DENGAN BAGIAN-BAGIAN
+// ============================================================
+function renderSholawatRangkaian(s){
+var html = '';
+var iconRangkaian = s.icon || '';
+var jumlahBagian = s.bagian.length;
+html += '<div class="sholawat-rangkaian-card">';
+html += '<div class="rangkaian-header">';
+html += '<div class="rangkaian-icon">'+iconRangkaian+'</div>';
+html += '<h4>'+s.judul+'</h4>';
+html += '<span class="rangkaian-badge">SHOLAWAT · '+jumlahBagian+' BAGIAN</span>';
+html += '</div>';
+for(var j=0;j<s.bagian.length;j++){
+var b = s.bagian[j];
+var nomor = j+1;
+html += '<div class="sholawat-bagian-item">';
+html += '<div class="bagian-label"><span class="bagian-num">'+nomor+'</span>'+((b.label)?b.label:'Bagian '+nomor)+'</div>';
+html += '<div class="bagian-arab">'+b.arab+'</div>';
+if(b.latin) html += '<div class="bagian-latin">'+b.latin+'</div>';
+if(b.arti) html += '<div class="bagian-arti">'+b.arti+'</div>';
+html += '</div>';
+}
+if(s.penutup){
+html += '<div class="sholawat-rangkaian-penutup">';
+html += '<div class="penutup-label">🌟 PENUTUP 🌟</div>';
+html += '<div class="penutup-arab">'+s.penutup.arab+'</div>';
+if(s.penutup.latin) html += '<div class="penutup-latin">'+s.penutup.latin+'</div>';
+if(s.penutup.arti) html += '<div class="penutup-arti">'+s.penutup.arti+'</div>';
+html += '</div>';
+}
+if(s.ref) html += '<div class="rangkaian-ref">📖 '+s.ref+'</div>';
+html += '</div>';
+return html;
+}
+function kembaliWelcome(){
+var allBtns = document.querySelectorAll('.split-btn.active');
+for(var i=0;i<allBtns.length;i++) allBtns[i].classList.remove('active');
+var detail = document.getElementById('detailPanel');
+var filterNames = {'all':{icon:'📋',label:'Semua Kategori'},'doa':{icon:'🤲',label:'Doa'},'sholawat':{icon:'🎵',label:'Sholawat'},'syiir':{icon:'🎶',label:'Syiir'}};
+var info = filterNames[currentFilter];
+var total = hitungTotalFilter(currentFilter);
+detail.innerHTML = '<div class="split-welcome">' +
+'<div class="welcome-icon">' + info.icon + '</div>' +
+'<h3>Filter: ' + info.label + '</h3>' +
+'<p>Menampilkan <strong style="color:#c9a84c;">' + total + ' kategori</strong>.<br>Klik salah satu kategori di panel sebelah kiri untuk melihat isinya.<br><br><em>"Dan Tuhanmu berfirman: Berdoalah kepada-Ku, niscaya akan Aku perkenankan bagimu."</em><br>— QS. Ghafir: 60</p>' +
+'</div>' +
+'<div id="dynamicTagButtons"></div>' +
+'<div class="sub-info" style="margin-top:30px;">' +
+'<strong>📌 Keutamaan Doa & Sholawat:</strong><br>' +
+'• Doa adalah otak ibadah — senjata utama seorang mukmin<br>' +
+'• Bersholawat sekali kepada Nabi ﷺ, Allah bersholawat (memberi rahmat) 10 kali<br>' +
+'• Orang yang paling banyak bersholawat paling berhak mendapat syafaat' +
+'</div>';
+detail.scrollTop = 0;
+renderTagButtons();
+}
+function showToast(pesan){
+var toast = document.getElementById('toast');
+if(!toast) return;
+toast.innerText = pesan;
+toast.classList.add('show');
+clearTimeout(window._toastTimer);
+window._toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 3000);
+}
+// ============================================================
+// ✅ INISIALISASI
+// ============================================================
+updateTabCounters();
+renderList();
+renderTagButtons();
+</script>
+</body>
+</html>
