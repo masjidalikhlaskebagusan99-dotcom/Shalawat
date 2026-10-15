@@ -401,8 +401,8 @@ bagian:[
 penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
 }
 ]},
-{id:'sholawat-badar2', jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Badar Versi 28 Bait',desc:'Sholawat ini mengandung pujian dan penghormatan kepada para sahabat Nabi yang berjuang dalam Perang Badar',sholawat:[
-{judul:'ﷺ Sholawat Badar Versi 28 Bait',icon:'ﷺ',ref:'Majmu\'Syarif',
+{id:'sholawat-badar2', jenis:'sholawat',icon:'ﷺ',nama:'Sholawat badar Versi 2',desc:'Sholawat ini mengandung pujian dan penghormatan kepada para sahabat Nabi yang berjuang dalam Perang Badar',sholawat:[
+{judul:'ﷺ Sholawat Badar Versi 2',icon:'ﷺ',ref:'Majmu\'Syarif',
 bagian:[
 {label:'Bagian 1 : Sholawat badar v2',arab:'صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى طهَ رَسُولِ اللهِ ❁ صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى يسَ حَبِيبِ اللهِ',latin:'Shalātullāhi salāmullāhi \'alā Ṭāhā rasūlillāh ❁ Shalātullāhi salāmullāhi \'alā Yāsīn ḥabībillāh', arti:'Rahmat dan keselamatan Allah semoga tetap tercurah kepada Thaha (Nabi Muhammad SAW), utusan Allah. ❁ Rahmat dan keselamatan Allah semoga tetap tercurah kepada Yasin (Nabi Muhammad SAW), kekasih Allah.'},
 {label:'Bagian 2 : Sholawat badar v2',arab:'تَوَسَّلْنَا بِبِسْمِ اللهِ وَبِالْهَادِي رَسُولِ اللهِ ❁ وَكُلِّ مُجَاهِدٍ لِلَّهِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Tawassalnā bibismillāhi wa bil-hādī rasūlillāh ❁ Wa kulli mujāhidin lillāhi bi ahlil-badri yā Allāh', arti:'Kami berwasilah (memohon perantara) dengan menyebut nama Allah (Basmalah) dan kepada Nabi yang memberi petunjuk, utusan Allah. ❁ Dan kepada setiap orang yang berjihad (berjuang) karena Allah, demi keberkahan para sahabat Ahli Badar, ya Allah.'},
@@ -449,7 +449,7 @@ for(var i=0;i<tabs.length;i++) tabs[i].classList.remove('active');
 btn.classList.add('active');
 renderList();
 var filterNames = {'all':'📋 Semua Kategori','doa':' Doa Saja','sholawat':' Sholawat Saja','syiir':'🎶 Syiir Saja'};
-var filterIcons = {'all':'📋','doa':'🤲','sholawat':'🎵','syiir':'🎶'};
+var filterIcons = {'all':'📋','doa':'🤲','sholawat':'ﷺ','syiir':'🎶'};
 var activeBtns = document.querySelectorAll('.split-btn.active');
 for(var i=0;i<activeBtns.length;i++) activeBtns[i].classList.remove('active');
 var detail = document.getElementById('detailPanel');
@@ -544,7 +544,7 @@ var match = !search || k.nama.toLowerCase().indexOf(search)!==-1;
 if(match){ sholCount++; matchedSholawat.push(k); }
 }
 if(sholCount > 0){
-sholHtml += '<h4>🎵 Kategori Sholawat <span class="section-count">' + sholCount + '</span></h4>';
+sholHtml += '<h4>ﷺ Kategori Sholawat <span class="section-count">' + sholCount + '</span></h4>';
 for(var i=0;i<matchedSholawat.length;i++){
 var k = matchedSholawat[i];
 sholHtml += '<button class="split-btn" data-id="'+k.id+'" data-type="sholawat" onclick="tampilkanKategori(\''+k.id+'\',\'sholawat\',this)">';
@@ -554,7 +554,7 @@ sholHtml += '<span class="btn-count">'+k.sholawat.length+'</span>';
 sholHtml += '</button>';
 }
 } else if(search){
-sholHtml += '<h4>🎵 Kategori Sholawat</h4>';
+sholHtml += '<h4>ﷺ Kategori Sholawat</h4>';
 sholHtml += '<div class="empty-state"><div class="empty-icon">🔍</div><h4>Tidak Ditemukan</h4><p>Tidak ada sholawat yang cocok dengan pencarian "'+search+'"</p></div>';
 }
 }
@@ -591,7 +591,7 @@ for(var i=0;i<allBtns.length;i++) allBtns[i].classList.remove('active');
 btn.classList.add('active');
 var detail = document.getElementById('detailPanel');
 var html = '<button class="show-sidebar-btn" onclick="kembaliWelcome()">☰ Kembali ke Daftar Kategori</button>';
-var filterNames = {'doa':{icon:'🤲',label:'Doa'},'sholawat':{icon:'🎵',label:'Sholawat'},'syiir':{icon:'🎶',label:'Syiir'}};
+var filterNames = {'doa':{icon:'🤲',label:'Doa'},'sholawat':{icon:'ﷺ',label:'Sholawat'},'syiir':{icon:'🎶',label:'Syiir'}};
 var filterInfo = filterNames[type];
 if(type === 'doa'){
 var k = null;
@@ -717,7 +717,7 @@ function kembaliWelcome(){
 var allBtns = document.querySelectorAll('.split-btn.active');
 for(var i=0;i<allBtns.length;i++) allBtns[i].classList.remove('active');
 var detail = document.getElementById('detailPanel');
-var filterNames = {'all':{icon:'📋',label:'Semua Kategori'},'doa':{icon:'🤲',label:'Doa'},'sholawat':{icon:'🎵',label:'Sholawat'},'syiir':{icon:'🎶',label:'Syiir'}};
+var filterNames = {'all':{icon:'📋',label:'Semua Kategori'},'doa':{icon:'🤲',label:'Doa'},'sholawat':{icon:'ﷺ',label:'Sholawat'},'syiir':{icon:'🎶',label:'Syiir'}};
 var info = filterNames[currentFilter];
 var total = hitungTotalFilter(currentFilter);
 detail.innerHTML = '<div class="split-welcome">' +
