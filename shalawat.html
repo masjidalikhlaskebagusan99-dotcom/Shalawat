@@ -34,12 +34,9 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-g
 .filter-status-mini .status-dot{width:6px;height:6px;background:#2ecc71;border-radius:50%;animation:pulse 1.5s infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}
 .split-container{display:flex;gap:25px;align-items:flex-start;background:transparent;margin-top:0;position:relative}
-
-/* ====== TOMBOL HAMBURGER (MOBILE ONLY) ====== */
 .sidebar-toggle-btn{display:none;align-items:center;justify-content:center;gap:6px;padding:10px 16px;background:linear-gradient(135deg,#c9a84c,#e8d48b);color:#1a0a2e;border:none;border-radius:25px;font-size:0.85rem;font-weight:700;cursor:pointer;transition:all 0.3s;font-family:inherit;box-shadow:0 4px 12px rgba(201,168,76,0.3);margin-bottom:12px;width:100%}
 .sidebar-toggle-btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(201,168,76,0.4)}
 .sidebar-toggle-btn .toggle-icon{font-size:1.1rem}
-
 .split-sidebar{width:340px;flex-shrink:0;background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.2);border-top:none;border-radius:0 0 0 15px;padding:15px;max-height:calc(100vh - 180px);overflow-y:auto;position:sticky;top:140px;transition:all 0.35s ease}
 .split-sidebar::-webkit-scrollbar{width:6px}
 .split-sidebar::-webkit-scrollbar-track{background:rgba(0,0,0,0.2);border-radius:10px}
@@ -48,6 +45,7 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-g
 .split-sidebar h4{color:#c9a84c;font-size:0.85rem;text-transform:uppercase;letter-spacing:1.5px;margin:18px 0 10px;padding-bottom:8px;border-bottom:1px solid rgba(201,168,76,0.2);display:flex;align-items:center;gap:8px}
 .split-sidebar h4:first-of-type{margin-top:0}
 .split-sidebar h4 .section-count{margin-left:auto;background:rgba(201,168,76,0.2);color:#c9a84c;padding:2px 8px;border-radius:10px;font-size:0.7rem;font-weight:700;text-transform:none;letter-spacing:0}
+.kitab-sub{color:#888;font-size:0.72rem;font-style:italic;margin:-4px 0 8px 4px;line-height:1.5}
 .sub-search{width:100%;margin-bottom:10px;padding:12px 18px;border-radius:25px;border:1px solid rgba(201,168,76,0.3);background:rgba(0,0,0,0.3);color:#fff;font-size:15px;outline:none;font-family:inherit}
 .sub-search:focus{border-color:#c9a84c}
 .split-btn{display:flex;align-items:center;gap:10px;width:100%;padding:11px 14px;margin-bottom:6px;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.15);border-radius:10px;color:#e8d48b;cursor:pointer;text-align:left;transition:all 0.3s;font-size:0.85rem;font-family:inherit}
@@ -70,21 +68,16 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-g
 .tag-buttons-container{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:20px 0;padding:15px;background:rgba(0,0,0,0.3);border-radius:12px;border:1px solid rgba(201,168,76,0.2)}
 .tag-button{padding:10px 20px;background:rgba(26,10,46,0.8);border:1.5px solid rgba(46,204,113,0.4);border-radius:25px;color:#e8d48b;font-size:0.88rem;font-weight:600;cursor:pointer;transition:all 0.3s;font-family:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
 .tag-button:hover{background:rgba(46,204,113,0.15);border-color:#2ecc71;color:#fff;transform:translateY(-2px);box-shadow:0 4px 12px rgba(46,204,113,0.3)}
-.doa-item-card,.sholawat-item-card{background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.2);border-radius:12px;padding:20px;margin-bottom:15px;transition:all 0.3s;scroll-margin-top:20px}
-.doa-item-card:hover,.sholawat-item-card:hover{border-color:#c9a84c;background:rgba(201,168,76,0.06)}
-.doa-item-card h4,.sholawat-item-card h4{color:#e8d48b;font-size:1.05rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
-
-/* ====== TEKS ARAB HARKAT: CENTER ====== */
-.doa-item-card .doa-arab,.sholawat-item-card .sholawat-arab,.sholawat-item-card .syiir-verse,.doa-bagian-item .bagian-arab,.sholawat-bagian-item .bagian-arab,.doa-rangkaian-penutup .penutup-arab,.sholawat-rangkaian-penutup .penutup-arab{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.5rem;color:#c9a84c;direction:rtl;text-align:center;line-height:2;padding:15px;background:rgba(0,0,0,0.2);border-radius:8px;margin-bottom:10px;white-space:pre-line}
-
-/* ====== TEKS LATIN: JUSTIFY ====== */
-.doa-item-card .doa-latin-text,.sholawat-item-card .sholawat-latin-text,.sholawat-item-card .syiir-latin-verse,.doa-bagian-item .bagian-latin,.sholawat-bagian-item .bagian-latin,.doa-rangkaian-penutup .penutup-latin,.sholawat-rangkaian-penutup .penutup-latin{color:#e8d48b;font-style:italic;font-size:0.9rem;margin-bottom:8px;line-height:1.8;white-space:pre-line;text-align:justify;text-align-last:left;-moz-text-align-last:left}
-.sholawat-item-card .syiir-latin-verse{padding:12px;background:rgba(201,168,76,0.05);border-left:3px solid rgba(201,168,76,0.4);border-radius:0 8px 8px 0}
-.doa-item-card .doa-arti,.sholawat-item-card .sholawat-desc,.sholawat-item-card .syiir-translation{color:#ccc;font-size:0.88rem;line-height:1.7;margin-bottom:8px;white-space:pre-line;text-align:justify;text-align-last:left;-moz-text-align-last:left}
-.doa-item-card .doa-ref,.sholawat-item-card .sholawat-ref{margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);color:#888;font-size:0.78rem}
+.doa-item-card,.sholawat-item-card,.syiir-item-card{background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.2);border-radius:12px;padding:20px;margin-bottom:15px;transition:all 0.3s;scroll-margin-top:20px}
+.doa-item-card:hover,.sholawat-item-card:hover,.syiir-item-card:hover{border-color:#c9a84c;background:rgba(201,168,76,0.06)}
+.doa-item-card h4,.sholawat-item-card h4,.syiir-item-card h4{color:#e8d48b;font-size:1.05rem;margin-bottom:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.doa-item-card .doa-arab,.sholawat-item-card .sholawat-arab,.syiir-item-card .syiir-arab,.doa-bagian-item .bagian-arab,.sholawat-bagian-item .bagian-arab,.syiir-bagian-item .bagian-arab,.doa-rangkaian-penutup .penutup-arab,.sholawat-rangkaian-penutup .penutup-arab,.syiir-rangkaian-penutup .penutup-arab{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.5rem;color:#c9a84c;direction:rtl;text-align:center;line-height:2;padding:15px;background:rgba(0,0,0,0.2);border-radius:8px;margin-bottom:10px;white-space:pre-line}
+.doa-item-card .doa-latin-text,.sholawat-item-card .sholawat-latin-text,.syiir-item-card .syiir-latin-text,.doa-bagian-item .bagian-latin,.sholawat-bagian-item .bagian-latin,.syiir-bagian-item .bagian-latin,.doa-rangkaian-penutup .penutup-latin,.sholawat-rangkaian-penutup .penutup-latin,.syiir-rangkaian-penutup .penutup-latin{color:#e8d48b;font-style:italic;font-size:0.9rem;margin-bottom:8px;line-height:1.8;white-space:pre-line;text-align:justify;text-align-last:left;-moz-text-align-last:left}
+.doa-item-card .doa-arti,.sholawat-item-card .sholawat-desc,.syiir-item-card .syiir-desc{color:#ccc;font-size:0.88rem;line-height:1.7;margin-bottom:8px;white-space:pre-line;text-align:justify;text-align-last:left;-moz-text-align-last:left}
+.doa-item-card .doa-ref,.sholawat-item-card .sholawat-ref,.syiir-item-card .syiir-ref{margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.06);color:#888;font-size:0.78rem}
 .sholawat-badge{display:inline-block;background:rgba(201,168,76,0.15);color:#c9a84c;padding:3px 10px;border-radius:10px;font-size:0.72rem;font-weight:600;margin-left:8px}
 .sholawat-badge.syair{background:rgba(155,89,182,0.15);color:#bb86fc}
-.sholawat-badge.rangkaian{background:rgba(46,204,113,0.15);color:#2ecc71}
+.sholawat-badge.hijau{background:rgba(46,204,113,0.15);color:#2ecc71}
 .doa-rangkaian-card{background:linear-gradient(135deg,rgba(201,168,76,0.06),rgba(45,27,78,0.4));border:1px solid rgba(201,168,76,0.4);border-radius:15px;padding:25px;margin-bottom:20px;position:relative;overflow:hidden;scroll-margin-top:20px}
 .doa-rangkaian-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#c9a84c,#e8d48b,#c9a84c)}
 .doa-rangkaian-card .rangkaian-header{display:flex;align-items:center;gap:10px;margin-bottom:18px;padding-bottom:12px;border-bottom:1px dashed rgba(201,168,76,0.3);flex-wrap:wrap}
@@ -129,8 +122,21 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-g
 .sholawat-rangkaian-penutup .penutup-label{color:#e8d48b;font-size:0.9rem;font-weight:700;margin-bottom:10px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;gap:6px}
 .sholawat-rangkaian-penutup .penutup-arti{color:#ccc;font-size:0.85rem;line-height:1.6;max-width:550px;margin:0 auto;text-align:justify;text-align-last:center;-moz-text-align-last:center}
 .sholawat-rangkaian-card .rangkaian-ref{margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.08);color:#888;font-size:0.75rem;text-align:right;font-style:italic}
-
-/* ====== TABLET & HP (max-width: 900px) ====== */
+.syiir-rangkaian-card{background:linear-gradient(135deg,rgba(155,89,182,0.06),rgba(45,27,78,0.4));border:1px solid rgba(155,89,182,0.4);border-radius:15px;padding:25px;margin-bottom:20px;position:relative;overflow:hidden;scroll-margin-top:20px}
+.syiir-rangkaian-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#9b59b6,#bb86fc,#9b59b6)}
+.syiir-rangkaian-card .rangkaian-header{display:flex;align-items:center;gap:10px;margin-bottom:18px;padding-bottom:12px;border-bottom:1px dashed rgba(155,89,182,0.3);flex-wrap:wrap}
+.syiir-rangkaian-card .rangkaian-header .rangkaian-icon{width:40px;height:40px;background:linear-gradient(135deg,#9b59b6,#bb86fc);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;flex-shrink:0}
+.syiir-rangkaian-card .rangkaian-header h4{color:#e8d48b;font-size:1.15rem;font-weight:700;margin:0;line-height:1.3;flex:1;min-width:0}
+.syiir-rangkaian-card .rangkaian-header .rangkaian-badge{padding:3px 10px;background:rgba(155,89,182,0.2);border:1px solid rgba(155,89,182,0.4);border-radius:12px;font-size:0.68rem;color:#bb86fc;font-weight:700;letter-spacing:0.5px;white-space:nowrap}
+.syiir-bagian-item{position:relative;padding:15px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-left:3px solid rgba(155,89,182,0.5);border-radius:0 10px 10px 0;transition:all 0.3s}
+.syiir-bagian-item:hover{background:rgba(155,89,182,0.07);border-left-color:#9b59b6;transform:translateX(3px)}
+.syiir-bagian-item .bagian-label{display:flex;align-items:center;gap:8px;color:#e8d48b;font-size:0.9rem;font-weight:600;margin-bottom:10px;flex-wrap:wrap}
+.syiir-bagian-item .bagian-label .bagian-num{width:22px;height:22px;background:rgba(155,89,182,0.25);border:1px solid rgba(155,89,182,0.5);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.7rem;color:#bb86fc;font-weight:700;flex-shrink:0}
+.syiir-bagian-item .bagian-arti{color:#ccc;font-size:0.87rem;line-height:1.6;padding:10px 12px;background:rgba(155,89,182,0.06);border-radius:6px;text-align:justify;text-align-last:left;-moz-text-align-last:left}
+.syiir-rangkaian-penutup{margin-top:18px;padding:18px;background:linear-gradient(135deg,rgba(155,89,182,0.12),rgba(45,27,78,0.5));border:1px solid rgba(155,89,182,0.4);border-radius:10px;text-align:center}
+.syiir-rangkaian-penutup .penutup-label{color:#e8d48b;font-size:0.9rem;font-weight:700;margin-bottom:10px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;gap:6px}
+.syiir-rangkaian-penutup .penutup-arti{color:#ccc;font-size:0.85rem;line-height:1.6;max-width:550px;margin:0 auto;text-align:justify;text-align-last:center;-moz-text-align-last:center}
+.syiir-rangkaian-card .rangkaian-ref{margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.08);color:#888;font-size:0.75rem;text-align:right;font-style:italic}
 @media (max-width:900px){
 .split-wrapper{padding:0 15px 30px}
 .page-header{padding:15px 20px}
@@ -142,42 +148,33 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-g
 .filter-tab .tab-count{font-size:0.62rem;padding:1px 5px}
 .filter-status-mini{display:none}
 .split-container{flex-direction:column;gap:15px}
-
-/* ====== TOMBOL HAMBURGER MUNCUL DI MOBILE ====== */
 .sidebar-toggle-btn{display:inline-flex}
-
-/* ====== DEFAULT: SIDEBAR TERSEMBUNYI DI MOBILE ====== */
 .split-sidebar{display:none;width:100%;max-height:none;position:relative;top:0;border-radius:0 0 15px 15px;border-top:1px solid rgba(201,168,76,0.2)}
 .split-detail{width:100%;max-height:none;position:relative;top:0;border-radius:15px;border-top:1px solid rgba(201,168,76,0.15);padding:20px}
-
-/* ====== SAAT CLASS sidebar-shown DITAMBAHKAN → SIDEBAR MUNCUL ====== */
 .split-container.sidebar-shown .split-sidebar{display:block}
 .split-container.sidebar-shown .split-detail{display:none}
-
 .sub-hero{padding:30px 15px 20px}
 .sub-hero .sub-arabic{font-size:2rem}
 .sub-hero h2{font-size:1.8rem}
 .sub-hero .sub-subtitle{font-size:0.95rem}
 .tag-buttons-container{gap:6px;padding:10px}
 .tag-button{padding:8px 14px;font-size:0.78rem}
-.doa-item-card,.sholawat-item-card{padding:15px}
-.doa-item-card h4,.sholawat-item-card h4{font-size:0.95rem}
-.doa-item-card .doa-arab,.sholawat-item-card .sholawat-arab,.sholawat-item-card .syiir-verse{font-size:1.3rem;padding:12px}
-.doa-bagian-item,.sholawat-bagian-item{padding:12px 14px}
-.doa-bagian-item .bagian-arab,.sholawat-bagian-item .bagian-arab{font-size:1.25rem;padding:10px 12px}
-.doa-bagian-item .bagian-latin,.sholawat-bagian-item .bagian-latin{font-size:0.85rem}
-.doa-bagian-item .bagian-arti,.sholawat-bagian-item .bagian-arti{font-size:0.85rem;padding:8px 10px}
-.doa-bagian-item .bagian-label,.sholawat-bagian-item .bagian-label{font-size:0.85rem}
-.doa-rangkaian-card,.sholawat-rangkaian-card{padding:18px}
-.doa-rangkaian-card .rangkaian-header h4,.sholawat-rangkaian-card .rangkaian-header h4{font-size:1rem}
-.doa-rangkaian-penutup,.sholawat-rangkaian-penutup{padding:14px 12px}
-.doa-rangkaian-penutup .penutup-arab,.sholawat-rangkaian-penutup .penutup-arab{font-size:1.2rem}
+.doa-item-card,.sholawat-item-card,.syiir-item-card{padding:15px}
+.doa-item-card h4,.sholawat-item-card h4,.syiir-item-card h4{font-size:0.95rem}
+.doa-item-card .doa-arab,.sholawat-item-card .sholawat-arab,.syiir-item-card .syiir-arab{font-size:1.3rem;padding:12px}
+.doa-bagian-item,.sholawat-bagian-item,.syiir-bagian-item{padding:12px 14px}
+.doa-bagian-item .bagian-arab,.sholawat-bagian-item .bagian-arab,.syiir-bagian-item .bagian-arab{font-size:1.25rem;padding:10px 12px}
+.doa-bagian-item .bagian-latin,.sholawat-bagian-item .bagian-latin,.syiir-bagian-item .bagian-latin{font-size:0.85rem}
+.doa-bagian-item .bagian-arti,.sholawat-bagian-item .bagian-arti,.syiir-bagian-item .bagian-arti{font-size:0.85rem;padding:8px 10px}
+.doa-bagian-item .bagian-label,.sholawat-bagian-item .bagian-label,.syiir-bagian-item .bagian-label{font-size:0.85rem}
+.doa-rangkaian-card,.sholawat-rangkaian-card,.syiir-rangkaian-card{padding:18px}
+.doa-rangkaian-card .rangkaian-header h4,.sholawat-rangkaian-card .rangkaian-header h4,.syiir-rangkaian-card .rangkaian-header h4{font-size:1rem}
+.doa-rangkaian-penutup,.sholawat-rangkaian-penutup,.syiir-rangkaian-penutup{padding:14px 12px}
+.doa-rangkaian-penutup .penutup-arab,.sholawat-rangkaian-penutup .penutup-arab,.syiir-rangkaian-penutup .penutup-arab{font-size:1.2rem}
 .split-welcome{padding:50px 20px}
 .split-welcome .welcome-icon{font-size:4rem}
 .split-welcome h3{font-size:1.3rem}
 }
-
-/* ====== HP KECIL (max-width: 480px) ====== */
 @media (max-width:480px){
 .page-header{padding:12px 15px}
 .page-header .brand{font-size:1.3rem}
@@ -199,29 +196,29 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-g
 .split-sidebar h4{font-size:0.78rem;margin:14px 0 8px;padding-bottom:6px}
 .tag-buttons-container{gap:5px;padding:8px;margin:15px 0}
 .tag-button{padding:6px 12px;font-size:0.72rem;gap:4px}
-.doa-item-card,.sholawat-item-card{padding:12px;margin-bottom:12px}
-.doa-item-card h4,.sholawat-item-card h4{font-size:0.9rem;margin-bottom:8px;flex-wrap:wrap}
-.doa-item-card .doa-arab,.sholawat-item-card .sholawat-arab,.sholawat-item-card .syiir-verse{font-size:1.2rem;padding:10px;line-height:1.9;margin-bottom:8px}
-.doa-item-card .doa-latin-text,.sholawat-item-card .sholawat-latin-text,.sholawat-item-card .syiir-latin-verse{font-size:0.82rem;line-height:1.7}
-.doa-item-card .doa-arti,.sholawat-item-card .sholawat-desc,.sholawat-item-card .syiir-translation{font-size:0.82rem;line-height:1.6}
-.doa-item-card .doa-ref,.sholawat-item-card .sholawat-ref{font-size:0.72rem}
-.doa-bagian-item,.sholawat-bagian-item{padding:10px 12px;margin-bottom:10px}
-.doa-bagian-item .bagian-arab,.sholawat-bagian-item .bagian-arab{font-size:1.15rem;padding:10px;line-height:1.9;margin-bottom:6px}
-.doa-bagian-item .bagian-latin,.sholawat-bagian-item .bagian-latin{font-size:0.8rem;line-height:1.6;margin-bottom:6px}
-.doa-bagian-item .bagian-arti,.sholawat-bagian-item .bagian-arti{font-size:0.8rem;line-height:1.5;padding:8px 10px}
-.doa-bagian-item .bagian-label,.sholawat-bagian-item .bagian-label{font-size:0.82rem;margin-bottom:8px;gap:6px}
-.doa-bagian-item .bagian-label .bagian-num,.sholawat-bagian-item .bagian-label .bagian-num{width:20px;height:20px;font-size:0.68rem}
-.doa-rangkaian-card,.sholawat-rangkaian-card{padding:14px;margin-bottom:15px;border-radius:12px}
-.doa-rangkaian-card .rangkaian-header,.sholawat-rangkaian-card .rangkaian-header{gap:8px;margin-bottom:12px;padding-bottom:10px}
-.doa-rangkaian-card .rangkaian-header .rangkaian-icon,.sholawat-rangkaian-card .rangkaian-header .rangkaian-icon{width:34px;height:34px;font-size:1.1rem}
-.doa-rangkaian-card .rangkaian-header h4,.sholawat-rangkaian-card .rangkaian-header h4{font-size:0.92rem}
-.doa-rangkaian-card .rangkaian-header .rangkaian-badge,.sholawat-rangkaian-card .rangkaian-header .rangkaian-badge{font-size:0.62rem;padding:2px 8px}
-.doa-rangkaian-penutup,.sholawat-rangkaian-penutup{padding:12px 10px;margin-top:14px}
-.doa-rangkaian-penutup .penutup-label,.sholawat-rangkaian-penutup .penutup-label{font-size:0.82rem;margin-bottom:8px}
-.doa-rangkaian-penutup .penutup-arab,.sholawat-rangkaian-penutup .penutup-arab{font-size:1.1rem;padding:8px;line-height:1.9;margin-bottom:6px}
-.doa-rangkaian-penutup .penutup-latin,.sholawat-rangkaian-penutup .penutup-latin{font-size:0.78rem;margin-bottom:5px}
-.doa-rangkaian-penutup .penutup-arti,.sholawat-rangkaian-penutup .penutup-arti{font-size:0.78rem;line-height:1.5}
-.doa-rangkaian-card .rangkaian-ref,.sholawat-rangkaian-card .rangkaian-ref{font-size:0.7rem}
+.doa-item-card,.sholawat-item-card,.syiir-item-card{padding:12px;margin-bottom:12px}
+.doa-item-card h4,.sholawat-item-card h4,.syiir-item-card h4{font-size:0.9rem;margin-bottom:8px}
+.doa-item-card .doa-arab,.sholawat-item-card .sholawat-arab,.syiir-item-card .syiir-arab{font-size:1.2rem;padding:10px;line-height:1.9;margin-bottom:8px}
+.doa-item-card .doa-latin-text,.sholawat-item-card .sholawat-latin-text,.syiir-item-card .syiir-latin-text{font-size:0.82rem;line-height:1.7}
+.doa-item-card .doa-arti,.sholawat-item-card .sholawat-desc,.syiir-item-card .syiir-desc{font-size:0.82rem;line-height:1.6}
+.doa-item-card .doa-ref,.sholawat-item-card .sholawat-ref,.syiir-item-card .syiir-ref{font-size:0.72rem}
+.doa-bagian-item,.sholawat-bagian-item,.syiir-bagian-item{padding:10px 12px;margin-bottom:10px}
+.doa-bagian-item .bagian-arab,.sholawat-bagian-item .bagian-arab,.syiir-bagian-item .bagian-arab{font-size:1.15rem;padding:10px;line-height:1.9;margin-bottom:6px}
+.doa-bagian-item .bagian-latin,.sholawat-bagian-item .bagian-latin,.syiir-bagian-item .bagian-latin{font-size:0.8rem;line-height:1.6;margin-bottom:6px}
+.doa-bagian-item .bagian-arti,.sholawat-bagian-item .bagian-arti,.syiir-bagian-item .bagian-arti{font-size:0.8rem;line-height:1.5;padding:8px 10px}
+.doa-bagian-item .bagian-label,.sholawat-bagian-item .bagian-label,.syiir-bagian-item .bagian-label{font-size:0.82rem;margin-bottom:8px;gap:6px}
+.doa-bagian-item .bagian-label .bagian-num,.sholawat-bagian-item .bagian-label .bagian-num,.syiir-bagian-item .bagian-label .bagian-num{width:20px;height:20px;font-size:0.68rem}
+.doa-rangkaian-card,.sholawat-rangkaian-card,.syiir-rangkaian-card{padding:14px;margin-bottom:15px;border-radius:12px}
+.doa-rangkaian-card .rangkaian-header,.sholawat-rangkaian-card .rangkaian-header,.syiir-rangkaian-card .rangkaian-header{gap:8px;margin-bottom:12px;padding-bottom:10px}
+.doa-rangkaian-card .rangkaian-header .rangkaian-icon,.sholawat-rangkaian-card .rangkaian-header .rangkaian-icon,.syiir-rangkaian-card .rangkaian-header .rangkaian-icon{width:34px;height:34px;font-size:1.1rem}
+.doa-rangkaian-card .rangkaian-header h4,.sholawat-rangkaian-card .rangkaian-header h4,.syiir-rangkaian-card .rangkaian-header h4{font-size:0.92rem}
+.doa-rangkaian-card .rangkaian-header .rangkaian-badge,.sholawat-rangkaian-card .rangkaian-header .rangkaian-badge,.syiir-rangkaian-card .rangkaian-header .rangkaian-badge{font-size:0.62rem;padding:2px 8px}
+.doa-rangkaian-penutup,.sholawat-rangkaian-penutup,.syiir-rangkaian-penutup{padding:12px 10px;margin-top:14px}
+.doa-rangkaian-penutup .penutup-label,.sholawat-rangkaian-penutup .penutup-label,.syiir-rangkaian-penutup .penutup-label{font-size:0.82rem;margin-bottom:8px}
+.doa-rangkaian-penutup .penutup-arab,.sholawat-rangkaian-penutup .penutup-arab,.syiir-rangkaian-penutup .penutup-arab{font-size:1.1rem;padding:8px;line-height:1.9;margin-bottom:6px}
+.doa-rangkaian-penutup .penutup-latin,.sholawat-rangkaian-penutup .penutup-latin,.syiir-rangkaian-penutup .penutup-latin{font-size:0.78rem;margin-bottom:5px}
+.doa-rangkaian-penutup .penutup-arti,.sholawat-rangkaian-penutup .penutup-arti,.syiir-rangkaian-penutup .penutup-arti{font-size:0.78rem;line-height:1.5}
+.doa-rangkaian-card .rangkaian-ref,.sholawat-rangkaian-card .rangkaian-ref,.syiir-rangkaian-card .rangkaian-ref{font-size:0.7rem}
 .split-welcome{padding:40px 15px}
 .split-welcome .welcome-icon{font-size:3.5rem;margin-bottom:15px}
 .split-welcome h3{font-size:1.15rem;margin-bottom:8px}
@@ -238,8 +235,6 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-g
 .empty-state p{font-size:0.85rem}
 .toast{font-size:0.82rem;padding:10px 18px;bottom:20px}
 }
-
-/* ====== HP SANGAT KECIL (max-width: 360px) ====== */
 @media (max-width:360px){
 .page-header .brand{font-size:1.15rem}
 .sub-hero .sub-arabic{font-size:1.4rem}
@@ -249,16 +244,11 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-g
 .split-sidebar{padding:10px 8px}
 .filter-tab{padding:6px 8px;font-size:0.68rem}
 .tag-button{padding:5px 10px;font-size:0.68rem}
-.doa-item-card .doa-arab,.sholawat-item-card .sholawat-arab,.sholawat-item-card .syiir-verse{font-size:1.1rem}
-.doa-bagian-item .bagian-arab,.sholawat-bagian-item .bagian-arab{font-size:1.05rem}
-.doa-rangkaian-penutup .penutup-arab,.sholawat-rangkaian-penutup .penutup-arab{font-size:1rem}
+.doa-item-card .doa-arab,.sholawat-item-card .sholawat-arab,.syiir-item-card .syiir-arab{font-size:1.1rem}
+.doa-bagian-item .bagian-arab,.sholawat-bagian-item .bagian-arab,.syiir-bagian-item .bagian-arab{font-size:1.05rem}
+.doa-rangkaian-penutup .penutup-arab,.sholawat-rangkaian-penutup .penutup-arab,.syiir-rangkaian-penutup .penutup-arab{font-size:1rem}
 }
-/* Tambahkan di dalam tag <style> */
-.split-detail p {
-    text-align: justify !important;
-    text-align-last: left;
-    -moz-text-align-last: left;
-}
+.split-detail p{text-align:justify !important;text-align-last:left;-moz-text-align-last:left}
 </style>
 </head>
 <body>
@@ -269,7 +259,7 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-g
 <section class="sub-hero">
 <div class="sub-arabic">الصَّلَوَاتُ وَالدَّعَوَات</div>
 <h2>Kategori Doa & Sholawat</h2>
-<p class="sub-subtitle">Kumpulan doa-doa mustajabah dari Al-Qur'an, Hadis, dan karya para ulama, serta sholawat-sholawat termasyhur kepada Nabi Muhammad ﷺ</p>
+<p class="sub-subtitle">Kumpulan doa, sholawat, dan syiir dari berbagai kitab ulama Ahlussunnah wal Jamaah</p>
 </section>
 <div class="split-wrapper">
 <div class="filter-tabs-sticky" id="filterTabsSticky">
@@ -287,22 +277,19 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-g
 <div class="split-container" id="splitContainer">
 <aside class="split-sidebar" id="splitSidebar">
 <button class="sidebar-toggle-btn" onclick="tutupSidebar()">
-<span class="toggle-icon">✕</span>
-<span>Tutup Daftar & Lihat Konten</span>
+<span class="toggle-icon">✕</span><span>Tutup Daftar & Lihat Konten</span>
 </button>
-<input type="text" id="searchInput" class="sub-search" placeholder="🔍 Cari doa / sholawat / syiir..." onkeyup="renderList()">
-<div id="doaListContainer"></div>
-<div id="sholawatListContainer"></div>
+<input type="text" id="searchInput" class="sub-search" placeholder="🔍 Cari kitab / doa / sholawat / syiir..." onkeyup="renderList()">
+<div id="kitabListContainer"></div>
 </aside>
 <main class="split-detail" id="detailPanel">
 <button class="sidebar-toggle-btn" id="btnBukaSidebar" onclick="bukaSidebar()" style="display:none;">
-<span class="toggle-icon">☰</span>
-<span>Buka Daftar Kategori</span>
+<span class="toggle-icon">☰</span><span>Buka Daftar Kitab</span>
 </button>
 <div class="split-welcome" id="welcomeBlock">
 <div class="welcome-icon">🤲</div>
-<h3>Pilih Kategori</h3>
-<p>Klik salah satu kategori di panel sebelah kiri untuk melihat kumpulan doa dan sholawat.<br>Gunakan tombol filter di atas untuk memfilter berdasarkan jenis konten.<br><br>
+<h3>Pilih Kitab</h3>
+<p>Klik salah satu kitab di panel kiri untuk melihat isi: <strong>Doa</strong>, <strong>Sholawat</strong>, dan <strong>Syiir</strong>.<br><br>
 <em>"Dan Tuhanmu berfirman: Berdoalah kepada-Ku, niscaya akan Aku perkenankan bagimu."</em><br>— QS. Ghafir: 60</p>
 </div>
 <div id="dynamicTagButtons"></div>
@@ -317,598 +304,448 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-g
 </div>
 <div class="toast" id="toast"></div>
 <script>
-// ============================================================
-// ✅ DATA TOMBOL TAG (GAMBAR 300.PNG) - DINAMIS & MUDAH DIUBAH
-// ============================================================
-var tagButtonsData = [
-{ icon: '📖', text: 'Al-Quran', link: 'https://masjidalikhlaskebagusan99-dotcom.github.io/quran/quran.html' },
-{ icon: '👳', text: 'Syekh Abdul Qadir', link: 'syekh-abdul-qadir.html' },
-{ icon: '📚', text: 'Biografi Para Waliyullah', link: 'https://masjidalikhlaskebagusan99-dotcom.github.io/Biografi/biografi.html' },
-{ icon: '📗', text: 'Futuh Al-Ghaib', link: 'https://masjidalikhlaskebagusan99-dotcom.github.io/artikel/artikel.html' },
-{ icon: '✨', text: 'Karomah Para Waliyullah', link: 'https://masjidalikhlaskebagusan99-dotcom.github.io/artikelwali2/artikelwali2.html' },
-{ icon: '✨', text: 'Dzikrul Ghofilin', link: 'https://online.fliphtml5.com/nztda/Majlis-Dzikir-Ghofilin-Kebagusan' },
-{ icon: '✨', text: 'Shalawat', link: 'https://masjidalikhlaskebagusan99-dotcom.github.io/Shalawat/shalawat.html' },
-{ icon: '✨', text: 'Kitab Maulid Ad-Dibai', link: 'https://online.fliphtml5.com/nztda/nblp/' },
-{ icon: '✨', text: 'Iman', link: 'iman.html' },
-{ icon: '🛡️', text: 'Taqwa', link: 'taqwa.html' },
-{ icon: '🕌', text: 'Ibadah', link: 'ibadah.html' },
-{ icon: '📿', text: 'Dzikir', link: 'dzikir.html' },
-{ icon: '🙏', text: 'Sholat', link: 'sholat.html' },
-{ icon: '🌙', text: 'Puasa', link: 'puasa.html' },
-{ icon: '🕋', text: 'Haji', link: 'haji.html' },
-{ icon: '💰', text: 'Zakat', link: 'zakat.html' },
-{ icon: '💝', text: 'Sedekah', link: 'sedekah.html' }
+/* ============ TOMBOL TAG ============ */
+var tagButtonsData=[
+{icon:'📖',text:'Al-Quran',link:'https://masjidalikhlaskebagusan99-dotcom.github.io/quran/quran.html'},
+{icon:'👳',text:'Syekh Abdul Qadir',link:'syekh-abdul-qadir.html'},
+{icon:'📚',text:'Biografi Para Waliyullah',link:'https://masjidalikhlaskebagusan99-dotcom.github.io/Biografi/biografi.html'},
+{icon:'📗',text:'Futuh Al-Ghaib',link:'https://masjidalikhlaskebagusan99-dotcom.github.io/artikel/artikel.html'},
+{icon:'✨',text:'Karomah Para Waliyullah',link:'https://masjidalikhlaskebagusan99-dotcom.github.io/artikelwali2/artikelwali2.html'},
+{icon:'✨',text:'Dzikrul Ghofilin',link:'https://online.fliphtml5.com/nztda/Majlis-Dzikir-Ghofilin-Kebagusan'},
+{icon:'✨',text:'Shalawat',link:'https://masjidalikhlaskebagusan99-dotcom.github.io/Shalawat/shalawat.html'},
+{icon:'✨',text:'Kitab Maulid Ad-Dibai',link:'https://online.fliphtml5.com/nztda/nblp/'},
+{icon:'✨',text:'Iman',link:'iman.html'},
+{icon:'🛡️',text:'Taqwa',link:'taqwa.html'},
+{icon:'🕌',text:'Ibadah',link:'ibadah.html'},
+{icon:'📿',text:'Dzikir',link:'dzikir.html'},
+{icon:'🙏',text:'Sholat',link:'sholat.html'},
+{icon:'🌙',text:'Puasa',link:'puasa.html'},
+{icon:'🕋',text:'Haji',link:'haji.html'},
+{icon:'💰',text:'Zakat',link:'zakat.html'},
+{icon:'💝',text:'Sedekah',link:'sedekah.html'}
 ];
-function renderTagButtons() {
-var container = document.getElementById('dynamicTagButtons');
-if (!container) return;
-var html = '<div class="tag-buttons-container">';
-for (var i = 0; i < tagButtonsData.length; i++) {
-var btn = tagButtonsData[i];
-html += '<a href="' + btn.link + '" class="tag-button">';
-html += '<span>' + btn.icon + '</span>';
-html += '<span>' + btn.text + '</span>';
-html += '</a>';
-}
-html += '</div>';
-container.innerHTML = html;
-}
+function renderTagButtons(){var c=document.getElementById('dynamicTagButtons');if(!c)return;var h='<div class="tag-buttons-container">';for(var i=0;i<tagButtonsData.length;i++){var b=tagButtonsData[i];h+='<a href="'+b.link+'" class="tag-button"><span>'+b.icon+'</span><span>'+b.text+'</span></a>';}h+='</div>';c.innerHTML=h;}
+function isMobile(){return window.innerWidth<=900;}
+function bukaSidebar(){document.getElementById('splitContainer').classList.add('sidebar-shown');window.scrollTo({top:document.getElementById('splitContainer').offsetTop-100,behavior:'smooth'});}
+function tutupSidebar(){document.getElementById('splitContainer').classList.remove('sidebar-shown');var d=document.getElementById('detailPanel');setTimeout(function(){d.scrollIntoView({behavior:'smooth',block:'start'});},100);}
+function updateBtnBukaSidebarVisibility(){var b=document.getElementById('btnBukaSidebar');if(b)b.style.display=isMobile()?'inline-flex':'none';}
 
-// ============================================================
-// ✅ FUNGSI BARU: TOGGLE SIDEBAR (MOBILE)
-// ============================================================
-function isMobile(){
-return window.innerWidth <= 900;
-}
+var JENIS={
+doa:{icon:'🤲',label:'Doa',badge:'DOA',card:'doa'},
+sholawat:{icon:'ﷺ',label:'Sholawat',badge:'SHOLAWAT',card:'sholawat'},
+syiir:{icon:'🎶',label:'Syiir',badge:'SYIIR',card:'syiir'}
+};
 
-// Buka sidebar (tampilkan daftar kategori)
-function bukaSidebar(){
-var container = document.getElementById('splitContainer');
-container.classList.add('sidebar-shown');
-// Scroll ke atas agar user melihat daftar
-window.scrollTo({top: document.getElementById('splitContainer').offsetTop - 100, behavior:'smooth'});
-}
+/* ============================================================
+   ✅ DATA namaKitab - SUDAH DIPERBAIKI
+   - Semua item sekarang memiliki id unik
+   - Item duplikat dengan elemen kosong sudah dihapus
+   ============================================================ */
+var namaKitab=[
+/* ========== KITAB 1: AL-QUR'AN & HADIS NABAWI ========== */
+{id:'kitab-quran-hadis',icon:'📖',nama:"Al-Qur'an & Hadis Nabawi",desc:'Doa-doa mustajabah bersumber langsung dari Al-Qur\'an, Rasulullah ﷺ, dan para Nabi.',items:[
+{jenis:'doa',id:'doa-quran-kebaikan',nama:'Doa Mohon Kebaikan Dunia Akhirat',desc:'Doa-doa mustajabah dari Al-Qur\'an.',elemen:[{arab:'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',latin:'Rabbanâ âtinâ fiddunyâ hasanah wa fil âkhirati hasanah wa qinâ \'adzâbannâr',arti:'Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan peliharalah kami dari siksa neraka.',ref:'QS. Al-Baqarah: 201'}]},
+{jenis:'doa',id:'doa-quran-ampunan',nama:'Doa Mohon Ampunan & Rahmat',desc:'Doa-doa mustajabah dari Al-Qur\'an.',elemen:[{arab:'رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً',latin:'Rabbanâ lâ tuzigh qulûbanâ ba\'da idz hadaitanâ wa hab lanâ min ladunka rahmah',arti:'Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah rahmat dari sisi-Mu.',ref:'QS. Ali Imran: 8'}]},
+{jenis:'doa',id:'doa-nabi-ilmu',nama:'Doa Memohon Ilmu Bermanfaat',desc:'Doa-doa dari Rasulullah ﷺ.',elemen:[{arab:'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا',latin:'Allâhumma innî as\'aluka \'ilman nâfi\'an wa rizqan thayyiban wa \'amalan mutaqabbalan',arti:'Ya Allah, aku memohon ilmu yang bermanfaat, rezeki yang baik, dan amal yang diterima.',ref:'HR. Ibnu Majah'}]},
+{jenis:'doa',id:'doa-nabi-kesusahan',nama:'Doa Perlindungan dari Kesusahan',desc:'Doa-doa dari Rasulullah ﷺ.',elemen:[{arab:'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَالْعَجْزِ وَالْكَسَلِ',latin:'Allâhumma innî a\'ûdzu bika minal hammi wal hazani wal \'ajzi wal kasali',arti:'Ya Allah, aku berlindung kepada-Mu dari kegelisahan, kesedihan, kelemahan, dan kemalasan.',ref:'HR. Bukhari'}]},
+{jenis:'doa',id:'doa-nabi-adam',nama:'Doa Nabi Adam AS',desc:'Doa-doa para Nabi dan Rasul.',elemen:[{arab:'رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ',latin:'Rabbanâ zhalamnâ anfusanâ wa illam taghfir lanâ wa tarhamnâ lanakûnanna minal khâsirîn',arti:'Ya Tuhan kami, kami telah menzalimi diri kami sendiri. Jika Engkau tidak mengampuni kami, niscaya kami termasuk orang-orang yang merugi.',ref:'QS. Al-A\'raf: 23'}]},
+{jenis:'doa',id:'doa-nabi-yunus',nama:'Doa Nabi Yunus AS',desc:'Doa-doa para Nabi dan Rasul.',elemen:[{arab:'لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ',latin:'Lâ ilâha illâ anta subhânaka innî kuntu minazh-zhâlimîn',arti:'Tidak ada Tuhan selain Engkau, Maha Suci Engkau, sesungguhnya aku termasuk orang-orang yang zalim.',ref:'QS. Al-Anbiya: 87'}]}
+]},
 
-// Tutup sidebar (tampilkan konten)
-function tutupSidebar(){
-var container = document.getElementById('splitContainer');
-container.classList.remove('sidebar-shown');
-// Scroll ke konten
-var detail = document.getElementById('detailPanel');
-setTimeout(function(){
-detail.scrollIntoView({behavior:'smooth', block:'start'});
-}, 100);
-}
+/* ========== KITAB 2: DOA HARIAN & AURAD ========== */
+{id:'kitab-doa-harian',icon:'🤲',nama:'Doa Harian & Aurad',desc:'Doa aktivitas sehari-hari sesuai sunnah, doa rizki, serta wirid aurad Ahlussunnah wal Jamaah.',items:[
+{jenis:'doa',id:'doa-masuk-rumah',nama:'Doa Masuk Rumah',desc:'Doa-doa aktivitas sehari-hari sesuai sunnah.',elemen:[{arab:'اَللّٰهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ الْمَوْلَجِ وَخَيْرَ الْمَخْرَجِ بِاسْمِ اللهِ وَلَجْنَا، وبِاسْمِ اللهِ خَرَجْنَا',latin:'Allâhumma innî as\'aluka khairal maulaji wa khairal makhraji, bismillâhi walajnâ wa bismillâhi kharajnâ',arti:'Ya Allah, aku memohon kepada-Mu sebaik-baik tempat masuk dan sebaik-baik tempat keluar. Atas nama-Mu kami masuk dan atas nama-Mu kami keluar.',ref:'HR. Abu Daud'}]},
+{jenis:'doa',id:'doa-sebelum-makan',nama:'Doa Sebelum Makan',desc:'Doa-doa aktivitas sehari-hari sesuai sunnah.',elemen:[{arab:'اَللّٰهُمَّ بَارِكْ لَنَا فِيْمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ',latin:'Allâhumma bârik lanâ fîmâ razaqtanâ waqinâ \'adzâban nâr',arti:'Ya Allah, berkahilah apa yang telah Engkau anugerahkan kepada kami dan jagalah kami dari siksa neraka.',ref:'HR. Abu Daud'}]},
+{jenis:'doa',id:'doa-keluar-rumah',nama:'Doa Keluar Rumah',desc:'Doa-doa aktivitas sehari-hari sesuai sunnah.',elemen:[{arab:'بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ',latin:'Bismillâhi tawakkaltu \'alallâhi wa lâ haula wa lâ quwwata illâ billâh',arti:'Dengan nama Allah, aku bertawakkal kepada Allah. Tiada daya dan kekuatan kecuali dengan pertolongan Allah.',ref:'HR. Abu Daud & Tirmidzi'}]},
+{jenis:'doa',id:'doa-rizki-mudah',nama:'Doa Mudah Raih Rezeki',desc:'Doa-doa memohon rizki yang halal dan berkah.',elemen:[{arab:'اَللّٰهُمَّ إِنِّي أَسْأَلُكَ أَنْ تَرْزُقَنِيْ رِزْقًا حَلَالًا وَاسِعًا طَيِّبًا',latin:'Allâhumma innî as-aluka an tarzuqanî rizqan halâlan wâsi\'an thayyiban',arti:'Ya Allah aku mohon kepadamu limpahan rezeki yang halal, luas, dan baik.',ref:'Kumpulan Amalan Ahlu Sunnah'}]},
+{jenis:'doa',id:'doa-rizki-utang',nama:'Doa Terhindar dari Utang',desc:'Doa-doa memohon rizki yang halal dan berkah.',elemen:[{arab:'اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ',latin:'Allâhumma innî a\'ûdzu bika min ghalabatid daini wa qahrir rijâl',arti:'Ya Allah, aku berlindung kepada-Mu dari lilitan utang dan tekanan orang-orang.',ref:'HR. Abu Daud'}]},
+{jenis:'doa',id:'wirid-bakda-shalat',icon:'🕌',nama:'Wirid Bakda Shalat Fardhu',desc:'Kumpulan dzikir, wirid, dan aurad pilihan dari para ulama Ahlussunnah wal Jamaah.',elemen:[
+{label:'Istighfar',arab:'أَسْتَغْفِرُ اللهَ الْعَظِـيْمَ لِيْ وَلِوَالِدَيَّ وَلِأَصْحَابِ الْحُقُوْقِ عَلَيَّ وَلِجَمِيْعِ الْمُؤْمِنِيْنَ وَالْمُؤْمِنَاتِ وَالْمُسْلِمِيْنَ وَالْمُسْلِمَاتِ الْأَحْيَاءِ مِنْهُمْ وَالْأَمْوَاتِ ×٣',arti:'Aku memohon ampunan kepada Allah yang Mahaagung, untuk diriku sendiri, kedua orang tuaku, sahabat-sahabat yang aku masih memiliki hak atasku, semua kaum mukmin dan muslim, baik yang masih hidup ataupun yang telah wafat. (3x)',ref:'Wirid Bakda Shalat Fardhu'},
+{label:'Tahlil',arab:'لَاإِلٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِيْ وَيُمِيْتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرٌ ×٣',arti:'Tiada Tuhan yang haq disembah kecuali Allah semata, tiada sekutu baginya. Hanya milik-Nya segala kerajaan dan hanya milik-Nya segala puji, Dzat yang menghidupkan dan yang mematikan. Dialah Dzat yang kuasa atas segala sesuatu. (3x)',ref:'Wirid Bakda Shalat Fardhu'},
+{label:'Doa keselamatan',arab:'اَللّٰهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ وَإِلَيْكَ يَعُوْدُ السَّلَامُ فَحَيِّنَا رَبَّنَا بِالسَّلَامِ وَأَدْخِلْنَا الْـجَنَّةَ دَارَ السَّلَامِ تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ يَا ذَاالْـجَلَالِ وَاْلإِكْرَامِ',arti:'Ya Allah Engkaulah Dzat yang memberi keselamatan, dari-Mu keselamatan datang, dan kepada-Mu segala keselamatan kembali. Maka hidupkanlah kami ya Allah dengan selamat, masukkan kami ke dalam surga rumah keselamatan, Engkaulah Dzat yang Mahasuci, wahai Tuhan kami, dan Engkaulah Dzat yang Mahaluhur, wahai Tuhan yang memiliki keagungan dan kemuliaan.',ref:'Wirid Bakda Shalat Fardhu'},
+{label:'Taawudz dan Al-Fatihah',arab:'أَعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ، اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ',arti:'Aku berlindung kepada Allah dari setan yang terlontar. Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Segala puji bagi Allah, Tuhan semesta alam.',ref:'Wirid Bakda Shalat Fardhu'},
+{label:'Al-Ikhlas (3x)',arab:'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ هُوَ اللّٰهُ اَحَدٌۚ، اَللّٰهُ الصَّمَدُۚ، لَمْ يَلِدْ وَلَمْ يُوْلَدْۙ، وَلَمْ يَكُنْ لَّهٗ كُفُوًا اَحَـــــدٌ ×٣',arti:'Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Katakanlah: "Dialah Allah Yang Maha Esa. Allah Dzat yang menjadi tumpuan segala permohonan. Ia tidak beranak dan tidak pula diperanakkan. Dan tidak ada siapa pun yang sebanding dengan-Nya." (3x)',ref:'Wirid Bakda Shalat Fardhu'},
+{label:'Al-Falaq',arab:'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ اَعُوْذُ بِرَبِّ الْفَلَقِۙ، مِنْ شَرِّ مَـــا خَلَقَۙ',arti:'Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Katakanlah: "Aku berlindung kepada Tuhan yang menciptakan cahaya subuh. Dari kejahatan makhluk-makhluk yang Ia ciptakan.',ref:'Wirid Bakda Shalat Fardhu'},
+{label:'An-Nas',arab:'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ اَعُوْذُ بِرَبِّ النَّاسِۙ، مَلِكِ النَّـــاسِۙ، اِلٰهِ النَّاسِۙ',arti:'Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Katakanlah: "Aku berlindung kepada Tuhan pemelihara manusia. Yang Menguasai manusia. Tuhannya manusia.',ref:'Wirid Bakda Shalat Fardhu'},
+{label:'Ayat Kursi',arab:'اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ',arti:'Allah, tidak ada tuhan selain Dia. Yang Mahahidup, Yang terus menerus mengurus makhluk-Nya.',ref:'Wirid Bakda Shalat Fardhu'},
+{label:'Tasbih, tahmid, takbir',arab:'سُبْحَانَ اللهِ ×٣٣ اَلْحَمْدُ لِلّٰهِ ×٣٣ اَللهُ أَكْبَرُ ×٣٣',arti:'Mahasuci Allah (33x). Segala puji bagi Allah (33x). Allah Mahabesar (33x).',ref:'Wirid Bakda Shalat Fardhu'},
+{label:'Shalawat kepada Nabi',arab:'اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَرَسُوْلِكَ النَّبِيِّ الْأُمِّـيِّ وَعَلى اٰلِهِ وَصَحْبِهِ وَسَلِّمْ',arti:'Ya Allah, limpahkanlah rahmat dan keselamatan kepada junjungan kami Nabi Muhammad sebagai hamba dan utusan-Mu yang ummi, beserta keluarga dan sahabatnya.',ref:'Wirid Bakda Shalat Fardhu'},
+{label:'Hasbunallah',arab:'وَحَسْبُنَا اللهُ وَنِعْمَ الْوَكِيْلُ، لَاحَوْلَ وَلَاقُوَّةَ إِلَّابِاللهِ الْعَلِيِّ الْعَظِيْمِ',arti:'Cukuplah Allah menjadi penolong kami dan Allah adalah sebaik-baik yang diserahi. Tiada daya dan tiada kekuatan melainkan dengan pertolongan Allah yang Mahatinggi dan Mahaagung.',ref:'Wirid Bakda Shalat Fardhu'}
+],penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}}
+]},
+{id:'kitab-sirrul-asrar',icon:'📗',nama:'Sirrul-Asrāri wa Maẓharul-Anwār',desc:'Kitab karya Syaikh Abdul Qadir Al-Jilani RA',items:[
+{jenis:'sholawat',id:'sholawat Kanzul-mk',icon:'ﷺ',nama:'Sholawat Al-Kanz Al-A\'zhom',desc:'halawat paling agung dan masyhur yang dinisbatkan kepada Syekh Abdul Qadir Al-Jilani. Shalawat ini mengandung pujian yang sangat mendalam terhadap hakikat spiritual Nabi Muhammad ﷺ',
+elemen:[{arab:'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ اللَّهُمَّ اجْعَلْ أَفْضَلَ صَلَوَاتِكَ أَبَدًا، وَأَنْمَى بَرَكَاتِكَ سَرْمَدًا، وَأَزْكَى تَحِيَّاتِكَ فَضْلًا وَعَدَدًا، عَلَى أَشْرَفِ الْخَلَائِقِ الْإِنْسَانِيَّةِ، وَمَجْمَعِ الْحَقَائِقِ الْإِيمَانِيَّةِ، وَطُورِ التَّجَلِّيَاتِ الْإِحْسَانِيَّةِ، وَمَهْبَطِ الْأَسْرَارِ الرُّوحَانِيَّةِ، وَعَرُوسِ الْمَمْلَكَةِ الرَّبَّانِيَّةِ، وَاسِطَةِ عِقْدِ النَّبِيِّينَ، وَمُقَدَّمِ جَيْشِ الْمُرْسَلِينَ، وَقَائِدِ رَكْبِ الْأَنْبِيَاءِ الْمَكْرَمِينَ، وَأَفْضَلِ الْخَلْقِ أَجْمَعِينَ، حَامِلِ لِوَاءِ الْعِزِّ الْأَعْلَى، وَمَالِكِ أَزِمَّةِ الْمَجْدِ الْأَسْنَى، شَاهِدِ أَسْرَارِ الْأَزَلِ، وَمُشَاهِدِ أَنْوَارِ السَّوَابِقِ الْأُوَلِ، وَتَرْجُمَانِ لِسَانِ الْقِدَمِ، وَمَنْبَعِ الْعِلْمِ وَالْحِلْمِ وَالْحِكَمِ، وَمَظْهَرِ وُجُودِ الْكُلِّيِّ وَالْجُزْئِيِّ، وَإِنْسَانِ عَيْنِ الْوُجُودِ الْعُلْوِيِّ وَالسُّفْلِيِّ، رُوحِ جَسَدِ الْكَوْنَيْنِ، وَعَيْنِ حَيَاةِ الدَّارَيْنِ، الْمُتَحَقِّقِ بِأَعْلَى رُتَبِ الْعُبُودِيَّةِ، الْمُتَخَلِّقِ بِأَخْلَاقِ الْمَقَامَاتِ الِاصْطِفَائِيَّةِ، الْخَلِيلِ الْأَكْرَمِ، وَالْحَبِيبِ الْأَعْظَمِ، سَيِّدِنَا مُحَمَّدِ بْنِ عَبْدِ اللَّهِ بْنِ عَبْدِ الْمُطَّلِبِ، خَاتَمِ النَّبِيِّينَ، وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ، عَدَدَ مَعْلُومَاتِكَ وَمِدَادَ كَلِمَاتِكَ، كُلَّمَا ذَكَرَكَ الذَّاكِرُونَ، وَغَفَلَ عَنْ ذِكْرِكَ الْغَافِلُونَ، وَسَلِّمْ كَثِيرًا إِلَى يَوْمِ الدِّينِ، وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ.',latin:' Bismillāhir-raḥmānir-raḥīm. Allāhummaj\'al afḍala ṣalawātika abadan, wa anmā barakātika sarmadan, wa azkā taḥiyyātika faḍlan wa \'adadan, \'alā asyrafil khalā\'iqil insāniyyah, wa majma\'il ḥaqā\'iqil īmāniyyah, wa ṭūrit tajalliyātil iḥsāniyyah, wa mahbaṭil asrārir rūḥāniyyah, wa \'arūsil mamlakatir rabbāniyyah, wāsiṭati \'aqdin nabiyyīn, wa muqaddami jayshil mursalīn, wa qā\'idi rakbil anbiyā\'il mukramīn, wa afḍalil khalqi ajma\'īn, ḥāmili liwā\'il \'izzil a\'lā, wa māliki azimmatil majdil asnā, shāhidi asrāril azal, wa mushāhidi anwāris sawābiqil ūlā, wa tarjumāni lisānil qidam, wa manba\'il \'ilmi wal ḥilmi wal ḥikam, wa maẓhari wujūdil kulliyyi wal juz\'iyyi, wa insāni \'ainil wujūdil \'ulwiyyi was sufliyyi, rūḥi jasadil kaunaini, wa \'aini ḥayātid dāraini, al-mutaḥaqiq bi a\'lā rutabil \'ubūdiyyah, al-mutakhalliq bi akhlāqil maqāmātiṣ-ṭifā\'iyyah, al-khalīlil akram, wal ḥabībil a\'ẓam, sayyidinā Muḥammadin bin \'Abdillāhi bin \'Abdil Muṭṭalib, khātam an-nabiyyīn, wa \'alā ālihī wa ṣaḥbihī ajma\'īn, \'adada ma\'lūmātika wa midāda kalimātika, kullamā dhakaraka adh-dhākirūn, wa ghafala \'an dhikrikal ghāfilūn, wa sallim kathīran ilā yaumid dīn, wal ḥamdu lillāhi rabbil \'ālamīn.',arti:'Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang. Ya Allah, jadikanlah sebaik-baik shalawat-Mu yang abadi, sebanyak-banyak berkah-Mu yang terus-menerus, serta seutama-utama salam penghormatan-Mu sebagai kelebihan dan jumlah, kepada makhluk manusia yang paling mulia, kumpulan hakikat-hakikat keimanan, tempat munculnya tajalli-tajalli ihsan, tempat turunnya rahasia-rohani, pengantin kerajaan ketuhanan, penghubung mata rantai para nabi, panglima pasukan para rasul, pemimpin rombongan para nabi yang dimuliakan, dan sebaik-baik makhluk seluruhnya. Pembawa bendera kemuliaan tertinggi, pemilik kendali kemegahan yang luhur, saksi rahasia azali, penyaksi cahaya takdir yang pertama, penerjemah lisan keabadian, sumber ilmu, kelembutan, dan hikmah, perwujudan keberadaan yang universal dan parsial, manusia dari mata keberadaan yang tinggi dan rendah, ruh dari jasad dua alam, dan mata kehidupan dua negeri. Yang terwujud pada derajat ketuhanan tertinggi, yang berakhlak dengan akhlak مقام (maqam) pilihan, kekasih yang paling mulia, dan habib yang paling agung: Tuan kami Nabi Muhammad bin Abdullah bin Abdul Muthalib, penutup para nabi. Beserta keluarga dan sahabatnya seluruhnya, sebanyak bilangan segala yang Engkau ketahui dan sebanyak tinta kalimat-Mu, setiap kali orang-orang yang berdzikir mengingat-Mu, dan orang-orang yang lalai melupakan dzikir kepada-Mu. Dan limpahkanlah salam kesejahteraan yang banyak hingga hari pembalasan. Segala puji bagi Allah, Tuhan semesta alam.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu\'anhu'}]},
+{jenis:'sholawat',id:'sholawat Al-Kamaliyah-mk',icon:'ﷺ',nama:'Shalawat Al-Kamaliyah',desc:'Shalawat ini sangat istimewa dalam sejarah spiritual Syekh Abdul Qadir Al-Jilani. Beliau menuturkan bahwa beliau menemukan teks shalawat ini terukir di sebuah batu di dalam gua pada masa khalwat (pengasingan spiritual) beliau selama 25 tahun. Beliau menyatakan bahwa membacanya satu kali setara dengan 70.000 shalawat.',
+elemen:[{arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ، عَدَدَ كَمَالِ اللَّهِ وَكَمَا يَلِيقُ بِكَمَالِهِ.',latin:'Allāhumma shalli wa sallim wa bārik \'alā sayyidinā Muḥammadin wa \'alā ālih, \'adada kamālillāhi wa kamā yalīqu bikamālih.',arti:'Ya Allah, limpahkanlah shalawat, salam, dan keberkahan kepada junjungan kami Nabi Muhammad beserta keluarganya, sebanyak bilangan kesempurnaan Allah dan sebagaimana layaknya bagi kesempurnaan-Nya.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat As-sabiq-mk',icon:'ﷺ',nama:'Shalawat As-Sabiq (Cahaya Terdahulu)',desc:'Shalawat ini merangkum hakikat Nur Muhammadi (Cahaya Muhammad) yang sering dibahas secara mendalam dalam bab-bab awal kitab Sirrul Asrar. Shalawat ini mengakui bahwa nur (cahaya) Nabi ﷺ adalah makhluk pertama yang diciptakan Allah sebelum alam semesta ini ada.',
+elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ السَّابِقِ لِلْخَلْقِ نُورُهُ، وَالرَّحْمَةِ لِلْعَالَمِينَ ظُهُورُهُ، عَدَدَ مَنْ مَضَى مِنْ خَلْقِكَ، وَمَنْ بَقِيَ، وَمَنْ سَعِدَ مِنْهُمْ، وَمَنْ شَقِيَ.',latin:'Allāhumma shalli \'alā sayyidinā Muḥammadinis sābiqi lil khalqi nūruh, war raḥmati lil \'ālamīna ẓuhūruh, \'adada man maḍā min khalqik, wa man baqiya, wa man sa\'ida minhum, wa man syaqiy.',arti:'Ya Allah, limpahkanlah shalawat kepada junjungan kami Nabi Muhammad, yang cahayanya mendahului seluruh makhluk, dan yang kemunculannya adalah rahmat bagi alam semesta, sebanyak bilangan makhluk-Mu yang telah berlalu, yang masih ada, yang beruntung di antara mereka, dan yang celaka.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Al-Hujub-mk',icon:'ﷺ',nama:'Shalawat Al-Hujub (Pembuka Hijab / Tabir)',desc:'Shalawat ini sangat selaras dengan inti ajaran Sirrul Asrar (Rahasia di atas Rahasia), yaitu memohon agar Allah mengangkat hijab (tabir) yang menutupi hati, sehingga seorang hamba dapat menyaksikan cahaya kebenaran (ma\'rifah) dan mendapatkan ilmu ladunni.', 
+elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، مِفْتَاحِ الْأَبْوَابِ الْمُغْلَقَةِ، وَمِفْتَاحِ الْخَزَائِنِ الْمُعَلَّقَةِ، وَعَلَى آلِهِ وَصَحْبِهِ، عَدَدَ مَا أَحَاطَ بِهِ عِلْمُكَ، وَخَطَّ بِهِ قَلَمُكَ',latin:'Allāhumma shalli \'alā sayyidinā Muḥammadin, miftāḥil abwābil mughlaqah, wa miftāḥil khazā\'inil mu\'allaqah, wa \'alā ālihī wa ṣaḥbihī, \'adada mā aḥāṭa bihī \'ilmuk, wa khaṭṭa bihī qalamuk.',arti:'Ya Allah, limpahkanlah shalawat kepada junjungan kami Nabi Muhammad ﷺ, sang pembuka pintu-pintu yang terkunci, dan pembuka perbendaharaan (rahmat dan ilmu) yang tergantung, beserta keluarga dan sahabatnya, sebanyak bilangan apa yang diliputi oleh ilmu-Mu, dan sebanyak apa yang dicatat oleh pena-Mu.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Li-Dafil-Balā-mk',icon:'ﷺ',nama:'Shalawat Li-Daf\'il Bala (Penolak Bala dan Kecukupan)',desc:'Shalawat ini diajarkan untuk memohon kecukupan (ghina) dari Allah SWT, sehingga hati tidak lagi bergantung pada makhluk, yang merupakan salah satu maqam (tingkatan) penting dalam tasawuf yang dibahas Syekh Abdul Qadir Al-Jilani',
+elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، صَاحِبِ الْجَاهِ الْعَظِيمِ، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ، عَدَدَ مَنْ صَلَّى عَلَيْهِ، وَعَدَدَ مَنْ لَمْ يُصَلِّ عَلَيْهِ، صَلَاةً تُغْنِينَا بِهَا عَنْ غَيْرِكَ، وَلَا تُحْوِجُنَا بِهَا إِلَى أَحَدٍ سِوَاكَ.',latin:'Allāhumma shalli \'alā sayyidinā Muḥammadin, ṣāḥibil jāhil \'aẓīm, wa \'alā ālihī wa ṣaḥbihī wa sallim, \'adada man shallā \'alayh, wa \'adada man lam yuṣalli \'alayh, shalātan tughnīnā bihā \'an ghayrik, wa lā tuḥwijnā bihā ilā aḥadin siwāk.',arti:'Ya Allah, limpahkanlah shalawat kepada junjungan kami Nabi Muhammad ﷺ, pemilik kedudukan (jah) yang agung, beserta keluarga dan sahabatnya, dan limpahkanlah keselamatan, sebanyak bilangan orang yang bershalawat kepadanya dan sebanyak bilangan orang yang tidak bershalawat kepadanya. Suatu shalawat yang dengannya Engkau mencukupkan kami dari selain-Mu, dan tidak menjadikan kami butuh kepada siapapun selain-Mu.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Al-Kibrit Al-Ahmar-mk',icon:'ﷺ',nama:'Shalawat Al-Kibrit Al-Ahmar',desc:'Dalam khazanah Tarekat Qadiriyah, "Kibrit Ahmar" (Belerang Merah) adalah simbol dari sesuatu yang sangat langka, berharga, dan memiliki daya ubah yang luar biasa. Shalawat ini diajarkan untuk membersihkan hati dari karat dosa dan membuka mata batin (bashirah).',
+elemen:[{arab:'اللَّهُمَّ اجْعَلْ أَفْضَلَ صَلَوَاتِكَ أَبَداً، وَأَنْمَى بَرَكَاتِكَ سَرْمَداً، وَأَزْكَى تَحِيَّاتِكَ فَضْلاً وَعَدَداً، عَلَى مَنْ هُوَ مَعْدِنُ الْأَسْرَارِ، وَمَظْهَرُ الْأَنْوَارِ، وَسِرُّ الْوُجُودِ، وَعَيْنُ الشُّهُودِ، سَيِّدِنَا مُحَمَّدٍ، وَعَلَى آلِهِ وَصَحْبِهِ، عَدَدَ مَا أَحَاطَ بِهِ عِلْمُكَ، وَخَطَّ بِهِ قَلَمُكَ، وَأَحْصَاهُ كِتَابُكَ.',latin:'Allāhummaj\'al afḍala ṣalawātika abadan, wa anmā barakātika sarmadan, wa azkā taḥiyyātika faḍlan wa \'adadan, \'alā man huwa ma\'dinul asrār, wa maẓharul anwār, wa sirrul wujūd, wa \'ainusy syuhūd, sayyidinā Muḥammadin, wa \'alā ālihī wa ṣaḥbihī, \'adada mā aḥāṭa bihī \'ilmuk, wa khaṭṭa bihī qalamuk, wa aḥṣāhu kitābuk',arti:'Ya Allah, jadikanlah sebaik-baik shalawat-Mu yang abadi, sebanyak-banyak berkah-Mu yang terus-menerus, dan seutama-utama salam penghormatan-Mu sebagai kelebihan dan jumlah, kepada Dzat yang merupakan tambang segala rahasia, perwujudan segala cahaya, rahasia dari segala keberadaan, dan mata dari segala penyaksian, yaitu junjungan kami Nabi Muhammad ﷺ. Beserta keluarga dan sahabatnya, sebanyak bilangan apa yang diliputi oleh ilmu-Mu, dicatat oleh pena-Mu, dan dihitung oleh kitab-Mu.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Al-Ghawthiyyah-mk',icon:'ﷺ',nama:'Sholawat Al-Ghawthiyyah',desc:'Shalawat ini mencerminkan gelar beliau sebagai Al-Ghawth Al-A\'zhom (Penolong Agung). Shalawat ini dibaca sebagai bentuk tawassul (perantara) kepada Allah melalui kedudukan Nabi ﷺ untuk memohon pertolongan dari segala kesempitan hidup.',
+elemen:[{arab:'يَا غَوْثَ الْأَعْظَمَ، كَمَالَ الْمِعْرَاجِ، وَمَا زَاغَ الْبَصَرُ وَمَا طَغَى، وَلَا صَلَاةَ لِمَنْ لَا مِعْرَاجَ لَهُ عِنْدِي. اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، صَاحِبِ الْمِعْرَاجِ، وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ وَصَحْبِهِ، عَدَدَ مَا سَبَقَ بِهِ عِلْمُكَ، وَجَرَى بِهِ قَلَمُكَ، وَنَفَذَ بِهِ حُكْمُكَ.',latin:'Yā ghawthal a\'ẓam, kamālal mi\'rāj, wa mā zāghal baṣaru wa mā ṭaghā, wa lā ṣalāta liman lā mi\'rāja lahū \'indī. Allāhumma shalli \'alā sayyidinā Muḥammadin, ṣāḥibil mi\'rāj, wa sallim wa bārik \'alayhi wa \'alā ālihī wa ṣaḥbihī, \'adada mā sabaqa bihī \'ilmuk, wa jarā bihī qalamuk, wa nafadha bihī ḥukmuk.',arti:'Wahai Penolong Agung, kesempurnaan dari peristiwa Mi\'raj, di mana penglihatan (Nabi) tidak berpaling dan tidak melampaui batas. Dan tidak ada shalat (yang sempurna) bagi siapa yang tidak memiliki mi\'raj (kedekatan) di sisiku. Ya Allah, limpahkanlah shalawat, salam, dan keberkahan kepada junjungan kami Nabi Muhammad ﷺ, pemilik Mi\'raj, beserta keluarga dan sahabatnya, sebanyak bilangan apa yang telah didahului oleh ilmu-Mu, dijalankan oleh pena-Mu, dan diberlakukan oleh ketetapan-Mu.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Al-Bashair-mk',icon:'ﷺ',nama:'Sholawat Al-Bashair',desc:'Shalawat ini dinamakan "Al-Bashair" (Kabar Gembira) karena setiap frasanya dikaitkan dengan ayat-ayat Al-Qur\'an yang membawa kabar gembira (bushra) bagi orang-orang yang ikhlas, bertaubat, dan berbuat baik. ',
+elemen:[{arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ، الْبَشِيرِ الْمُبَشِّرِ لِلْمُخْلِصِينَ، بِمَا قَالَ اللَّهُ الْعَظِيمُ: ﴿فَمَنْ كَانَ يَرْجُو لِقَاءَ رَبِّهِ فَلْيَعْمَلْ عَمَلًا صَالِحًا وَلَا يُشْرِكْ بِعِبَادَةِ رَبِّهِ أَحَدًا ❁ اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ، الْبَشِيرِ الْمُبَشِّرِ لِلتَّوَّابِينَ، بِمَا قَالَ اللَّهُ الْعَظِيمُ: ﴿إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِينَ ❁ اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ، الْبَشِيرِ الْمُبَشِّرِ لِلْمُحْسِنِينَ، بِمَا قَالَ اللَّهُ الْعَظِيمُ: ﴿إِنَّ رَحْمَتَ اللَّهِ قَرِيبٌ مِنَ الْمُحْسِنِينَ',latin:'Allāhumma shalli wa sallim \'alā sayyidinā Muḥammadin, al-bashīril mubashshiri lil mukhliṣīn, bimā qālallāhul \'aẓīm: {Faman kāna yarjū liqā\'a rabbihī fal ya\'mal \'amalan ṣāliḥan wa lā yusyrik bi\'ibādati rabbihī aḥadā}. ❁ Allāhumma shalli wa sallim \'alā sayyidinā Muḥammadin, al-bashīril mubashshiri lit-tawwābīn, bimā qālallāhul \'aẓīm: {Innallāha yuḥibbut-tawwābīna wa yuḥibbul mutaṭahhirīn}. ❁ Allāhumma shalli wa sallim \'alā sayyidinā Muḥammadin, al-bashīril mubashshiri lil muḥsinīn, bimā qālallāhul \'aẓīm: {Inna raḥmatallāhi qarībun minal muḥsinīn}.',arti:'Ya Allah, limpahkanlah shalawat dan salam kepada junjungan kami Nabi Muhammad ﷺ, pembawa kabar gembira bagi orang-orang yang ikhlas, sebagaimana firman Allah Yang Maha Agung: Barangsiapa mengharap perjumpaan dengan Tuhannya, maka hendaklah ia mengerjakan amal yang saleh dan janganlah ia mempersekutukan seorang pun dalam beribadah kepada Tuhannya. Ya Allah, limpahkanlah shalawat dan salam kepada junjungan kami Nabi Muhammad ﷺ, pembawa kabar gembira bagi orang-orang yang bertaubat, sebagaimana firman Allah Yang Maha Agung: Sesungguhnya Allah menyukai orang-orang yang bertaubat dan menyukai orang-orang yang menyucikan diri. Ya Allah, limpahkanlah shalawat dan salam kepada junjungan kami Nabi Muhammad ﷺ, pembawa kabar gembira bagi orang-orang yang berbuat baik, sebagaimana firman Allah Yang Maha Agung: Sesungguhnya rahmat Allah amat dekat kepada orang-orang yang berbuat baik.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Al-Sab\'iniyyah-mk',icon:'ﷺ',nama:'Sholawat Al-Sab\'iniyyah',desc:'Dinamakan "As-Sab\'iniyyah" karena dalam tradisi Tarekat Qadiriyah, shalawat ini diyakini memiliki pahala yang setara dengan 70.000 (tujuh puluh ribu) kali shalawat. Konon, Syekh Abdul Qadir Al-Jilani menemukan shalawat ini terukir pada sebuah batu di dalam gua selama masa pengasingan spiritual (khalwat) beliau.',
+elemen:[{arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ، صَاحِبِ الْجَاهِ الْعَظِيمِ، وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ، عَدَدَ مَنْ صَلَّى عَلَيْهِ، وَعَدَدَ مَنْ لَمْ يُصَلِّ عَلَيْهِ، صَلَاةً تُغْنِينَا بِهَا عَنْ غَيْرِكَ، وَلَا تُحْوِجُنَا بِهَا إِلَى أَحَدٍ سِوَاكَ، صَلَاةً تَقْضِي بِهَا حَوَائِجَنَا، وَتُفَرِّجُ بِهَا كُرُوبَنَا، وَتَسْتُرُ بِهَا عُيُوبَنَا، وَتَغْفِرُ بِهَا ذُنُوبَنَا، صَلَاةً تَكُونُ لَنَا عِزًّا فِي الدَّارَيْنِ، وَسَلَامًا دَائِمًا إِلَى يَوْمِ الدِّينِ.',latin:'Allāhumma shalli wa sallim wa bārik \'alā sayyidinā wa mawlānā Muḥammadin, ṣāḥibil jāhil \'aẓīm, wa \'alā ālihī wa ṣaḥbihī ajma\'īn, \'adada man shallā \'alayh, wa \'adada man lam yuṣalli \'alayh, ṣalātan tughnīnā bihā \'an ghayrik, wa lā tuḥwijnā bihā ilā aḥadin siwāk, ṣalātan taqḍī bihā ḥawā\'ijanā, wa tufarriju bihā kurūbanā, wa tasturu bihā \'uyūbanā, wa taghfiru bihā dhunūbanā, ṣalātan takūnu lanā \'izzan fid-dārayn, wa salāman dā\'iman ilā yaumid-dīn.',arti:'Ya Allah, limpahkanlah shalawat, salam, dan keberkahan kepada junjungan dan tuan kami Nabi Muhammad ﷺ, pemilik kedudukan yang agung, beserta keluarga dan sahabatnya seluruhnya, sebanyak bilangan orang yang bershalawat kepadanya dan sebanyak bilangan orang yang tidak bershalawat kepadanya. Suatu shalawat yang dengannya Engkau mencukupkan kami dari selain-Mu, dan tidak menjadikan kami butuh kepada siapapun selain-Mu. Shalawat yang dengannya Engkau memenuhi hajat kami, melapangkan kesusahan kami, menutupi aib kami, dan mengampuni dosa-dosa kami. Shalawat yang menjadi kemuliaan bagi kami di dua negeri (dunia dan akhirat), dan keselamatan yang abadi hingga hari pembalasan.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Al-Qadiriyyah Al-Kubra-mk',icon:'ﷺ',nama:'Sholawat Al-Qadiriyyah Al-Kubra',desc:'Shalawat ini juga dikenal dengan nama "Ad-Dala\'il Al-Qadiriyah" atau "Al-Yaqutah Al-Hamra\' (Yakut Merah). Dalam khazanah Tarekat Qadiriyah, shalawat ini dianggap sangat agung hingga dikatakan dapat mencukupi (menggantikan) wirid Dala\'il Al-Khayrat bagi para salik yang mengamalkannya dengan penuh penghayatan.',
+elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، مَعْدِنِ الْأَسْرَارِ، وَمَظْهَرِ الْأَنْوَارِ، وَكَهْفِ الْأَبْرَارِ، وَغَوْثِ الْأَغْيَارِ، وَعَلَى آلِهِ وَصَحْبِهِ، عَدَدَ مَا أَحَاطَ بِهِ عِلْمُكَ، وَخَطَّ بِهِ قَلَمُكَ، وَأَحْصَاهُ كِتَابُكَ، صَلَاةً تَامَّةً كَامِلَةً، وَسَلَامًا دَائِمًا شَامِلًا، إِلَى يَوْمِ الْقِيَامَةِ وَيَوْمِ الْحِسَابِ.',latin:'Allāhumma shalli \'alā sayyidinā Muḥammadin, ma\'dinil asrār, wa maẓharil anwār, wa kahfil abrār, wa ghawthil aghyār, wa \'alā ālihī wa ṣaḥbihī, \'adada mā aḥāṭa bihī \'ilmuk, wa khaṭṭa bihī qalamuk, wa aḥṣāhu kitābuk, ṣalātan tāmmatan kāmilatan, wa salāman dā\'iman syāmilan, ilā yaumil qiyāmati wa yaumil ḥisāb.',arti:'Ya Allah, limpahkanlah shalawat kepada junjungan kami Nabi Muhammad ﷺ, sebagai tambang (sumber) segala rahasia, perwujudan segala cahaya, tempat berlindungnya orang-orang baik, dan penolong bagi mereka yang membutuhkan pertolongan. Beserta keluarga dan sahabatnya, sebanyak bilangan apa yang diliputi oleh ilmu-Mu, dicatat oleh pena-Mu, dan dihitung oleh kitab-Mu. Limpahkanlah shalawat yang sempurna dan utuh, serta salam yang abadi dan menyeluruh, hingga hari kiamat dan hari perhitungan.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Al-Taslim-mk',icon:'ﷺ',nama:'Sholawat Al-Taslim (Shalawat Penyerahan Diri)',desc:'Shalawat ini mencerminkan inti ajaran Sirrul Asrar, yaitu melepaskan ketergantungan pada sebab-sebab duniawi dan menyerahkan segala urusan hanya kepada Allah SWT melalui wasilah cinta kepada Nabi ﷺ.',
+elemen:[{arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ، صَلَاةً نُسَلِّمُ بِهَا أُمُورَنَا، وَنُفَوِّضُ بِهَا أَحْوَالَنَا، وَنَسْتَسْلِمُ بِهَا لِحُكْمِكَ وَقَضَائِكَ، صَلَاةً تَكُونُ لَنَا ذُخْرًا يَوْمَ الْقِيَامَةِ، وَسَلَامًا دَائِمًا إِلَى يَوْمِ الدِّينِ.',latin:'Allāhumma shalli wa sallim \'alā sayyidinā Muḥammadin, ṣalātan nusallimu bihā umūranā, wa nufawwiḍu bihā aḥwālanā, wa nastaslimu bihā liḥukmika wa qaḍā\'ik, ṣalātan takūnu lanā dhukhran yaumal qiyāmah, wa salāman dā\'iman ilā yaumid-dīn.',arti:'Ya Allah, limpahkanlah shalawat dan salam kepada junjungan kami Nabi Muhammad ﷺ, suatu shalawat yang dengannya kami menyerahkan segala urusan kami, kami pasrahkan segala keadaan kami, dan kami tunduk sepenuhnya kepada hukum dan ketetapan-Mu. Jadikanlah shalawat ini sebagai simpanan (bekal) bagi kami di hari kiamat, dan limpahkanlah keselamatan yang abadi hingga hari pembalasan.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Litani-mk',icon:'ﷺ',nama:'Shalawat dalam Hizb Al-Nasr (Litani Kemenangan)',desc:'Hizb Al-Nasr adalah litani perlindungan dan kemenangan yang sangat masyhur dinisbatkan kepada Syekh Abdul Qadir Al-Jilani. Di dalamnya terdapat penggalan shalawat yang agung untuk memohon pertolongan Allah melalui kedudukan Nabi ﷺ.',
+elemen:[{arab:' اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، مَعْدِنِ الْأَسْرَارِ، وَمَظْهَرِ الْأَنْوَارِ، وَكَهْفِ الْأَبْرَارِ، وَغَوْثِ الْأَغْيَارِ، وَعَلَى آلِهِ وَصَحْبِهِ، عَدَدَ مَا أَحَاطَ بِهِ عِلْمُكَ، وَخَطَّ بِهِ قَلَمُكَ، وَأَحْصَاهُ كِتَابُكَ.',latin:'... Allāhumma shalli \'alā sayyidinā Muḥammadin, ma\'dinil asrār, wa maẓharil anwār, wa kahfil abrār, wa ghawthil aghyār, wa \'alā ālihī wa ṣaḥbihī, \'adada mā aḥāṭa bihī \'ilmuk, wa khaṭṭa bihī qalamuk, wa aḥṣāhu kitābuk.',arti:'... Ya Allah, limpahkanlah shalawat kepada junjungan kami Nabi Muhammad ﷺ, sebagai tambang (sumber) segala rahasia, perwujudan segala cahaya, tempat berlindungnya orang-orang baik, dan penolong bagi mereka yang membutuhkan pertolongan. Beserta keluarga dan sahabatnya, sebanyak bilangan apa yang diliputi oleh ilmu-Mu, dicatat oleh pena-Mu, dan dihitung oleh kitab-Mu.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Litani2-mk',icon:'ﷺ',nama:'Shalawat dalam Hizb Al-Fath (Litani Pembukaan)',desc:'Hizb Al-Fath diamalkan untuk membuka pintu-pintu rezeki, ilmu, dan hidayah yang terasa tertutup. Shalawat di dalamnya menyerukan Nabi ﷺ sebagai "Al-Fatih" (Sang Pembuka). ',
+elemen:[{arab:' اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، الْفَاتِحِ لِمَا أُغْلِقَ، وَالْخَاتِمِ لِمَا سَبَقَ، نَاصِرِ الْحَقِّ بِالْحَقِّ، وَالْهَادِي إِلَى صِرَاطِكَ الْمُسْتَقِيمِ، وَعَلَى آلِهِ وَصَحْبِهِ، عَدَدَ مَا سَبَقَ بِهِ عِلْمُكَ، وَجَرَى بِهِ قَلَمُكَ، وَنَفَذَ بِهِ حُكْمُكَ.',latin:'... Allāhumma shalli \'alā sayyidinā Muḥammadin, al-fātiḥi limā ughliq, wal khātimi limā sabaq, nāṣiril ḥaqqi bil ḥaqq, wal hādī ilā ṣirāṭikal mustaqīm, wa \'alā ālihī wa ṣaḥbihī, \'adada mā sabaqa bihī \'ilmuk, wa jarā bihī qalamuk, wa nafadha bihī ḥukmuk.',arti:'... Ya Allah, limpahkanlah shalawat kepada junjungan kami Nabi Muhammad ﷺ, sang pembuka apa yang terkunci, penutup apa yang telah lalu, penolong kebenaran dengan kebenaran, dan pemberi petunjuk ke jalan-Mu yang lurus. Beserta keluarga dan sahabatnya, sebanyak bilangan apa yang telah didahului oleh ilmu-Mu, dijalankan oleh pena-Mu, dan diberlakukan oleh ketetapan-Mu.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Nur al-Qiyamah-mk',icon:'ﷺ',nama:'Shalawat Nur al-Qiyamah ',desc:'Ini adalah salah satu shalawat paling istimewa yang dinisbatkan kepada Syekh Abdul Qadir Al-Jilani. Konon, beliau menemukan shalawat ini terukir pada sebuah batu di pintu gua selama masa pengasingan spiritual (khalwat) beliau, dan membacanya diyakini setara dengan puluhan ribu shalawat biasa karena cahaya (nur) yang dilimpahkan kepada pembacanya di hari kiamat.',
+elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، بَحْرِ أَنْوَارِكَ، وَمَعْدِنِ أَسْرَارِكَ، وَلِسَانِ حُجَّتِكَ، وَعَرُوسِ مَمْلَكَتِكَ، وَإِمَامِ حَضْرَتِكَ، وَخَزَائِنِ رَحْمَتِكَ، وَطَرِيقِ شَرِيعَتِكَ الْمُتَلَذِّذِ بِتَوْحِيدِكَ، وَعَلَى آلِهِ وَصَحْبِهِ، وَسَلِّمْ كَثِيرًا.',latin:'Allāhumma shalli \'alā sayyidinā Muḥammadin, baḥri anwārik, wa ma\'dini asrārik, wa lisāni ḥujjatik, wa \'arūsi mamlakatik, wa imāmi ḥaḍratik, wa khazā\'ini raḥmatik, wa ṭarīqi sharī\'atikal mutaladhdhidhi bi tawḥīdik, wa \'alā ālihī wa ṣaḥbihī, wa sallim kathīrā.',arti:'Ya Allah, limpahkanlah shalawat kepada junjungan kami Nabi Muhammad ﷺ, sebagai lautan cahaya-Mu, tambang (sumber) rahasia-Mu, lisan hujah-Mu, pengantin kerajaan-Mu, imam di hadirat-Mu, perbendaharaan rahmat-Mu, dan jalan syariat-Mu yang merasakan kelezatan dalam mentauhidkan-Mu. Beserta keluarga dan sahabatnya, dan limpahkanlah keselamatan yang banyak.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Litani3-mk',icon:'ﷺ',nama:'Shalawat dalam Hizb Al-Rizq (Litani Pembuka Rezeki)',desc:'Syekh Abdul Qadir Al-Jilani mengajarkan litani khusus untuk memohon kelapangan rezeki yang halal dan berkah. Inti dari litani ini adalah shalawat yang mengakui Nabi ﷺ sebagai kunci pembuka pintu-pintu karunia Allah.',
+elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، مِفْتَاحِ بَابِ الْيَسَارِ، وَمِصْبَاحِ ظُلْمَةِ الْإِعْسَارِ، وَعَلَى آلِهِ وَصَحْبِهِ، صَلَاةً تَفْتَحُ لَنَا بِهَا أَبْوَابَ الرِّزْقِ الْحَلَالِ الْوَاسِعِ، وَتُخْرِجُنَا بِهَا مِنْ ضِيقِ الْأَحْوَالِ إِلَى سَعَةِ الْأَمْوَالِ وَالْأَحْوَالِ.',latin:'Allāhumma shalli \'alā sayyidinā Muḥammadin, miftāḥi bābil yasār, wa miṣbāḥi ẓulmatil i\'sār, wa \'alā ālihī wa ṣaḥbihī, ṣalātan taftaḥu lanā bihā abwābar rizqil ḥalālil wāsi\', wa tukhrijunā bihā min ḍīqil aḥwāli ilā sa\'atil amwāli wal aḥwāl.',arti:'Ya Allah, limpahkanlah shalawat kepada junjungan kami Nabi Muhammad ﷺ, sang pembuka pintu kemudahan, dan pelita dari kegelapan kesempitan (kemiskinan). Beserta keluarga dan sahabatnya, suatu shalawat yang dengannya Engkau bukakan untuk kami pintu-pintu rezeki halal yang luas, dan dengannya Engkau keluarkan kami dari himpitan keadaan menuju kelapangan harta dan kehidupan.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]},
+{jenis:'sholawat',id:'sholawat Al-Hifz wa Al-Sitr-mk',icon:'ﷺ',nama:'Shalawat Al-Hifz wa Al-Sitr',desc:'Shalawat ini diamalkan sebagai benteng spiritual (ḥiṣn) untuk memohon perlindungan Allah dari segala gangguan (baik dari manusia, jin, maupun hawa nafsu) dan agar aib serta kekurangan kita ditutupi oleh rahmat-Nya.',
+elemen:[{arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ، حِصْنِ الْأَوْلِيَاءِ، وَحِرْزِ الْأَصْفِيَاءِ، وَعَلَى آلِهِ وَصَحْبِهِ، صَلَاةً تَحْفَظُنَا بِهَا مِنْ شَرِّ مَا خَلَقْتَ، وَتَسْتُرُنَا بِهَا بِسِتْرِكَ الْجَمِيلِ الَّذِي لَا يَنْكَشِفُ أَبَدًا، وَتَجْعَلُنَا بِهَا مِنْ أَهْلِ الْأَمَانِ يَوْمَ الْقِيَامَةِ.',latin:'Allāhumma shalli wa sallim \'alā sayyidinā Muḥammadin, ḥiṣnil auliyā\', wa ḥirzil aṣfiyā\', wa \'alā ālihī wa ṣaḥbihī, ṣalātan taḥfaẓunā bihā min sharri mā khalaqt, wa tasturunā bihā bisitrikal jamīlil ladzī lā yankashifu abadan, wa taj\'alunā bihā min ahlil amāni yaumal qiyāmah.',arti:'Ya Allah, limpahkanlah shalawat dan salam kepada junjungan kami Nabi Muhammad ﷺ, sebagai bentengnya para wali dan pelindungnya para hamba yang terpilih. Beserta keluarga dan sahabatnya, suatu shalawat yang dengannya Engkau jaga kami dari keburukan segala makhluk yang Engkau ciptakan, Engkau tutupi kami dengan tutupan-Mu yang indah yang tidak akan tersingkap selamanya, dan Engkau jadikan kami termasuk golongan yang aman di hari kiamat.',ref:'Syeikh Abdul Qadir Al-Jilani Radhiallahu \'anhu'}]}
 
-// ============================================================
-// ✅ DATA DOA
-// ============================================================
-var doaKategoriData = [
-{id:'doa-quran',icon:'📖',nama:'Doa Dari Al-Quran',desc:'Doa-doa mustajabah dari Al-Qur\'an.',doa:[
-{judul:'Doa Mohon Kebaikan Dunia Akhirat',arab:'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',latin:'Rabbanâ âtinâ fiddunyâ hasanah wa fil âkhirati hasanah wa qinâ \'adzâbannâr',arti:'Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan peliharalah kami dari siksa neraka.',ref:'QS. Al-Baqarah: 201'},
-{judul:'Doa Mohon Ampunan & Rahmat',arab:'رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً',latin:'Rabbanâ lâ tuzigh qulûbanâ ba\'da idz hadaitanâ wa hab lanâ min ladunka rahmah',arti:'Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah rahmat dari sisi-Mu.',ref:'QS. Ali Imran: 8'}
 ]},
-{id:'doa-muhammad',icon:'🕌',nama:'Doa Nabi Muhammad ﷺ',desc:'Doa-doa dari Rasulullah ﷺ.',doa:[
-{judul:'Doa Memohon Ilmu Bermanfaat',arab:'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا',latin:'Allâhumma innî as\'aluka \'ilman nâfi\'an wa rizqan thayyiban wa \'amalan mutaqabbalan',arti:'Ya Allah, aku memohon ilmu yang bermanfaat, rezeki yang baik, dan amal yang diterima.',ref:'HR. Ibnu Majah'},
-{judul:'Doa Perlindungan dari Kesusahan',arab:'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَالْعَجْزِ وَالْكَسَلِ',latin:'Allâhumma innî a\'ûdzu bika minal hammi wal hazani wal \'ajzi wal kasali',arti:'Ya Allah, aku berlindung kepada-Mu dari kegelisahan, kesedihan, kelemahan, dan kemalasan.',ref:'HR. Bukhari'}
+/* ========== KITAB 4: MUFARRIJU AL-KURUB (Syaikh an-Nabhani) ========== */
+/* ✅ DIPERBAIKI: Semua item sekarang memiliki id unik */
+{id:'kitab-mufarriju-kurub',icon:'📗',nama:'Mufarriju al-Kurub wa Mufarriju al-Qulub',desc:'Kitab karya Syaikh Yusuf bin Ismail an-Nabhani (w. 1350 H) yang berisi kumpulan sholawat pelapang kesusahan, pembuka rezeki, dan penghilang kesempitan.',items:[
+{jenis:'sholawat',id:'sholawat-ibrahimiyah-mk',icon:'ﷺ',nama:'Sholawat Ibrahimia',desc:'Sholawat yang dibaca dalam tahiyyat akhir sholat fardhu.',elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ،  عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، فِي الْعَالَمِينَ  حَمِيدٌ مَجِيدٌ.',latin:'Allâhumma shalli \'alâ Muhammad wa \'alâ âli  Muhammad, kamâ shallaita \'alâ Ibrâhîm wa \'alâ âli Ibrâhîm. wa bārik \'alā sayyidinā Muḥammad, wa \'alā āli sayyidinā Muḥammad, kamā bārakta \'alā sayyidinā Ibrāhīm, wa \'alā āli sayyidinā Ibrāhīm, fil-\'ālamīna innaka ḥamīdum majīd.',arti:'Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad dan keluarga junjungan kami Nabi Muhammad, sebagaimana Engkau telah melimpahkan rahmat kepada junjungan kami Nabi Ibrahim dan keluarga junjungan kami Nabi Ibrahim. Dan limpahkanlah berkah kepada junjungan kami Nabi Muhammad dan keluarga junjungan kami Nabi Muhammad, sebagaimana Engkau telah melimpahkan berkah kepada junjungan kami Nabi Ibrahim dan keluarga junjungan kami Nabi Ibrahim. Di seluruh alam semesta, sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.',ref:'HR. Bukhari & Muslim'}]},
+{jenis:'sholawat',id:'sholawat-fatih-mk',icon:'ﷺ',nama:'Sholawat Fatih',desc:'Sholawat ini dinamakan "Al-Fatih" (Sang Pembuka) karena dipercaya sebagai wasilah (perantara) untuk membuka pintu-pintu rahmat, menghilangkan kesulitan, dan mendapatkan cahaya spiritual dari Allah SWT.',elemen:[{arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ الْفَاتِحِ لِمَا أُغْلِقَ، وَالْخَاتِمِ لِمَا سَبَقَ، النَّاصِرِ الْحَقَّ بِالْحَقِّ، وَالْهَادِي إِلَى صِرَاطِكَ الْمُسْتَقِيمِ، وَعَلَى آلِهِ وَأَصْحَابِهِ حَقَّ قَدْرِهِ وَمِقْدَارِهِ الْعَظِيمِ',latin:'Allāhumma ṣalli wa sallim wa bārik ‘alā sayyidinā Muḥammadinil fātiḥi limā ughliqa, wal khātimi limā sabaqa, an-nāṣiril ḥaqqa bil ḥaqqi, wal hādī ilā ṣirāṭikal mustaqīm, wa ‘alā ālihī wa aṣḥābihī ḥaqqa qadrihī wa miqdārihil ‘aẓīm.',arti:'Ya Allah, limpahkanlah rahmat (shalawat), keselamatan (salam), dan keberkahan kepada junjungan kami, Nabi Muhammad ﷺYang membuka apa yang terkunci: Pembuka segala pintu kebaikan, ilmu, rezeki, dan hidayah yang sebelumnya tertutup atau sulit dijangkau oleh manusia. Penutup para nabi yang datang untuk menyempurnakan dan menggenapkan syariat para nabi yang diutus sebelumnya. Yang membela dan menegakkan agama Allah (kebenaran) hakiki) dengan hujah, pertolongan, dan cara yang benar pula. Termasuk seluruh pengikut dan pecinta beliau yang setia hingga akhir zaman. Sebuah pengakuan bahwa keagungan Nabi Muhammad ﷺ tidak dapat diukur atau dibatasi oleh akal pikiran manusia,',ref:'Sayyid Muhammad Syamsuddin bin Abil Hasan Al-Bakri'}]},
+{jenis:'sholawat',id:'sholawat-nariyah-mk',icon:'ﷺ',nama:'Sholawat Nariyah',desc:'Sholawat ini secara tradisional diamalkan secara berjamaah oleh masyarakat Maghribi (Maroko), terutama saat menghadapi bencana atau kesulitan besar.',elemen:[{arab:'اَللّٰهُمَّ صَلِّ صَلَاةً كَامِلَةً وَسَلِّمْ سَلَامًا تَامًّا عَلَى سَيِّدِنَا مُحَمَّدٍ الَّذِيْ تَنْحَلُّ بِهِ الْعُقَدُ وَتَنْفَرِجُ بِهِ الْكُرَبُ وَتُقْضٰى بِهِ الْحَوَائِجُ وَتُنَالُ بِهِ الرَّغَائِبُ وَحُسْنُ الْخَوَاتِمِ وَيُسْتَسْقَى الْغَمَامُ بِوَجْهِهِ الْكَرِيْمِ وَعَلَى آلِهِ وَصَحْبِهِ فِيْ كُلِّ لَمْحَةٍ وَنَفَسٍ بِعَدَدِ كُلِّ مَعْلُوْمٍ لَكَ',latin:'Allāhumma ṣalli ṣalātan kāmilatan wa sallim salāman tāmman ‘alā sayyidinā Muḥammadin alladzī tanḥallu bihil-‘uqadu wa tanfariju bihil-kurabu wa tuqḍā bihil-ḥawā’iju wa tunālu bihir-raghā’ibu wa ḥusnul-khawātimi wa yustasqal-ghamāmu biwajhihil-karīmi wa ‘alā ālihī wa ṣaḥbihī fī kulli lamḥatin wa nafasin bi‘adadi kulli ma‘lūmilak(a).',arti:'"Ya Allah, limpahkanlah shalawat (rahmat) yang sempurna, dan salam (keselamatan) yang sempurna, Kepada junjungan kami, Nabi Muhammad ﷺ. "Yang dengannya (berkat kedudukan beliau) terurai segala ikatan (masalah, kebuntuan, atau kesulitan yang terasa membelenggu). Dan dengannya terhilangkan segala kesusahan (kesedihan, kecemasan, dan beban berat). Dan dengannya terpenuhi segala hajat (kebutuhan hidup, baik dunia maupun akhirat). Dan dengannya tercapai segala keinginan (cita-cita luhur) serta husnul khatimah (akhir kehidupan yang baik dan diridhai Allah). Dan dengannya dimintakan turunnya hujan (pertolongan/rahmat) melalui awan, berkat wajah beliau yang mulia. Dan (limpahkanlah pula shalawat dan salam) kepada keluarga dan para sahabat beliau. Dalam setiap kedipan mata dan setiap tarikan napas. "Sebanyak bilangan (makhluk/hal) yang diliputi oleh ilmu Allah (yang Maha Luas dan Tak Terbatas).',ref:'Sayyid Muhammad bin Alawi Al-Maliki · Syekh Ibrahim At-Tazi'}]},
+{jenis:'sholawat',id:'sholawat-tafrijul-kurub',nama:'Sholawat Tafrijul Kurub',desc:'Sholawat pelapang kesusahan dan penghilang kesempitan.',elemen:[{arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ، صَلَاةَ عَبْدٍ قَلَّتْ حِيلَتُهُ، وَرَسُولُ اللهِ وَسِيلَتُهُ، وَأَنْتَ لَهَا يَا إِلَهِي وَلِكُلِّ كَرْبٍ عَظِيمٍ، فَفَرِّجْ عَنَّا مَا نَحْنُ فِيهِ بِسِرِّ بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ',latin:'Allāhumma ṣalli wa sallim wa bārik ‘alā sayyidinā Muḥammadin wa ‘alā ālihi wa ṣaḥbihī, ṣalāta ‘abdin qallat ḥīlatuhū, wa Rasūlullāhi wasīlatuhū, wa anta lahā yā ilāhī wa likulli karbin ‘aẓīm, fafarrij ‘annā mā naḥnu fīhi bi sirri bismillāhir-raḥmānir-raḥīm.',arti:'Ya Allah, limpahkanlah rahmat, keselamatan, dan keberkahan kepada junjungan kami Nabi Muhammad, keluarga, dan sahabatnya, dengan sholawat dari seorang hamba yang telah habis daya upayanya, dan Rasulullah adalah perantaranya. Engkaulah Yang Maha Menguasai hal itu, wahai Tuhanku, dan Engkaulah Yang Maha Menguasai setiap kesusahan yang besar, maka lapangkanlah apa yang sedang kami alami ini dengan rahasia (keagungan) \'Bismillāhir-raḥmānir-raḥīm',ref:'Syaikh Yusuf an-Nabhani: Sebagaimana disebutkan sebelumnya, Syaikh Yusuf bin Ismail an-Nabhani (w. 1350 H) menulis kitab khusus berjudul Mufarriju al-Kurub wa Mufarriju al-Qulub'}]},
+{jenis:'sholawat',id:'sholawat-al-kubra',nama:'Sholawat al-Kubra (Sholawat Agung)',desc:'Syaikh an-Nabhani sering menyebutkan sholawat ini sebagai pembuka pintu rahmat dan penghilang kesempitan yang paling afdhal.',elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةً تَامَّةً، وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ تَسْلِيمًا تَامًّا',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadin ṣalātan tāmmah, wa sallim ‘alā sayyidinā Muḥammadin taslīman tāmmā.',arti:'Ya Allah, limpahkanlah shalawat yang sempurna kepada junjungan kami Nabi Muhammad, dan limpahkanlah keselamatan yang sempurna pula kepada junjungan kami Nabi Muhammad.',ref:'Syaikh Yusuf bin Ismail an-Nabhani RA · Kitab Mufarriju al-Kurub wa Mufarriju al-Qulub'}]},
+{jenis:'sholawat',id:'sholawat-habib-al-mahbub',nama:'Sholawat Habib al-Mahbub (Pelapang Kesulitan & Rezeki)',desc:'Syaikh an-Nabhani dalam kitab Mufarriju al-Kurub wa Mufarriju al-Qulub sebagai kunci untuk menyembuhkan penyakit (termasuk penyakit kemiskinan/kesempitan rezeki) dan melapangkan kesusahan. 1. Untuk Diri Sendiri: Bacalah salah satu sholawat di atas sebanyak 40x atau 100x setiap hari (terutama setelah shalat fardhu atau di sepertiga malam) dengan niat memohon kesembuhan dan ketenangan hati. 2. Bacakan sholawat tersebut sebanyak 7x atau 40x di sisi orang yang sakit.Atau bacakan ke dalam segelas air minum, lalu tiupkan pelan ke dalam air tersebut, dan berikan air itu kepada orang yang sakit untuk diminum (dengan keyakinan bahwa yang menyembuhkan hakiki adalah Allah SWT).(Syaikh Ahmad as-Sawi menyebutkan bahwa apabila sholawat ini dibaca dengan istiqamah dan niat yang tulus untuk orang sakit, maka dengan izin Allah, penyakit akan berangsur membaik.)',elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ الْحَبِيبِ الْمَحْبُوبِ، شَافِي الْعِلَلِ، وَمُفَرِّجِ الْكُرُوبِ، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadinil-ḥabībil-maḥbūb, syāfil-‘ilal, wa mufarrijil-kurūb, wa ‘alā ālihi wa ṣaḥbihī wa sallim',arti:'Ya Allah, limpahkanlah sholawat kepada junjungan kami Nabi Muhammad, sang kekasih yang amat dicinta, yang menyembuhkan berbagai penyakit (lahir dan batin), serta yang melapangkan segala kesusahan, semoga keselamatan juga tercurah kepada keluarga dan sahabat beliau.',ref:'Syaikh Yusuf an-Nabhani RA · Kitab Mufarriju al-Kurub wa Mufarriju al-Qulub'}]},
+{jenis:'sholawat',id:'sholawat-ar-rizq',nama:'Sholawat Khusus Pembuka Rezeki (Sholawat Ar-Rizq)',desc:'Syaikh Yusuf an-Nabhani untuk hajat khusus berupa kelapangan rezeki. 1. stiqamah: Pilihlah salah satu sholawat di atas, lalu amalkan secara konsisten (misalnya 100x atau 300x) setiap hari, terutama setelah shalat fardhu atau di waktu mustajab (seperti sepertiga malam atau antara adzan dan iqamah). 2. Niat yang Benar: Niatkan sholawat ini sebagai bentuk cinta kepada Rasulullah ﷺ dan sebagai wasilah (perantara), sambil meyakini sepenuhnya bahwa Yang Maha Memberi Rezeki hanyalah Allah SWT. 3. Diawali dan Diakhiri: Selalu awali dan akhiri bacaan sholawat khusus ini dengan Sholawat Ibrahimiyah (Allahumma sholli \'ala Muhammad...) agar lebih sempurna dan diterima di sisi Allah. 4. Ikhtiar Lahir, memperbanyak istighfar, karena istighfar adalah kunci turunnya hujan dan rezeki ',elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، صَلَاةً تَرْزُقُنَا بِهَا سَعَةَ الْعَيْشِ وَالرَّخَاءَ، وَتَكْفِينَا بِهَا شَرَّ الْبَلَاءِ، وَتَجْعَلُنَا بِهَا مِنَ الْفَائِزِينَ يَوْمَ الْقِيَامَةِ',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadin, ṣalātan tarzuqunā bihā sa‘atal-‘aisyi war-rakhā’, wa takfīnā bihā syarral-balā’, wa taj‘alunā bihā minal-fā’izīna yaumal-qiyāmah.',arti:'Ya Allah, limpahkanlah sholawat kepada junjungan kami Nabi Muhammad, dengan sholawat yang dengannya Engkau berikan rezeki kepada kami berupa kelapangan hidup dan kemakmuran, yang dengannya Engkau cukupkan kami dari keburukan bencana, dan yang dengannya Engkau jadikan kami termasuk orang-orang yang beruntung di hari kiamat.',ref:'Syaikh Yusuf bin Ismail an-Nabhani RA · Kitab Mufarriju al-Kurub wa Mufarriju al-Qulub'}]},
+{jenis:'sholawat',id:'sholawat-jazuliya',nama:'Sholawat Ummi/Jazuliyah',desc:'Sholawat ini sangat dianjurkan untuk dibaca, khususnya pada hari Jumat.',elemen:[{arab:'اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَنَبِيِّكَ وَرَسُولِكَ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadin ‘abdika wa nabiyyika wa rasūlika, an-nabiyyil ummiyyi, wa ‘alā ālihi wa ṣaḥbihi wa sallim',arti:'Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad, hamba-Mu, nabi-Mu, dan utusan-Mu, seorang nabi yang ummi.',ref:'Imam Muhammad bin Sulaiman Al-Jazuli · Dala\'il al-Khayrat'}]},
+{jenis:'sholawat',id:'sholawat-munjiyat',nama:'Sholawat Munjiyat',desc:'Sholawat penyelamat dari bencana dan bahaya.',elemen:[{arab:'اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلاَةً تُنْجِيْنَا بِهَا مِنْ جَمِيْعِ الْأَهْوَالِ وَالْاٰفَاتِ، وَتَقْضِيْ لَنَا بِهَا جَمِيعَ الْحَاجَاتِ، وَتُطَهِّرُنَا بِهَا مِنْ جَمِيْعِ السَّيِّئَاتِ، وَتَرْفَعُنَا بِهَا عِنْدَكَ أَعْلَى الدَّرَجَاتِ، وَتُبَلِّغُنَا بِهَا أَقْصَى الْغَايَاتِ مِنْ جَمِيْعِ الْخَيْرَاتِ، فِي الْحَيَاةِ وَبَعْدَ الْمَمَاتِ',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadin ṣalātan tunjīnā bihā min jamī’il aḥwāli wal-āfāti, wa taqḍī lanā bihā jamī’al ḥājāti, wa tuṭahhirunā bihā min jamī’is sayyi’āti, wa tarfa’unā bihā ‘indaka a’lad darajāti, wa tuballighunā bihā aqṣal ghāyāti min jamī’il khairāti, fil ḥayāti wa ba’dal mamāti.',arti:'Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad, suatu shalawat yang dengannya Engkau menyelamatkan kami dari segala ketakutan dan bencana.',ref:'Syekh As-Shalih Musa ad-Dlarir · Kitab Dalâilul Khairât'}]},
+{jenis:'sholawat',id:'sholawat-tibbil-qulub',nama:'Sholawat Tibbil Qulub',desc:'Sholawat untuk penyembuh hati dan badan.',elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، طِبِّ الْقُلُوبِ وَدَوَائِهَا، وَعَافِيَةِ الْأَبْدَانِ وَشِفَائِهَا، وَنُورِ الْأَبْصَارِ وَضِيَائِهَا، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ.',latin:'Allāhumma shalli \'alā sayyidinā Muḥammad, ṭibbil-qulūbi wa dawā\'ihā, wa \'āfiyatil-abdāni wa syifā\'ihā, wa nūril-abṣāri wa ḍiyā\'ihā, wa \'alā ālihi wa ṣaḥbihi wa sallim.',arti:'Ya Allah, limpahkanlah sholawat kepada junjungan kami Nabi Muhammad sebagai obat hati dan penyembuhnya.',ref:'Syaikh Ahmad Al-Adawi Al-Maliki · Dalâilul Khairât'}]},
+{jenis:'sholawat',id:'sholawat-ruhi-muhammad',nama:'Sholawat Ruhi Muhammad SAW',desc:'Sholawat Ruhi Muhammad (sering juga disebut Sholawat \'Ala Ruhi Muhammad atau Sholawat Ruh Muhammad)',elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى رُوحِ سَيِّدِنَا مُحَمَّدٍ فِي الْأَرْوَاحِ، وَعَلَى جَسَدِهِ فِي الْأَجْسَادِ، وَعَلَى قَبْرِهِ فِي الْقُبُورِ، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ',latin:'Allāhumma ṣalli ‘alā rūḥi sayyidinā Muḥammadin fil arwāḥ, wa ‘alā jasadihi fil ajsād, wa ‘alā qabrihi fil qubūr, wa ‘alā ālihi wa ṣaḥbihi wa sallim.',arti:'Ya Allah, limpahkanlah rahmat (shalawat) kepada ruh Nabi Muhammad ﷺ di alam arwah (dunia ruh), kepada jasadnya di alam jasad (dunia fisik), dan kepada kuburnya di alam kubur (dunia barzakh), serta limpahkanlah pula rahmat dan keselamatan kepada keluarga dan sahabatnya.',ref:'Syaikh Yusuf bin Ismail an-Nabhani: Beliau membahas sholawat ini secara khusus dalam kitab beliau yang berjudul Afdhalush Shalawat \'Alaa Sayyidis Sadaat. (Syekh Abdul Qodir Al Jailani RA, terdapat dalam kitab masyhur Dalailul Khoirot yang disusun oleh Sayyid Muhammad bin Sulaiman Al Jazuli.) '}]}
 ]},
-{id:'doa-nabi',icon:'🕋',nama:'Doa Para Nabi',desc:'Doa-doa para Nabi dan Rasul.',doa:[
-{judul:'Doa Nabi Adam AS',arab:'رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ',latin:'Rabbanâ zhalamnâ anfusanâ wa illam taghfir lanâ wa tarhamnâ lanakûnanna minal khâsirîn',arti:'Ya Tuhan kami, kami telah menzalimi diri kami sendiri. Jika Engkau tidak mengampuni kami, niscaya kami termasuk orang-orang yang merugi.',ref:'QS. Al-A\'raf: 23'},
-{judul:'Doa Nabi Yunus AS',arab:'لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ',latin:'Lâ ilâha illâ anta subhânaka innî kuntu minazh-zhâlimîn',arti:'Tidak ada Tuhan selain Engkau, Maha Suci Engkau, sesungguhnya aku termasuk orang-orang yang zalim.',ref:'QS. Al-Anbiya: 87'}
+
+/* ========== KITAB 5: SHOLAWAT NUSANTARA ========== */
+{id:'kitab-sholawat-nusantara',icon:'🕌',nama:'Sholawat Nusantara & Banten',desc:'Sholawat-warisan ulama Nusantara: Kesultanan Banten, Syekh Nawawi Al-Bantani, Habib Segaf Baharun, dan para sesepuh.',items:[
+{jenis:'sholawat',id:'sholawat-busyro',nama:'Sholawat Al-Busyro',desc:'Sholawat Al-Busyro bukanlah sholawat yang dikarang oleh manusia secara sadar, melainkan sholawat yang diijazahkan (diajarkan) langsung oleh Rasulullah SAW melalui mimpi kepada Habib Segaf bin Hasan Baharun (Pengasuh Pondok Pesantren Darul Lughah wadda\'wah / Dalwa, Bangil, Pasuruan).Menurut penuturan beliau, mimpi tersebut terjadi pada malam Asyura tahun 2016. Saat terbangun, beliau langsung hafal bacaan sholawat ini beserta aroma wangi gaharu yang menyertai mimpi tersebut, dan diperintahkan oleh Rasulullah SAW dalam mimpi untuk menyebarkan sholawat ini kepada umat.',elemen:[{arab:'اَللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ صَاحِبِ الْبُشْرَى، صَلَاةً تُبَشِّرُنَا بِهَا وَأَهْلَنَا وَأَوْلَادَنَا وَجَمِيْعَ مَشَايِخِنَا وَمُعَلِّمِيْنَا وَطَلَبَتَنَا وَطَالِبَاتِنَا، مِنْ يَوْمِنَا هَذَا إِلَى يَوْمِ الْآخِرَةِ.',latin:'Allāhumma shalli wa sallim ‘alā sayyidinā Muḥammadin ṣāḥibil busyrā, ṣalātan tubashshirunā bihā wa ahlana wa aulādanā wa jamī‘a mashāyikhinā wa mu‘allimīnā wa ṭalabatana wa ṭālibātinā, min yauminā hādzā ilā yaumil ākhirah.',arti:'Ya Allah, limpahkanlah shalawat dan salam kepada junjungan kami Nabi Muhammad, sang pembawa kabar gembira, dengan shalawat yang memberikan kabar gembira kepada kami, keluarga kami, anak-anak kami, seluruh guru-guru (masyayikh) kami, para pengajar kami, murid-murid kami (laki-laki dan perempuan), mulai dari hari ini hingga hari akhir (kiamat).',ref:'Ijazah Rasulullah Kepada Habib Segaf bin Hasan Baharun (Diamalkan sebanyak 41 kali setelah sholat Subuh) ﷺ'}]},
+{jenis:'sholawat',id:'sholawat-al-lutfhi',nama:'Sholawat Al-Lutfhi',desc:'Kedua sholawat di atas sangat masyhur di kalangan masyarakat Banten dan sering dilantunkan dalam berbagai majelis zikir maupun amalan pribadi untuk memohon pertolongan dan keberkahan dari Allah SWT melalui wasilah Rasulullah SAW',elemen:[{arab:'اَللّٰهُمَّ صَـلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى اٰلِهِ صَلَاةَ أَهْلِ السَّمٰوَاتِ وَالْأَرَضِيْنَ عَلَيْهِ، وَأَجْرِ يَا مَوْلَانَا لُطْفَكَ الْخَفِيَّ فِيْ أَمْرِيْ، وَأَرِنِيْ سِرَّ جَمِيْلِ صُنْعِكَ فِيْمَا اٰمِلُهُ مِنْكَ، يَا اَللهُ يَا سَمِيْعُ يَا قَرِيْبُ يَارَبَّ الْعَالَمِيْنَ',latin:'Allāhumma shalli \'alā sayyidinā Muḥammadin wa \'alā ālihi, shalāta ahlis-samāwāti wal-araḍīna \'alaihi. Wa ajri yā maulānā luṭfakal-khafiyya fī amrī, wa arinī sirra jamīli ṣun\'ika fīmā āmiluhu minka, yā Allāhu yā Samī\'u yā Qarību yā Rabbal-\'ālamīn.',arti:'Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad, dan kepada keluarganya, dengan rahmat para penghuni langit dan bumi kepada beliau. Dan jalankanlah wahai Tuhan kami kelembutan-Mu yang tersembunyi (Luthfil Khafi) dalam urusanku, dan tampakkanlah kepadaku rahasia keindahan pengaturan-Mu dalam apa yang kuharapkan dari-Mu. Wahai Allah, wahai Dzat Yang Maha Mendengar, wahai Dzat Yang Maha Dekat, wahai Tuhan semesta alam.',ref:'Sayyid al-Imam al-\'Arif Billah Abdullah al-\'Alami, namun di Nusantara sholawat ini sangat lekat dengan amalan Syekh Nawawi Al-Bantani sebagai wasilah (perantara) untuk menghilangkan kesedihan, kesukaran, dan mengabulkan kebutuhan apa pun.'}]},
+{jenis:'sholawat',id:'sholawat-mustika',nama:'Sholawat Mustika',desc:'Sholawat ini dikenal dalam tradisi keilmuan ruhaniyah (hikmah) Kesultanan Banten dan diwariskan melalui ijazah para sesepuh Banten (seperti Pangeran Tajul \'Arsyi). Sholawat ini sangat ringkas namun memiliki nilai spiritual yang tinggi untuk memohon perlindungan dan kemudahan urusan.',elemen:[{arab:'بِسْمِ اللهِ كُنْ، صَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ، يَا هُوَ، هُوَ اللهُ، يَا نُورُ، يَا عَزِيزُ، يَا جَبَّارُ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ',latin:'Bismillāhi Kun, shallallāhu \'alā sayyidinā Muḥammadin wa \'alā āli sayyidinā Muḥammad.Allāhumma shalli wa sallim wa bārik \'alā sayyidinā Muḥammad, Yā Huwa, Huwallāh, Yā Nūr, Yā \'Azīz, Yā Jabbār, lā ḥawla wa lā quwwata illā billāh.',arti:'Dengan nama Allah \'Jadilah\', maka jadilah. Semoga sholawat, salam, dan keberkahan tercurah kepada junjungan kami Nabi Muhammad dan keluarga junjungan kami Nabi Muhammad. Ya Allah, limpahkanlah sholawat, salam, dan keberkahan kepada junjungan kami Nabi Muhammad. Wahai Dia, Dialah Allah, Wahai Cahaya, Wahai Yang Maha Perkasa, Wahai Yang Maha Kuasa, tiada daya dan kekuatan kecuali dengan pertolongan Allah.',ref:'Sultan Maulana Hasanuddin (pendiri Kesultanan Banten) dan Syekh Nawawi Al-Bantani (ulama besar asal Tanara, Banten).'}]}
 ]},
-{id:'doa-harian',icon:'🤲',nama:'Doa-doa Harian',desc:'Doa-doa aktivitas sehari-hari sesuai sunnah.',doa:[
-{judul:'Doa Masuk Rumah',arab:'اَللّٰهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ الْمَوْلَجِ وَخَيْرَ الْمَخْرَجِ بِاسْمِ اللهِ وَلَجْنَا، وبِاسْمِ اللهِ خَرَجْنَا',latin:'Allâhumma innî as\'aluka khairal maulaji wa khairal makhraji, bismillâhi walajnâ wa bismillâhi kharajnâ',arti:'Ya Allah, aku memohon kepada-Mu sebaik-baik tempat masuk dan sebaik-baik tempat keluar. Atas nama-Mu kami masuk dan atas nama-Mu kami keluar.',ref:'HR. Abu Daud'},
-{judul:'Doa Sebelum Makan',arab:'اَللّٰهُمَّ بَارِكْ لَنَا فِيْمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ',latin:'Allâhumma bârik lanâ fîmâ razaqtanâ waqinâ \'adzâban nâr',arti:'Ya Allah, berkahilah apa yang telah Engkau anugerahkan kepada kami dan jagalah kami dari siksa neraka.',ref:'HR. Abu Daud'},
-{judul:'Doa Keluar Rumah',arab:'بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ',latin:'Bismillâhi tawakkaltu \'alallâhi wa lâ haula wa lâ quwwata illâ billâh',arti:'Dengan nama Allah, aku bertawakkal kepada Allah. Tiada daya dan kekuatan kecuali dengan pertolongan Allah.',ref:'HR. Abu Daud & Tirmidzi'}
+
+/* ========== KITAB 6: SHOLAWAT MASYHUR TIMUR TENGAH ========== */
+{id:'kitab-sholawat-masyhur',icon:'ﷺ',nama:'Sholawat Masyhur Timur Tengah',desc:'Sholawat-sholawat masyhur dari para ulama Timur Tengah: Syekh Al-Bakri, Syekh At-Tazi, Tarekat Syadziliyah, dan Syekh Al-Badawi.',items:[
+{jenis:'sholawat',id:'sholawat-fatih',nama:'Sholawat Fatih',desc:'Sholawat ini dinamakan "Al-Fatih" (Sang Pembuka) karena dipercaya sebagai wasilah (perantara) untuk membuka pintu-pintu rahmat, menghilangkan kesulitan, dan mendapatkan cahaya spiritual dari Allah SWT.',elemen:[{arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ الْفَاتِحِ لِمَا أُغْلِقَ، وَالْخَاتِمِ لِمَا سَبَقَ، النَّاصِرِ الْحَقَّ بِالْحَقِّ، وَالْهَادِي إِلَى صِرَاطِكَ الْمُسْتَقِيمِ، وَعَلَى آلِهِ وَأَصْحَابِهِ حَقَّ قَدْرِهِ وَمِقْدَارِهِ الْعَظِيمِ',latin:'Allāhumma ṣalli wa sallim wa bārik ‘alā sayyidinā Muḥammadinil fātiḥi limā ughliqa, wal khātimi limā sabaqa, an-nāṣiril ḥaqqa bil ḥaqqi, wal hādī ilā ṣirāṭikal mustaqīm, wa ‘alā ālihī wa aṣḥābihī ḥaqqa qadrihī wa miqdārihil ‘aẓīm.',arti:'',ref:'Sayyid Muhammad Syamsuddin bin Abil Hasan Al-Bakri'}]},
+{jenis:'sholawat',id:'sholawat-nariyah',nama:'Sholawat Nariyah',desc:'Sholawat ini secara tradisional diamalkan secara berjamaah oleh masyarakat Maghribi (Maroko), terutama saat menghadapi bencana atau kesulitan besar.',elemen:[{arab:'اَللّٰهُمَّ صَلِّ صَلَاةً كَامِلَةً وَسَلِّمْ سَلَامًا تَامًّا عَلَى سَيِّدِنَا مُحَمَّدٍ الَّذِيْ تَنْحَلُّ بِهِ الْعُقَدُ وَتَنْفَرِجُ بِهِ الْكُرَبُ وَتُقْضٰى بِهِ الْحَوَائِجُ وَتُنَالُ بِهِ الرَّغَائِبُ وَحُسْنُ الْخَوَاتِمِ وَيُسْتَسْقَى الْغَمَامُ بِوَجْهِهِ الْكَرِيْمِ وَعَلَى آلِهِ وَصَحْبِهِ فِيْ كُلِّ لَمْحَةٍ وَنَفَسٍ بِعَدَدِ كُلِّ مَعْلُوْمٍ لَكَ',latin:'Allāhumma ṣalli ṣalātan kāmilatan wa sallim salāman tāmman ‘alā sayyidinā Muḥammadin alladzī tanḥallu bihil-‘uqadu wa tanfariju bihil-kurabu wa tuqḍā bihil-ḥawā’iju wa tunālu bihir-raghā’ibu wa ḥusnul-khawātimi wa yustasqal-ghamāmu biwajhihil-karīmi wa ‘alā ālihī wa ṣaḥbihī fī kulli lamḥatin wa nafasin bi‘adadi kulli ma‘lūmilak(a).',ref:'Sayyid Muhammad bin Alawi Al-Maliki · Syekh Ibrahim At-Tazi'}]},
+{jenis:'sholawat',id:'sholawat-nur-dzati',nama:'Sholawat Nur Dzati',desc:'Sholawat cahaya Dzat.',elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، النُّوْرِ الذَّاتِيِّ، وَالسِّرِّ السَّارِي فِي سَائِرِ الْأَسْمَاءِ وَالصِّفَاتِ، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ.',latin:'Allāhumma shalli ‘alā sayyidinā Muḥammad, in-nūridz-dzātī, was-sirris-sārī fī sā’iril-asmā’i waṣ-ṣifāt, wa ‘alā ālihi wa ṣaḥbihi wa sallim.',arti:'Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad, yang merupakan cahaya Dzat (Allah) dan rahasia yang mengalir pada seluruh nama serta sifat-Nya.',ref:'Tradisi Tarekat Syadziliyah'}]},
+{jenis:'sholawat',id:'sholawat-nuril-anwar',nama:'Sholawat Nuril Anwar',desc:'Sangat \'ajib untuk membuka pintu rezeki dan menolak bala.',elemen:[{arab:'اللَّهُمَّ صَلِّ عَلَى نُورِ الْأَنْوَارِ، وَسِرِّ الْأَسْرَارِ، وَتِرْيَاقِ الْأَغْيَارِ، وَمِفْتَاحِ بَابِ الْيَسَارِ، سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ الْمُخْتَارِ، وَعَلَى آلِهِ الْأَطْهَارِ، وَأَصْحَابِهِ الْأَخْيَارِ، عَدَدَ نِعَمِ اللهِ وَإِفْضَالِهِ.',latin:'Allāhumma shalli ‘alā nūril-anwāri, wa sirril-asrāri, wa tiryāqil-aghyāri, wa miftāḥi bābil-yasāri, sayyidinā wa maulānā Muḥammadil-mukhtāri, wa ‘alā ālih-il-ath-hāri, wa aṣḥābih-il-akhyāri, ‘adada ni‘amillāhi wa ifḍālihi.',arti:'Ya Allah, limpahkanlah rahmat kepada cahaya di antara segala cahaya, rahasia di antara segala rahasia.',ref:'Syeikh Ahmad Al-Badawi'}]}
 ]},
-{id:'doa-rizki',icon:'💰',nama:'Doa Mengharap Rizki',desc:'Doa-doa memohon rizki yang halal dan berkah.',doa:[
-{judul:'Doa Mudah Raih Rezeki',arab:'اَللّٰهُمَّ إِنِّي أَسْأَلُكَ أَنْ تَرْزُقَنِيْ رِزْقًا حَلَالًا وَاسِعًا طَيِّبًا',latin:'Allâhumma innî as-aluka an tarzuqanî rizqan halâlan wâsi\'an thayyiban',arti:'Ya Allah aku mohon kepadamu limpahan rezeki yang halal, luas, dan baik.',ref:'Kumpulan Amalan Ahlu Sunnah'},
-{judul:'Doa Terhindar dari Utang',arab:'اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ',latin:'Allâhumma innî a\'ûdzu bika min ghalabatid daini wa qahrir rijâl',arti:'Ya Allah, aku berlindung kepada-Mu dari lilitan utang dan tekanan orang-orang.',ref:'HR. Abu Daud'}
+
+/* ========== KITAB 7: SHOLAWAT & AMALAN KHUSUS ========== */
+{id:'kitab-sholawat-khusus',icon:'📿',nama:'Sholawat & Amalan Khusus',desc:'Kumpulan sholawat dan amalan khusus dari berbagai sumber: Syaikh Hamid al-Imadi, Syekh ad-Diba\'i, Syekh Yusuf al-Makassari, Majmu\' Syarif, Manaqib Syekh Abdul Qadir, dan Amalan Aswaja.',items:[
+{jenis:'sholawat',id:'sholawat-adriknii',icon:'🕌',nama:'Sholawat Adriknii Yaa Rasulullah',desc:'Sholawat ini diterima secara langsung melalui mimpi oleh Syaikh Hamid Effendi al-Imadi, seorang Mufti Damaskus, Suriah. ',elemen:[
+{label:'Bagian 1',arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ، قَدْ ضَاقَتْ حِيلَتِي، أَدْرِكْنِي يَا رَسُولَ اللَّهِ',latin:'Allāhumma ṣalli wa sallim ‘alā sayyidinā Muḥammadin, qad ḍāqat ḥīlatī, adriknī yā Rasūlallāh',arti:'Ya Allah, limpahkanlah shalawat dan salam kepada junjungan kami Nabi Muhammad. Sungguh segala upayaku telah menemui jalan buntu (sempit), tolonglah aku, wahai Rasulullah.',ref:'Syaikh Hamid Effendi al-Imadi'},
+{label:'Bagian 2',arab:'الصَّلَاةُ وَالسَّلَامُ عَلَيْكَ يَا سَيِّدِي يَا رَسُولَ اللَّهِ، خُذْ بِيَدِي، قَلَّتْ حِيلَتِي، أَدْرِكْنِي',latin:'Aṣ-ṣalātu was-salāmu ‘alaika yā sayyidī yā Rasūlallāh, khudz biyadī, qallat ḥīlatī, adriknī.',arti:'Shalawat dan salam semoga tercurah kepadamu, wahai junjunganku Rasulullah. Peganglah tanganku, sungguh segala dayaku telah habis, tolonglah aku.',ref:'Syaikh Hamid Effendi al-Imadi'}
+],penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}},
+{jenis:'sholawat',id:'sholawat-ya-rabbi',icon:'🕌',nama:'Sholawat Ya Robbi Sholli \'Ala Muhammad',desc:'Pengarang: Syekh Wajihuddin Abdurrahman bin Muhammad bin Umar ad-Diba\'i (866-944 H).',elemen:[
+{label:'Bagian 1',arab:'يَا رَبِّ صَلِّ عَلَى مُحَمَّدْ ، يَا رَبِّ صَلِّ وَسَلِّمْ عَلَيْهِ',latin:'Yâ rabbi shalli \'alâ Muhammad, yâ rabbi shalli wa sallim \'alaih',arti:'Ya Tuhanku, limpahkanlah shalawat kepada Muhammad, ya Tuhanku, limpahkanlah shalawat dan salam kepadanya.',ref:'Syekh Wajihuddin ad-Diba\'i'},
+{label:'Bagian 2',arab:'يَا رَبِّ بَلِّغْهُ الْوَسِيلَةْ ، يَا رَبِّ خُصَّهُ بِالْفَضِيلَةْ',latin:'Yâ rabbi ballighhul wasîlah, yâ rabbi khusshahu bil fadhîlah',arti:'Ya Tuhanku, sampaikanlah kepadanya wasilah, ya Tuhanku, khususkanlah ia dengan keutamaan.',ref:'Syekh Wajihuddin ad-Diba\'i'},
+{label:'Bagian 3',arab:'يَا رَبِّ وَارْضَ عَنِ الصَّحَابَةْ ، يَا رَبِّ وَارْضَ عَنِ السُّلَالَةْ',latin:'Yâ rabbi wardhâ \'anish shahâbah, yâ rabbi wardhâ \'anus sulâlah',arti:'Ya Tuhanku, ridhailah para sahabat, ya Tuhanku, ridhailah keturunan (keluarga) beliau.',ref:'Syekh Wajihuddin ad-Diba\'i'},
+{label:'Bagian 4',arab:'يَا رَبِّ وَارْضَ عَنِ الْمَشَايِخْ ، يَا رَبِّ فَارْحَمْ وَالِدِينَا',latin:'Yâ rabbi wardhâ \'anil masyâyikh, yâ rabbi farham wâlidainâ',arti:'Ya Tuhanku, ridhailah para masyaikh, ya Tuhanku, sayangilah kedua orang tua kami.',ref:'Syekh Wajihuddin ad-Diba\'i'},
+{label:'Bagian 5',arab:'يَا رَبِّ وَارْحَمْنَا جَمِيْعًا ، يَا رَبِّ وَارْحَمْ كُلَّ مُسْلِمْ',latin:'Yâ rabbi warhamnâ jamî\'â, yâ rabbi warham kulla muslim',arti:'Ya Tuhanku, sayangilah kami semua, ya Tuhanku, sayangilah setiap muslim.',ref:'Syekh Wajihuddin ad-Diba\'i'},
+{label:'Bagian 6',arab:'يَا رَبِّ وَاغْفِرْ لِكُلِّ مُذْنِبْ ، يَا رَبِّ لَا تَقْطَعْ رَجَانَا',latin:'Yâ rabbi waghfir likulli mudznib, yâ rabbi lâ taqtha\' rajânâ',arti:'Ya Tuhanku, ampunilah setiap orang yang berdosa, ya Tuhanku, janganlah putuskan harapan kami.',ref:'Syekh Wajihuddin ad-Diba\'i'},
+{label:'Bagian 7',arab:'يَا رَبِّ يَا سَامِعْ دُعَانَا ، يَا رَبِّ بَلِّغْنَا نَزُوْرُهْ',latin:'Yâ rabbi yâ sâmi\' du\'ânâ, yâ rabbi ballighnâ nazûruh',arti:'Ya Tuhanku, wahai Yang mendengar doa kami, ya Tuhanku, sampaikanlah kami untuk berziarah kepadanya.',ref:'Syekh Wajihuddin ad-Diba\'i'},
+{label:'Bagian 8',arab:'يَا رَبِّ تَغْشَانَا بِنُوْرِهِ ، يَا رَبِّ حِفْظَانُكَ وَأَمَانُكَ',latin:'Yâ rabbi taghsyânâ binûrih, yâ rabbi hifzhânuka wa amânuka',arti:'Ya Tuhanku, selimutilah kami dengan cahaya beliau, ya Tuhanku, penjagaan-Mu dan keamanan-Mu.',ref:'Syekh Wajihuddin ad-Diba\'i'},
+{label:'Bagian 9',arab:'يَا رَبِّ وَاسْكِنَّا جِنَانَكَ ، يَا رَبِّ أَجِرْنَا مِنْ عَذَابِكَ',latin:'Yâ rabbi waskinnâ jinânaka, yâ rabbi ajirnâ min \'adzâbika',arti:'Ya Tuhanku, tempatkanlah kami di surga-Mu, ya Tuhanku, lindungilah kami dari siksa-Mu.',ref:'Syekh Wajihuddin ad-Diba\'i'},
+{label:'Bagian 10',arab:'يَا رَبِّ وَارْزُقْنَا الشَّهَادَةْ ، يَا رَبِّ حِطْنَا بِالسَّعَادَةْ',latin:'Yâ rabbi warzuqnâsy syahâdah, yâ rabbi hithnâ bis sa\'âdah',arti:'Ya Tuhanku, anugerahkanlah kami syahadah, ya Tuhanku, inclusionilah kami dengan kebahagiaan.',ref:'Syekh Wajihuddin ad-Diba\'i'},
+{label:'Bagian 11',arab:'يَا رَبِّ وَاصْلِحْ كُلَّ مُصْلِحْ ، يَا رَبِّ وَاكْفِ كُلَّ مُؤْذِيْ',latin:'Yâ rabbi wa ashlih kulla mushlih, yâ rabbi wakfi kulla mu\'dzî',arti:'Ya Tuhanku, perbaikilah setiap orang yang berbuat baik, ya Tuhanku, cukupilah (lindungilah) dari setiap orang yang menyakiti.',ref:'Syekh Wajihuddin ad-Diba\'i'},
+{label:'Bagian 12',arab:'يَا رَبِّ نَخْتِمْ بِالْمُشَفَّعْ ، يَا رَبِّ صَلِّ عَلَيْهِ وَسَلِّمْ',latin:'Yâ rabbi nakhtim bil musyaffa\', yâ rabbi shalli \'alaih wa sallim',arti:'Ya Tuhanku, kami tutup dengan (mendapat) syafaat, ya Tuhanku, limpahkanlah shalawat dan salam kepadanya.',ref:'Syekh Wajihuddin ad-Diba\'i'}
+],penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}},
+{jenis:'sholawat',id:'sholawat-badar-4',icon:'🕌',nama:'Sholawat Badar 4 bagian',desc:'Dipopulerkan oleh Syekh Yusuf al-Makassari.',elemen:[
+{label:'Variasi 1',arab:'صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى طهَ رَسُوْلِ اللهِ',latin:'Sholaatullaah salaamullaah ‘alaa Thoohaa rosuulillaah',arti:'Rahmat dan keselamatan Allah, semoga tetap tercurah kepada Nabi Thoha, utusan Allah.',ref:'Berbagai Sumber'},
+{label:'Variasi 2',arab:'صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى يس حَبِيْبِ اللهِ',latin:'Sholaatullaah salaamullaah ‘alaa Yaa Siin habiibillaah',arti:'Rahmat dan keselamatan Allah, semoga tetap tercurah kepada Nabi Yasin, kekasih Allah.',ref:'Berbagai Sumber'},
+{label:'Variasi 3',arab:'تَوَسَّلْنَا بِبِسْمِ اللهِ وَبِالْهَادِي رَسُوْلِ اللهِ',latin:'Tawassalnaa bibismillaah wa bil haadii rosuulillaah',arti:'Kami berwasilah dengan menyebut nama Allah dan kepada Sang Pemberi Petunjuk, utusan Allah.',ref:'Berbagai Sumber'},
+{label:'Variasi 4',arab:'وَكُلِّ مُجَاهِدٍ للهِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Wa kulli mujaahidin lillaahi bi ahlil badri yaa Allaah',arti:'Dan kepada setiap orang yang berjihad karena Allah, demi keberkahan para sahabat Ahli Badar, wahai Allah.',ref:'Berbagai Sumber'}
+],penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}},
+{jenis:'sholawat',id:'sholawat-badar-v2',icon:'ﷺ',nama:'Sholawat Badar Versi 2',desc:'Sholawat pujian kepada para sahabat Perang Badar.',elemen:[
+{label:'Bagian 1',arab:'صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى طهَ رَسُولِ اللهِ ❁ صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى يسَ حَبِيبِ اللهِ',latin:'Shalātullāhi salāmullāhi \'alā Ṭāhā rasūlillāh ❁ Shalātullāhi salāmullāhi \'alā Yāsīn ḥabībillāh',arti:'Rahmat dan keselamatan Allah kepada Thaha, utusan Allah ❁ Rahmat dan keselamatan Allah kepada Yasin, kekasih Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 2',arab:'تَوَسَّلْنَا بِبِسْمِ اللهِ وَبِالْهَادِي رَسُولِ اللهِ ❁ وَكُلِّ مُجَاهِدٍ لِلَّهِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Tawassalnā bibismillāhi wa bil-hādī rasūlillāh ❁ Wa kulli mujāhidin lillāhi bi ahlil-badri yā Allāh',arti:'Kami berwasilah dengan Basmalah dan kepada Nabi pemberi petunjuk ❁ Dan kepada setiap mujahid demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 3',arab:'إِلَهِي سَلِّمِ الْأُمَّةَ مِنَ الْآفَاتِ وَالنِّقْمَةِ ❁ وَمِنْ هَمٍّ وَمِنْ غُمَّةٍ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Ilāhi sallimil ummah minal āfāti wan-niqmah ❁ Wa min hammin wa min ghummah bi ahlil badri yā Allāh',arti:'Ya Tuhanku, selamatkanlah umat dari bencana dan siksaan ❁ Dan dari rasa gelisah serta kesedihan demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 4',arab:'إِلَهِي نَجِّنَا وَاكْشِفْ جَمِيعَ أَذِيَّةٍ وَاصْرِفْ ❁ مَكَائِدَ الْعِدَا وَالْطُفْ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Ilāhi najjinā waksyif jamī\'a adziyyatin waṣrif ❁ Makā\'idal \'idā wal-thuf bi ahlil badri yā Allāh',arti:'Ya Tuhanku, selamatkanlah kami dan singkirkanlah segala gangguan ❁ Serta palingkanlah tipu daya musuh, dan berilah kelembutan demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 5',arab:'إِلَهِي نَفِّسِ الْكُرَبَا مِنَ الْعَاصِينَ وَالْعَطْبَا ❁ وَكُلِّ بَلِيَّةٍ وَوَبَا بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Ilāhi naffisil kurbā minal \'āshīna wal-\'athbā ❁ Wa kulli baliyyatin wa wabā bi ahlil badri yā Allāh',arti:'Ya Tuhanku, hilangkanlah kesusahan dari orang durhaka dan kerusakan ❁ Dan dari segala musibah serta wabah demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 6',arab:'فَكَمْ مِنْ رَحْمَةٍ حَصَلَتْ وَكَمْ مِنْ ذِلَّةٍ فَصَلَتْ ❁ وَكَمْ مِنْ نِعْمَةٍ وَصَلَتْ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Fakam min raḥmatin ḥashalat wa kam min dzillatin fashalah ❁ Wa kam min ni\'matin washalat bi ahlil badri yā Allāh',arti:'Betapa banyak rahmat yang diperoleh, dan kehinaan yang lenyap ❁ Dan betapa banyak nikmat yang sampai demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 7',arab:'وَكَمْ أَغْنَيْتَ ذَا الْعُمْرِ وَكَمْ أَوْلَيْتَ ذَا الْفَقْرِ ❁ وَكَمْ عَافَيْتَ ذَا الْوِزْرِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Wa kam aghnaita dzal \'umri wa kam aulaita dzal faqri ❁ Wa kam \'āfaita dzal wizri bi ahlil badri yā Allāh',arti:'Betapa banyak Engkau beri kekayaan dan anugerah kepada fakir ❁ Dan keselamatan kepada yang berdosa demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 8',arab:'لَقَدْ ضَاقَتْ عَلَى الْقَلْبِ جَمِيعُ الْأَرْضِ مَعْ رَحْبِ ❁ فَانْجِ مِنَ الْبَلَا الصَّعْبِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Laqad dhāqat \'alal qalbi jamī\'ul ardhi ma\'a raḥbi ❁ Fanji minal balāsh-sha\'bi bi ahlil badri yā Allāh',arti:'Sungguh terasa sempit di hati meskipun bumi luas ❁ Maka selamatkanlah dari bencana yang sulit demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 9',arab:'أَتَيْنَا طَالِبِي الرِّفْقِ وَجُلِّ الْخَيْرِ وَالسَّعْدِ ❁ فَوَسِّعْ مِنْحَةَ الْأَيْدِي بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Atainā thālibir rifqi wa jullil khairi was-sa\'di ❁ Fawassi\' minḥatal aidī bi ahlil badri yā Allāh',arti:'Kami datang memohon kelembutan dan kebaikan serta keberuntungan ❁ Maka lapangkanlah anugerah-Mu demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 10',arab:'فَلَا تَرْدُدْ مَعَ الْخَيْبَةِ بَلِ اجْعَلْنَا عَلَى الطَّيْبَةِ ❁ أَيَا ذَا الْعِزِّ وَالْهَيْبَةِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Falā tardud ma\'al khaibah balij\'alnā \'alath-thaibah ❁ Ayā dzal \'izzi wal-haibah bi ahlil badri yā Allāh',arti:'Janganlah tolak kami dengan kegagalan, jadikanlah kami dalam keadaan baik ❁ Wahai Dzat yang memiliki keagungan demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 11',arab:'وَإِنْ تَرْدُدْ فَمَنْ نَأْتِي بِنَيْلِ جَمِيعِ حَاجَاتِي ❁ أَيَا جَالِيَ الْمُلِمَّاتِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Wa in tardud faman na\'tī binaili jamī\'i hājātinā ❁ Ayā jāliyal mulimmāti bi ahlil badri yā Allāh',arti:'Dan jika Engkau menolak, kepada siapa kami datang untuk meraih hajat ❁ Wahai Dzat yang menghilangkan musibah demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 12',arab:'إِلَهِي اغْفِرْ وَأَكْرِمْنَا بِنَيْلِ مَطَالِبٍ مِنَّا ❁ وَدَفْعِ مَسَاءَةٍ عَنَّا بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Ilāhīghfir wa akrimnā binaili mathālibin minnā ❁ Wa daf\'i masā\'atin \'annā bi ahlil badri yā Allāh',arti:'Ya Tuhanku, ampunilah dan muliakanlah kami dengan tercapainya permohonan ❁ Dan tolaklah keburukan dari kami demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 13',arab:'إِلَهِي أَنْتَ ذُو لُطْفٍ وَذُو فَضْلٍ وَذُو عَطْفٍ ❁ وَكَمْ مِنْ كُرْبَةٍ تَنْفِي بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Ilāhi anta dzū luthfin wa dzū fadhlin wa dzū \'athfin ❁ Wa kam min kurbatin tanfī bi ahlil badri yā Allāh',arti:'Ya Tuhanku, Engkau Maha Lembut, Maha Memberi Keutamaan, Maha Penyayang ❁ Dan betapa banyak kesusahan yang Engkau hilangkan demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'},
+{label:'Bagian 14',arab:'وَصَلِّ عَلَى النَّبِيِّ الْبَرِّ بِلَا عَدٍّ وَلَا حَصْرِ ❁ وَآلِ سَادَةٍ غُرِّ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Wa shalli \'alan nabiyyil barri bilā \'addin wa lā hashri ❁ Wa āli sādatin ghurri bi ahlil badri yā Allāh',arti:'Limpahkanlah rahmat kepada Nabi yang berbakti tanpa batas ❁ Dan kepada keluarga serta para pemimpin mulia demi Ahli Badar, ya Allah.',ref:'Majmu\' Syarif'}
+],penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}},
+{jenis:'sholawat',id:'sholawat-rijallallah',icon:'🕌',nama:'Sholawat Rijallallah',desc:'Meskipun syair ini ditujukan kepada para wali ("Wahai hamba Allah, tolonglah kami"), tujuan akhirnya dalam akidah Ahlussunnah wal Jamaah tetaplah Allah SWT. Para wali dimohonkan pertolongannya hanya sebagai wasilah (perantara) karena kedekatan mereka kepada Allah, sedangkan yang sesungguhnya mengabulkan hajat dan memberi pertolongan hanyalah Allah semata  Syair ini sangat dianjurkan dibaca dengan adab, kerendahan hati, dan niat yang lurus.',elemen:[
+{label:'Bagian 1: Pendek',arab:'عِبَادَ اللهِ رِجَالَ اللَّهِ أَغِيْثُوْنَا لِأَجْلِ اللَّهِ ❁ وَكُوْنُوْا عَوْنَنَا لِلَّهِ عَسَى نَحْظَى بِفَضْلِ اللَّهِ',latin:'‘Ibādallāhi rijālallāh, aghītsūnā li-ajlillāh ❁ Wa kūnū ‘aunanā lillāh, ‘asā nahdhā bifadhlillāh',arti:'Wahai hamba-hamba Allah, wahai para pejuang (wali) Allah. Tolonglah kami karena Allah. Jadilah engkau penolong kami dalam segala ibadah kepada Allah, semoga kami beruntung mendapatkan karunia Allah.',ref:'Manaqib Syeikh Abdul Qadir Jilani RA'},
+{label:'Bagian 2: Lengkap',arab:'وَيَا أَقْطَابُ وَيَا أَنْجَابُ وَيَا سَادَاتٌ وَيَا أَحْبَابُ ❁ وَأَنْتُمْ يَا أُولِي الْأَلْبَابِ تَعَالَوْا وَانْصُرُوا لِلَّهِ',latin:'Wa yā aqthābu wa yā anjāb, wa yā sādātun wa yā aḥbāb ❁ Wa antum yā ulil-albāb, ta‘ālau wanṣurū lillāh',arti:'Wahai para wali Qutub (poros agama), wahai para wali pilihan, wahai para pemimpin kami, dan wahai para kekasih Allah. Kalian semua wahai orang-orang yang berakal sempurna, datanglah dan tolonglah kami karena Allah.',ref:'Manaqib Syeikh Abdul Qadir Jilani RA'},
+{label:'Bagian 3: Pendek',arab:'سَأَلْنَاكُمْ سَأَلْنَاكُمْ وَلِلزُّلْفَى رَجَوْنَاكُمْ ❁ وَفِي أَمْرٍ قَصَدْنَاكُمْ فَشُدُّوْا عَزْمَكُمْ لِلَّهِ',latin:'Sa’alnākum sa’alnākum, wa liz-zulfā rajaunākum ❁ Wa fī amrin qashadnākum, fasyuddū ‘azmakum lillāh',arti:'Kami memohon kepada kalian, kami sungguh memohon kepada kalian. Untuk mendapatkan kedekatan (zulfah) kepada rahmat Allah, kami mengharapkan kalian. Dalam segala urusan, kami bermaksud (bertawasul) kepada kalian, maka kuatkanlah tekad kalian untuk menolong kami karena Allah.',ref:'Manaqib Syeikh Abdul Qadir Jilani RA'},
+{label:'Bagian 4: Lengkap',arab:'فَيَا رَبِّي بِسَادَتِي تَحَقَّقْ لِي إِشَارَتِي ❁ عَسَى تَأْتِي بِشَارَتِي وَيَصْفُو وَقْتُنَا لِلَّهِ',latin:'Fa yā rabbī bisādatī, taḥaqqaq lī isyāratī ❁ ‘Asā ta’tī bisyāratī, wa yashfū waqtunā lillāh',arti:'Wahai Tuhanku, dengan perantara para pembesar (wali)ku, wujudkanlah segala maksud dan isyaratku. Semoga datang kabar gembira bagiku, dan menjadi suci (tenang) waktu kehidupan kami hanya untuk Allah.',ref:'Manaqib Syeikh Abdul Qadir Jilani RA'},
+{label:'Bagian 5: Pendek',arab:'بِكَشْفِ الْحُجُبِ عَنْ عَيْنِي وَرَفْعِ الْبَيْنِ مِنْ بَيْنِي ❁ وَطَمْسِ الْكَيْفِ وَالْأَيْنِ بِنُورِ الْوَجْهِ يَا اللَّهُ',latin:'Bikasyfil-ḥujubi ‘an ‘ainī, wa raf‘il-baini min bainī ❁ Wa thamsil-kaifi wal-aini, binūril-wajhi yā Allāh',arti:'Dengan terbukanya tabir hijab dari pandangan mata hatiku, terangkatnya jarak pemisah antara aku dengan-Mu. Terhapusnya sifat \'bagaimana\' (kaif) dan \'di mana\' (ain) dari sifat-Mu, berkat cahaya Dzat-Mu, wahai Allah.',ref:'Manaqib Syeikh Abdul Qadir Jilani RA'},
+{label:'Bagian 6: Lengkap',arab:'صَلَاةُ اللهِ مَوْلَانَا عَلَى مَنْ بِالْهُدَى جَانَا ❁ وَمَنْ بِالْحَقِّ أَوْلَانَا شَفِيْعِ الْخَلْقِ عِنْدَ اللَّهِ',latin:'Shalātullāhi maulānā, ‘alā man bil-hudā jānā ❁ Wa man bil-ḥaqqi aulānā, syafī‘il-khalqi ‘indallāh',arti:'Semoga sholawat Allah, wahai Tuan kami, tercurah kepada orang yang datang membawa petunjuk kepada kami (Nabi Muhammad SAW). Dan kepada orang yang memberikan kebenaran kepada kami, yaitu pemberi syafaat bagi seluruh makhluk di sisi Allah.',ref:'Manaqib Syeikh Abdul Qadir Jilani RA'}
+],penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}},
+{jenis:'sholawat',id:'sholawat-khatmil-quran',icon:'🕌',nama:'Khatmil Quran',desc:'Amalan Aswaja',elemen:[
+{label:'Basmalah: Pendek',arab:'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ',latin:'Bismillahiraahmaanirraahiim',arti:'Wahai hamba-hamba Allah, wahai para pejuang (wali) Allah. Tolonglah kami karena Allah. Jadilah engkau penolong kami dalam segala ibadah kepada Allah, semoga kami beruntung mendapatkan karunia Allah.',ref:'Amalam Aswaja'},
+{label:'Tawwasul1: Lengkap',arab:'وَيَا أَقْطَابُ وَيَا أَنْجَابُ وَيَا سَادَاتٌ وَيَا أَحْبَابُ ❁ وَأَنْتُمْ يَا أُولِي الْأَلْبَابِ تَعَالَوْا وَانْصُرُوا لِلَّهِ',latin:'Wa yā aqthābu wa yā anjāb, wa yā sādātun wa yā aḥbāb ❁ Wa antum yā ulil-albāb, ta‘ālau wanṣurū lillāh',arti:'Wahai para wali Qutub (poros agama), wahai para wali pilihan, wahai para pemimpin kami, dan wahai para kekasih Allah. Kalian semua wahai orang-orang yang berakal sempurna, datanglah dan tolonglah kami karena Allah.',ref:'Amalam Aswaja'}
+],penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}}
 ]},
-{id:'dzikir-aurad',icon:'',nama:'Dzikir Aurod',desc:'Kumpulan dzikir, wirid, dan aurad pilihan dari para ulama Ahlussunnah wal Jamaah.',doa:[
-{judul:'Wirid Bakda Shalat Fardhu', icon:'🕌', ref:'Wirid Bakda Shalat Fardhu',
-bagian:[
-{label:'Istighfar', arab:'أَسْتَغْفِرُ اللهَ الْعَظِـيْمَ لِيْ وَلِوَالِدَيَّ وَلِأَصْحَابِ الْحُقُوْقِ عَلَيَّ وَلِجَمِيْعِ الْمُؤْمِنِيْنَ وَالْمُؤْمِنَاتِ وَالْمُسْلِمِيْنَ وَالْمُسْلِمَاتِ الْأَحْيَاءِ مِنْهُمْ وَالْأَمْوَاتِ ×٣', arti:'Aku memohon ampunan kepada Allah yang Mahaagung, untuk diriku sendiri, kedua orang tuaku, sahabat-sahabat yang aku masih memiliki hak atasku, semua kaum mukmin dan muslim, baik yang masih hidup ataupun yang telah wafat. (3x)'},
-{label:'Tahlil', arab:'لَاإِلٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِيْ وَيُمِيْتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرٌ ×٣', arti:'Tiada Tuhan yang haq disembah kecuali Allah semata, tiada sekutu baginya. Hanya milik-Nya segala kerajaan dan hanya milik-Nya segala puji, Dzat yang menghidupkan dan yang mematikan. Dialah Dzat yang kuasa atas segala sesuatu. (3x)'},
-{label:'Doa keselamatan', arab:'اَللّٰهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ وَإِلَيْكَ يَعُوْدُ السَّلَامُ فَحَيِّنَا رَبَّنَا بِالسَّلَامِ وَأَدْخِلْنَا الْـجَنَّةَ دَارَ السَّلَامِ تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ يَا ذَاالْـجَلَالِ وَاْلإِكْرَامِ', arti:'Ya Allah Engkaulah Dzat yang memberi keselamatan, dari-Mu keselamatan datang, dan kepada-Mu segala keselamatan kembali. Maka hidupkanlah kami ya Allah dengan selamat, masukkan kami ke dalam surga rumah keselamatan, Engkaulah Dzat yang Mahasuci, wahai Tuhan kami, dan Engkaulah Dzat yang Mahaluhur, wahai Tuhan yang memiliki keagungan dan kemuliaan.'},
-{label:'Taawudz dan Al-Fatihah', arab:'أَعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ، اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ', arti:'Aku berlindung kepada Allah dari setan yang terlontar. Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Segala puji bagi Allah, Tuhan semesta alam.'},
-{label:'Al-Ikhlas (3x)', arab:'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ هُوَ اللّٰهُ اَحَدٌۚ، اَللّٰهُ الصَّمَدُۚ، لَمْ يَلِدْ وَلَمْ يُوْلَدْۙ، وَلَمْ يَكُنْ لَّهٗ كُفُوًا اَحَـــــدٌ ×٣', arti:'Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Katakanlah: "Dialah Allah Yang Maha Esa. Allah Dzat yang menjadi tumpuan segala permohonan. Ia tidak beranak dan tidak pula diperanakkan. Dan tidak ada siapa pun yang sebanding dengan-Nya." (3x)'},
-{label:'Al-Falaq', arab:'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ اَعُوْذُ بِرَبِّ الْفَلَقِۙ، مِنْ شَرِّ مَـــا خَلَقَۙ', arti:'Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Katakanlah: "Aku berlindung kepada Tuhan yang menciptakan cahaya subuh. Dari kejahatan makhluk-makhluk yang Ia ciptakan.'},
-{label:'An-Nas', arab:'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ اَعُوْذُ بِرَبِّ النَّاسِۙ، مَلِكِ النَّـــاسِۙ، اِلٰهِ النَّاسِۙ', arti:'Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Katakanlah: "Aku berlindung kepada Tuhan pemelihara manusia. Yang Menguasai manusia. Tuhannya manusia.'},
-{label:'Ayat Kursi', arab:'اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ', arti:'Allah, tidak ada tuhan selain Dia. Yang Mahahidup, Yang terus menerus mengurus makhluk-Nya.'},
-{label:'Tasbih, tahmid, takbir', arab:'سُبْحَانَ اللهِ ×٣٣ اَلْحَمْدُ لِلّٰهِ ×٣٣ اَللهُ أَكْبَرُ ×٣٣', arti:'Mahasuci Allah (33x). Segala puji bagi Allah (33x). Allah Mahabesar (33x).'},
-{label:'Shalawat kepada Nabi', arab:'اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَرَسُوْلِكَ النَّبِيِّ الْأُمِّـيِّ وَعَلى اٰلِهِ وَصَحْبِهِ وَسَلِّمْ', arti:'Ya Allah, limpahkanlah rahmat dan keselamatan kepada junjungan kami Nabi Muhammad sebagai hamba dan utusan-Mu yang ummi, beserta keluarga dan sahabatnya.'},
-{label:'Hasbunallah', arab:'وَحَسْبُنَا اللهُ وَنِعْمَ الْوَكِيْلُ، لَاحَوْلَ وَلَاقُوَّةَ إِلَّابِاللهِ الْعَلِيِّ الْعَظِيْمِ', arti:'Cukuplah Allah menjadi penolong kami dan Allah adalah sebaik-baik yang diserahi. Tiada daya dan tiada kekuatan melainkan dengan pertolongan Allah yang Mahatinggi dan Mahaagung.'}
-],
-penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
-}
+
+/* ========== KITAB 8: SYIIR NUSANTARA ========== */
+{id:'kitab-syiir-nusantara',icon:'🎶',nama:'Syiir & Nadhom Nusantara',desc:'Syiir dan nadhom penuh makna cinta tanah air, cinta Rasulullah ﷺ, dan semangat Ramadhan.',items:[
+{jenis:'syiir',id:'syiir-ya-lal-wathan',nama:'Syiir Ya Lal Wathan',desc:'Syiir nasional-religius karya KH. Anwar Mansyur Pekalongan.',elemen:[{arab:'يَا لَلْوَطَنْ يَا لَلْوَطَنْ يَا لَلْوَطَنْ\nمَوْلَانَا النَّبِيُّ شَفِيْعُ الْأُمَم\nعَلَى اللهِ صَلَّ يَا لَلْوَطَنْ',latin:'Yâ lal wathan yâ lal wathan yâ lal wathan\nMaulânân nabiyyu syafî\'ul umam\n\'Alallâhi shalla yâ lal wathan',arti:'Demi tanah air, demi tanah air, demi tanah air\nTuan kami Nabi, penolong umat\nKepada Allah bersholawatlah, demi tanah air',ref:'KH. Anwar Mansyur · Pekalongan'}]},
+{jenis:'syiir',id:'syiir-tholaal-badru',nama:'Syiir Thola\'al Badru',desc:'Syiir penyambutan Nabi Muhammad saat hijrah ke Madinah.',elemen:[{arab:'طَلَعَ الْبَدْرُ عَلَيْنَا *** مِنْ ثَنِيَّاتِ الْوَدَاعِ\nوَجَبَ الشُّكْرُ عَلَيْنَا *** مَا دَعَا لِلَّهِ دَاعِ',latin:'Thola\'al badru \'alainâ *** min tsaniyyâtil wadâ\'\nWajabas syukru \'alainâ *** mâ da\'â lillâhi dâ\'',arti:'Bulan purnama telah terbit kepada kami *** dari bukit-bukit Wada\'\nWajib bersyukur atas kami *** selama ada yang menyeru kepada Allah',ref:'Syiir Klasik · Abad ke-7 M'}]},
+{jenis:'syiir',id:'syiir-ahlan-wa-sahlan',nama:'Syiir Ahlan Wa Sahlan',desc:'Syiir penyambutan bulan Ramadhan.',elemen:[{arab:'أَهْلًا وَسَهْلًا يَا شَهْرَ رَمَضَانْ *** أَهْلًا وَسَهْلًا يَا شَهْرَ الْإِحْسَانْ\nمَرْحَبًا مَرْحَبًا بِالشَّهْرِ الْكَرِيْمْ *** شَهْرِ الصِّيَامِ وَقِرَاءَةِ الْقُرْآنْ',latin:'Ahlan wa sahlan yâ syahra Ramadhân *** ahlan wa sahlan yâ syahral ihsân\nMarhaban marhaban bisy syahril karîm *** syahris shiyâmi wa qirâ\'atil qur\'ân',arti:'Selamat datang wahai bulan Ramadhan *** selamat datang wahai bulan kebaikan\nSelamat datang, selamat datang wahai bulan mulia *** bulan puasa dan bacaan Al-Qur\'an',ref:'Syiir Penyambutan Ramadhan'}]}
 ]}
 ];
 
-// ============================================================
-// ✅ DATA SHOLAWAT & SYIIR (dipertahankan semua, termasuk ID yang bermasalah)
-// ============================================================
-var sholawatKategoriData = [
-{id:'sholawat-ibrahimiyah',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Ibrahimiyah',desc:'Sholawat yang dibaca dalam tahiyyat akhir sholat fardhu.',sholawat:[
-{judul:'ﷺ Sholawat Ibrahimiyah',arab:'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ،  عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، فِي الْعَالَمِينَ  حَمِيدٌ مَجِيدٌ.',latin:'Allâhumma shalli \'alâ Muhammad wa \'alâ âli  Muhammad, kamâ shallaita \'alâ Ibrâhîm wa \'alâ âli Ibrâhîm. wa bārik \'alā sayyidinā Muḥammad, wa \'alā āli sayyidinā Muḥammad, kamā bārakta \'alā sayyidinā Ibrāhīm, wa \'alā āli sayyidinā Ibrāhīm, fil-\'ālamīna innaka ḥamīdum majīd.',arti:'Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad dan keluarga junjungan kami Nabi Muhammad, sebagaimana Engkau telah melimpahkan rahmat kepada junjungan kami Nabi Ibrahim dan keluarga junjungan kami Nabi Ibrahim. Dan limpahkanlah berkah kepada junjungan kami Nabi Muhammad dan keluarga junjungan kami Nabi Muhammad, sebagaimana Engkau telah melimpahkan berkah kepada junjungan kami Nabi Ibrahim dan keluarga junjungan kami Nabi Ibrahim. Di seluruh alam semesta, sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.',ref:'HR. Bukhari & Muslim'}
-]},
-{id:'sholawat-fatih',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Fatih',desc:'Sholawat ini dinamakan "Al-Fatih" (Sang Pembuka) karena dipercaya sebagai wasilah (perantara) untuk membuka pintu-pintu rahmat, menghilangkan kesulitan, dan mendapatkan cahaya spiritual dari Allah SWT.',sholawat:[
-{judul:'ﷺ Sholawat Fatih (Lengkap)',arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ الْفَاتِحِ لِمَا أُغْلِقَ، وَالْخَاتِمِ لِمَا سَبَقَ، النَّاصِرِ الْحَقَّ بِالْحَقِّ، وَالْهَادِي إِلَى صِرَاطِكَ الْمُسْتَقِيمِ، وَعَلَى آلِهِ وَأَصْحَابِهِ حَقَّ قَدْرِهِ وَمِقْدَارِهِ الْعَظِيمِ',latin:'Allāhumma ṣalli wa sallim wa bārik ‘alā sayyidinā Muḥammadinil fātiḥi limā ughliqa, wal khātimi limā sabaqa, an-nāṣiril ḥaqqa bil ḥaqqi, wal hādī ilā ṣirāṭikal mustaqīm, wa ‘alā ālihī wa aṣḥābihī ḥaqqa qadrihī wa miqdārihil ‘aẓīm.',ref:'Sayyid Muhammad Syamsuddin bin Abil Hasan Al-Bakri'}
-]},
-{id:'sholawat-nariyah',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Nariyah',desc:'Sholawat ini secara tradisional diamalkan secara berjamaah oleh masyarakat Maghribi (Maroko), terutama saat menghadapi bencana atau kesulitan besar.',sholawat:[
-{judul:'ﷺ Sholawat Nariyah (Lengkap)',arab:'اَللّٰهُمَّ صَلِّ صَلَاةً كَامِلَةً وَسَلِّمْ سَلَامًا تَامًّا عَلَى سَيِّدِنَا مُحَمَّدٍ الَّذِيْ تَنْحَلُّ بِهِ الْعُقَدُ وَتَنْفَرِجُ بِهِ الْكُرَبُ وَتُقْضٰى بِهِ الْحَوَائِجُ وَتُنَالُ بِهِ الرَّغَائِبُ وَحُسْنُ الْخَوَاتِمِ وَيُسْتَسْقَى الْغَمَامُ بِوَجْهِهِ الْكَرِيْمِ وَعَلَى آلِهِ وَصَحْبِهِ فِيْ كُلِّ لَمْحَةٍ وَنَفَسٍ بِعَدَدِ كُلِّ مَعْلُوْمٍ لَكَ',latin:'Allāhumma ṣalli ṣalātan kāmilatan wa sallim salāman tāmman ‘alā sayyidinā Muḥammadin alladzī tanḥallu bihil-‘uqadu wa tanfariju bihil-kurabu wa tuqḍā bihil-ḥawā’iju wa tunālu bihir-raghā’ibu wa ḥusnul-khawātimi wa yustasqal-ghamāmu biwajhihil-karīmi wa ‘alā ālihī wa ṣaḥbihī fī kulli lamḥatin wa nafasin bi‘adadi kulli ma‘lūmilak(a).',ref:'Sayyid Muhammad bin Alawi Al-Maliki · Syekh Ibrahim At-Tazi'}
-]},
-{id:'sholawat-munjiyat',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Munjiyat',desc:'Sholawat penyelamat dari bencana dan bahaya.',sholawat:[
-{judul:'ﷺ Sholawat Munjiyat',arab:'اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلاَةً تُنْجِيْنَا بِهَا مِنْ جَمِيْعِ الْأَهْوَالِ وَالْاٰفَاتِ، وَتَقْضِيْ لَنَا بِهَا جَمِيعَ الْحَاجَاتِ، وَتُطَهِّرُنَا بِهَا مِنْ جَمِيْعِ السَّيِّئَاتِ، وَتَرْفَعُنَا بِهَا عِنْدَكَ أَعْلَى الدَّرَجَاتِ، وَتُبَلِّغُنَا بِهَا أَقْصَى الْغَايَاتِ مِنْ جَمِيْعِ الْخَيْرَاتِ، فِي الْحَيَاةِ وَبَعْدَ الْمَمَاتِ',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadin ṣalātan tunjīnā bihā min jamī’il aḥwāli wal-āfāti, wa taqḍī lanā bihā jamī’al ḥājāti, wa tuṭahhirunā bihā min jamī’is sayyi’āti, wa tarfa’unā bihā ‘indaka a’lad darajāti, wa tuballighunā bihā aqṣal ghāyāti min jamī’il khairāti, fil ḥayāti wa ba’dal mamāti.',arti:'Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad, suatu shalawat yang dengannya Engkau menyelamatkan kami dari segala ketakutan dan bencana.',ref:'Syekh As-Shalih Musa ad-Dlarir · Kitab Dalâilul Khairât'}
-]},
-{id:'sholawat-jazuliya',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Ummi/Jazuliyah',desc:'Sholawat ini sangat dianjurkan untuk dibaca, khususnya pada hari Jumat.',sholawat:[
-{judul:'ﷺ Sholawat Ummi/Jazuliya',arab:'اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَنَبِيِّكَ وَرَسُولِكَ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadin ‘abdika wa nabiyyika wa rasūlika, an-nabiyyil ummiyyi, wa ‘alā ālihi wa ṣaḥbihi wa sallim',arti:'Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad, hamba-Mu, nabi-Mu, dan utusan-Mu, seorang nabi yang ummi.',ref:'Imam Muhammad bin Sulaiman Al-Jazuli · Dala\'il al-Khayrat'}
-]},
-{id:'sholawat-tibbil-qulub',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Tibbil Qulub',desc:'Sholawat untuk penyembuh hati dan badan.',sholawat:[
-{judul:'ﷺ Sholawat Tibbil Qulub',arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، طِبِّ الْقُلُوبِ وَدَوَائِهَا، وَعَافِيَةِ الْأَبْدَانِ وَشِفَائِهَا، وَنُورِ الْأَبْصَارِ وَضِيَائِهَا، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ.',latin:'Allāhumma shalli \'alā sayyidinā Muḥammad, ṭibbil-qulūbi wa dawā\'ihā, wa \'āfiyatil-abdāni wa syifā\'ihā, wa nūril-abṣāri wa ḍiyā\'ihā, wa \'alā ālihi wa ṣaḥbihi wa sallim.',arti:'Ya Allah, limpahkanlah sholawat kepada junjungan kami Nabi Muhammad sebagai obat hati dan penyembuhnya.',ref:'Syaikh Ahmad Al-Adawi Al-Maliki · Dalâilul Khairât'}
-]},
-{id:'sholawat-Nur Dzati',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Nur Dzati',desc:'Sholawat cahaya Dzat.',sholawat:[
-{judul:'ﷺ Sholawat Nur Dzati',arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، النُّوْرِ الذَّاتِيِّ، وَالسِّرِّ السَّارِي فِي سَائِرِ الْأَسْمَاءِ وَالصِّفَاتِ، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ.',latin:'Allāhumma shalli ‘alā sayyidinā Muḥammad, in-nūridz-dzātī, was-sirris-sārī fī sā’iril-asmā’i waṣ-ṣifāt, wa ‘alā ālihi wa ṣaḥbihi wa sallim.',arti:'Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad, yang merupakan cahaya Dzat (Allah) dan rahasia yang mengalir pada seluruh nama serta sifat-Nya.',ref:'Tradisi Tarekat Syadziliyah'}
-]},
-{id:'sholawat-Nuril Anwar',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Nuril Anwar',desc:'Sangat \'ajib untuk membuka pintu rezeki dan menolak bala.',sholawat:[
-{judul:'ﷺ Sholawat Nuril Anwar',arab:'اللَّهُمَّ صَلِّ عَلَى نُورِ الْأَنْوَارِ، وَسِرِّ الْأَسْرَارِ، وَتِرْيَاقِ الْأَغْيَارِ، وَمِفْتَاحِ بَابِ الْيَسَارِ، سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ الْمُخْتَارِ، وَعَلَى آلِهِ الْأَطْهَارِ، وَأَصْحَابِهِ الْأَخْيَارِ، عَدَدَ نِعَمِ اللهِ وَإِفْضَالِهِ.',latin:'Allāhumma shalli ‘alā nūril-anwāri, wa sirril-asrāri, wa tiryāqil-aghyāri, wa miftāḥi bābil-yasāri, sayyidinā wa maulānā Muḥammadil-mukhtāri, wa ‘alā ālih-il-ath-hāri, wa aṣḥābih-il-akhyāri, ‘adada ni‘amillāhi wa ifḍālihi.',arti:'Ya Allah, limpahkanlah rahmat kepada cahaya di antara segala cahaya, rahasia di antara segala rahasia.',ref:'Syeikh Ahmad Al-Badawi'}
-]},
-{id:'sholawat-busyro',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Al-Busyro',desc:'Sholawat Al-Busyro bukanlah sholawat yang dikarang oleh manusia secara sadar, melainkan sholawat yang diijazahkan (diajarkan) langsung oleh Rasulullah SAW melalui mimpi kepada Habib Segaf bin Hasan Baharun (Pengasuh Pondok Pesantren Darul Lughah wadda\'wah / Dalwa, Bangil, Pasuruan).Menurut penuturan beliau, mimpi tersebut terjadi pada malam Asyura tahun 2016. Saat terbangun, beliau langsung hafal bacaan sholawat ini beserta aroma wangi gaharu yang menyertai mimpi tersebut, dan diperintahkan oleh Rasulullah SAW dalam mimpi untuk menyebarkan sholawat ini kepada umat.',sholawat:[
-{judul:'ﷺ Sholawat Al-Busyro',arab:'اَللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ صَاحِبِ الْبُشْرَى، صَلَاةً تُبَشِّرُنَا بِهَا وَأَهْلَنَا وَأَوْلَادَنَا وَجَمِيْعَ مَشَايِخِنَا وَمُعَلِّمِيْنَا وَطَلَبَتَنَا وَطَالِبَاتِنَا، مِنْ يَوْمِنَا هَذَا إِلَى يَوْمِ الْآخِرَةِ.',latin:'Allāhumma shalli wa sallim ‘alā sayyidinā Muḥammadin ṣāḥibil busyrā, ṣalātan tubashshirunā bihā wa ahlana wa aulādanā wa jamī‘a mashāyikhinā wa mu‘allimīnā wa ṭalabatana wa ṭālibātinā, min yauminā hādzā ilā yaumil ākhirah.',arti:'Ya Allah, limpahkanlah shalawat dan salam kepada junjungan kami Nabi Muhammad, sang pembawa kabar gembira, dengan shalawat yang memberikan kabar gembira kepada kami, keluarga kami, anak-anak kami, seluruh guru-guru (masyayikh) kami, para pengajar kami, murid-murid kami (laki-laki dan perempuan), mulai dari hari ini hingga hari akhir (kiamat).',ref:'Ijazah Rasulullah Kepada Habib Segaf bin Hasan Baharun (Diamalkan sebanyak 41 kali setelah sholat Subuh) ﷺ'}
-]},
-{id:'sholawat-al-lutfhi',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Al-Lutfhi',desc:'Kedua sholawat di atas sangat masyhur di kalangan masyarakat Banten dan sering dilantunkan dalam berbagai majelis zikir maupun amalan pribadi untuk memohon pertolongan dan keberkahan dari Allah SWT melalui wasilah Rasulullah SAW',sholawat:[
-{judul:'ﷺ Sholawat Al-Lutfi',arab:'اَللّٰهُمَّ صَـلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى اٰلِهِ صَلَاةَ أَهْلِ السَّمٰوَاتِ وَالْأَرَضِيْنَ عَلَيْهِ، وَأَجْرِ يَا مَوْلَانَا لُطْفَكَ الْخَفِيَّ فِيْ أَمْرِيْ، وَأَرِنِيْ سِرَّ جَمِيْلِ صُنْعِكَ فِيْمَا اٰمِلُهُ مِنْكَ، يَا اَللهُ يَا سَمِيْعُ يَا قَرِيْبُ يَارَبَّ الْعَالَمِيْنَ',latin:'Allāhumma shalli \'alā sayyidinā Muḥammadin wa \'alā ālihi, shalāta ahlis-samāwāti wal-araḍīna \'alaihi. Wa ajri yā maulānā luṭfakal-khafiyya fī amrī, wa arinī sirra jamīli ṣun\'ika fīmā āmiluhu minka, yā Allāhu yā Samī\'u yā Qarību yā Rabbal-\'ālamīn.',arti:'Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad, dan kepada keluarganya, dengan rahmat para penghuni langit dan bumi kepada beliau. Dan jalankanlah wahai Tuhan kami kelembutan-Mu yang tersembunyi (Luthfil Khafi) dalam urusanku, dan tampakkanlah kepadaku rahasia keindahan pengaturan-Mu dalam apa yang kuharapkan dari-Mu. Wahai Allah, wahai Dzat Yang Maha Mendengar, wahai Dzat Yang Maha Dekat, wahai Tuhan semesta alam.',ref:'Sayyid al-Imam al-\'Arif Billah Abdullah al-\'Alami, namun di Nusantara sholawat ini sangat lekat dengan amalan Syekh Nawawi Al-Bantani sebagai wasilah (perantara) untuk menghilangkan kesedihan, kesukaran, dan mengabulkan kebutuhan apa pun.'}
-]},
-{id:'sholawat-mustika',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Mustika',desc:'Sholawat ini dikenal dalam tradisi keilmuan ruhaniyah (hikmah) Kesultanan Banten dan diwariskan melalui ijazah para sesepuh Banten (seperti Pangeran Tajul \'Arsyi). Sholawat ini sangat ringkas namun memiliki nilai spiritual yang tinggi untuk memohon perlindungan dan kemudahan urusan.',sholawat:[
-{judul:'ﷺ Sholawat Mustika',arab:'بِسْمِ اللهِ كُنْ، صَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ، يَا هُوَ، هُوَ اللهُ، يَا نُورُ، يَا عَزِيزُ، يَا جَبَّارُ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ',latin:'Bismillāhi Kun, shallallāhu \'alā sayyidinā Muḥammadin wa \'alā āli sayyidinā Muḥammad.Allāhumma shalli wa sallim wa bārik \'alā sayyidinā Muḥammad, Yā Huwa, Huwallāh, Yā Nūr, Yā \'Azīz, Yā Jabbār, lā ḥawla wa lā quwwata illā billāh.',arti:'Dengan nama Allah \'Jadilah\', maka jadilah. Semoga sholawat, salam, dan keberkahan tercurah kepada junjungan kami Nabi Muhammad dan keluarga junjungan kami Nabi Muhammad. Ya Allah, limpahkanlah sholawat, salam, dan keberkahan kepada junjungan kami Nabi Muhammad. Wahai Dia, Dialah Allah, Wahai Cahaya, Wahai Yang Maha Perkasa, Wahai Yang Maha Kuasa, tiada daya dan kekuatan kecuali dengan pertolongan Allah.',ref:'Sultan Maulana Hasanuddin (pendiri Kesultanan Banten) dan Syekh Nawawi Al-Bantani (ulama besar asal Tanara, Banten).'}
-]},
-{id:'sholawat-ruhi-Muhammad',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Ruhi Muhammad SAW',desc:'Sholawat Ruhi Muhammad (sering juga disebut Sholawat \'Ala Ruhi Muhammad atau Sholawat Ruh Muhammad)',sholawat:[
-{judul:'Sholawat Ruhi Muhammad',arab:'اللَّهُمَّ صَلِّ عَلَى رُوحِ سَيِّدِنَا مُحَمَّدٍ فِي الْأَرْوَاحِ، وَعَلَى جَسَدِهِ فِي الْأَجْسَادِ، وَعَلَى قَبْرِهِ فِي الْقُبُورِ، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ',latin:'Allāhumma ṣalli ‘alā rūḥi sayyidinā Muḥammadin fil arwāḥ, wa ‘alā jasadihi fil ajsād, wa ‘alā qabrihi fil qubūr, wa ‘alā ālihi wa ṣaḥbihi wa sallim.',arti:'Ya Allah, limpahkanlah rahmat (shalawat) kepada ruh Nabi Muhammad ﷺ di alam arwah (dunia ruh), kepada jasadnya di alam jasad (dunia fisik), dan kepada kuburnya di alam kubur (dunia barzakh), serta limpahkanlah pula rahmat dan keselamatan kepada keluarga dan sahabatnya.',ref:'Syaikh Yusuf bin Ismail an-Nabhani: Beliau membahas sholawat ini secara khusus dalam kitab beliau yang berjudul Afdhalush Shalawat \'Alaa Sayyidis Sadaat. (Syekh Abdul Qodir Al Jailani RA, terdapat dalam kitab masyhur Dalailul Khoirot yang disusun oleh Sayyid Muhammad bin Sulaiman Al Jazuli.) '}
-]},
-{id:'Sholawat Tafrijul Kurub',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Tafrijul Kurub',desc:'Sholawat Ruhi Muhammad (sering juga disebut Sholawat \'Ala Ruhi Muhammad atau Sholawat Ruh Muhammad)',sholawat:[
-{judul:'Sholawat Tafrijul Kurub',arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ، صَلَاةَ عَبْدٍ قَلَّتْ حِيلَتُهُ، وَرَسُولُ اللهِ وَسِيلَتُهُ، وَأَنْتَ لَهَا يَا إِلَهِي وَلِكُلِّ كَرْبٍ عَظِيمٍ، فَفَرِّجْ عَنَّا مَا نَحْنُ فِيهِ بِسِرِّ بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ',latin:'Allāhumma ṣalli wa sallim wa bārik ‘alā sayyidinā Muḥammadin wa ‘alā ālihi wa ṣaḥbihī, ṣalāta ‘abdin qallat ḥīlatuhū, wa Rasūlullāhi wasīlatuhū, wa anta lahā yā ilāhī wa likulli karbin ‘aẓīm, fafarrij ‘annā mā naḥnu fīhi bi sirri bismillāhir-raḥmānir-raḥīm.',arti:'Ya Allah, limpahkanlah rahmat, keselamatan, dan keberkahan kepada junjungan kami Nabi Muhammad, keluarga, dan sahabatnya, dengan sholawat dari seorang hamba yang telah habis daya upayanya, dan Rasulullah adalah perantaranya. Engkaulah Yang Maha Menguasai hal itu, wahai Tuhanku, dan Engkaulah Yang Maha Menguasai setiap kesusahan yang besar, maka lapangkanlah apa yang sedang kami alami ini dengan rahasia (keagungan) \'Bismillāhir-raḥmānir-raḥīm',ref:'Syaikh Yusuf an-Nabhani: Sebagaimana disebutkan sebelumnya, Syaikh Yusuf bin Ismail an-Nabhani (w. 1350 H) menulis kitab khusus berjudul Mufarriju al-Kurub wa Mufarriju al-Qulub'}
-]},
-{id:'Sholawat al-Kubra',jenis:'sholawat',icon:'ﷺ',nama:' Sholawat al-Kubra (Sholawat Agung)',desc:'Syaikh an-Nabhani sering menyebutkan sholawat ini sebagai pembuka pintu rahmat dan penghilang kesempitan yang paling afdhal.',sholawat:[
-{judul:' Sholawat al-Kubra (Sholawat Agung)',arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةً تَامَّةً، وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ تَسْلِيمًا تَامًّا',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadin ṣalātan tāmmah, wa sallim ‘alā sayyidinā Muḥammadin taslīman tāmmā.',arti:'Ya Allah, limpahkanlah shalawat yang sempurna kepada junjungan kami Nabi Muhammad, dan limpahkanlah keselamatan yang sempurna pula kepada junjungan kami Nabi Muhammad.',ref:'Syaikh Yusuf an-Nabhani RA'}
-]},
-{id:'Sholawat Habib al-Mahbub (Sholawat Pelapang Kesulitan & Rezeki)',jenis:'sholawat',icon:'ﷺ',nama:' Sholawat Habib al-Mahbub (Sholawat Pelapang Kesulitan & Rezeki)',desc:'Syaikh an-Nabhani dalam kitab Mufarriju al-Kurub wa Mufarriju al-Qulub sebagai kunci untuk menyembuhkan penyakit (termasuk penyakit kemiskinan/kesempitan rezeki) dan melapangkan kesusahan. 1. Untuk Diri Sendiri: Bacalah salah satu sholawat di atas sebanyak 40x atau 100x setiap hari (terutama setelah shalat fardhu atau di sepertiga malam) dengan niat memohon kesembuhan dan ketenangan hati. 2. Bacakan sholawat tersebut sebanyak 7x atau 40x di sisi orang yang sakit.Atau bacakan ke dalam segelas air minum, lalu tiupkan pelan ke dalam air tersebut, dan berikan air itu kepada orang yang sakit untuk diminum (dengan keyakinan bahwa yang menyembuhkan hakiki adalah Allah SWT).(Syaikh Ahmad as-Sawi menyebutkan bahwa apabila sholawat ini dibaca dengan istiqamah dan niat yang tulus untuk orang sakit, maka dengan izin Allah, penyakit akan berangsur membaik.)',sholawat:[
-{judul:' Sholawat Habib al-Mahbub (Sholawat Pelapang Kesulitan & Rezeki)',arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ الْحَبِيبِ الْمَحْبُوبِ، شَافِي الْعِلَلِ، وَمُفَرِّجِ الْكُرُوبِ، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadinil-ḥabībil-maḥbūb, syāfil-‘ilal, wa mufarrijil-kurūb, wa ‘alā ālihi wa ṣaḥbihī wa sallim',arti:'Ya Allah, limpahkanlah sholawat kepada junjungan kami Nabi Muhammad, sang kekasih yang amat dicinta, yang menyembuhkan berbagai penyakit (lahir dan batin), serta yang melapangkan segala kesusahan, semoga keselamatan juga tercurah kepada keluarga dan sahabat beliau.',ref:'Syaikh Yusuf an-Nabhani RA'}
-]},
-{id:'Sholawat Khusus Pembuka Rezeki (Sholawat Ar-Rizq)',jenis:'sholawat',icon:'ﷺ',nama:' Sholawat Khusus Pembuka Rezeki (Sholawat Ar-Rizq)',desc:'Syaikh Yusuf an-Nabhani untuk hajat khusus berupa kelapangan rezeki. 1. stiqamah: Pilihlah salah satu sholawat di atas, lalu amalkan secara konsisten (misalnya 100x atau 300x) setiap hari, terutama setelah shalat fardhu atau di waktu mustajab (seperti sepertiga malam atau antara adzan dan iqamah). 2. Niat yang Benar: Niatkan sholawat ini sebagai bentuk cinta kepada Rasulullah ﷺ dan sebagai wasilah (perantara), sambil meyakini sepenuhnya bahwa Yang Maha Memberi Rezeki hanyalah Allah SWT. 3. Diawali dan Diakhiri: Selalu awali dan akhiri bacaan sholawat khusus ini dengan Sholawat Ibrahimiyah (Allahumma sholli \'ala Muhammad...) agar lebih sempurna dan diterima di sisi Allah. 4. Ikhtiar Lahir, memperbanyak istighfar, karena istighfar adalah kunci turunnya hujan dan rezeki ',sholawat:[
-{judul:' Sholawat Khusus Pembuka Rezeki (Sholawat Ar-Rizq)',arab:'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ، صَلَاةً تَرْزُقُنَا بِهَا سَعَةَ الْعَيْشِ وَالرَّخَاءَ، وَتَكْفِينَا بِهَا شَرَّ الْبَلَاءِ، وَتَجْعَلُنَا بِهَا مِنَ الْفَائِزِينَ يَوْمَ الْقِيَامَةِ',latin:'Allāhumma ṣalli ‘alā sayyidinā Muḥammadin, ṣalātan tarzuqunā bihā sa‘atal-‘aisyi war-rakhā’, wa takfīnā bihā syarral-balā’, wa taj‘alunā bihā minal-fā’izīna yaumal-qiyāmah.',arti:'Ya Allah, limpahkanlah sholawat kepada junjungan kami Nabi Muhammad, dengan sholawat yang dengannya Engkau berikan rezeki kepada kami berupa kelapangan hidup dan kemakmuran, yang dengannya Engkau cukupkan kami dari keburukan bencana, dan yang dengannya Engkau jadikan kami termasuk orang-orang yang beruntung di hari kiamat.',ref:'Syaikh Yusuf an-Nabhani RA'}
-]},
-// ✅ ID INI TETAP DIPERTAHANKAN (sesuai permintaan user sebelumnya)
-{id:'sholawat-Adrikinii Ya Rasulullah',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Adriknii Yaa Rasulullah',desc:'Sholawat ini diterima secara langsung melalui mimpi oleh Syaikh Hamid Effendi al-Imadi, seorang Mufti Damaskus, Suriah. ',sholawat:[
-{judul:'ﷺ Sholawat Adriknii Yaa Rasulullah',icon:'🕌',ref:'Syaikh Hamid Effendi al-Imadi',
-bagian:[
-{label:'Bagian 1',arab:'اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ، قَدْ ضَاقَتْ حِيلَتِي، أَدْرِكْنِي يَا رَسُولَ اللَّهِ',latin:'Allāhumma ṣalli wa sallim ‘alā sayyidinā Muḥammadin, qad ḍāqat ḥīlatī, adriknī yā Rasūlallāh',arti:'Ya Allah, limpahkanlah shalawat dan salam kepada junjungan kami Nabi Muhammad. Sungguh segala upayaku telah menemui jalan buntu (sempit), tolonglah aku, wahai Rasulullah.'},
-{judul:'Bagian 2',arab:'الصَّلَاةُ وَالسَّلَامُ عَلَيْكَ يَا سَيِّدِي يَا رَسُولَ اللَّهِ، خُذْ بِيَدِي، قَلَّتْ حِيلَتِي، أَدْرِكْنِي',latin:'Aṣ-ṣalātu was-salāmu ‘alaika yā sayyidī yā Rasūlallāh, khudz biyadī, qallat ḥīlatī, adriknī.',arti:'Shalawat dan salam semoga tercurah kepadamu, wahai junjunganku Rasulullah. Peganglah tanganku, sungguh segala dayaku telah habis, tolonglah aku.'}
-],
-penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
-}
-]},
-{id:'sholawat-Ya Rabbi Sholi ala Muhammad-lengkap',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Ya Robbi Sholli \'Ala Muhammad',desc:'Pengarang: Syekh Wajihuddin Abdurrahman bin Muhammad bin Umar ad-Diba\'i (866-944 H).',sholawat:[
-{judul:'ﷺ Ya Robbi Sholli \'Ala Muhammad (12 Bagian)',icon:'🕌',ref:'Syekh Wajihuddin ad-Diba\'i',
-bagian:[
-{label:'Bagian 1',arab:'يَا رَبِّ صَلِّ عَلَى مُحَمَّدْ ، يَا رَبِّ صَلِّ وَسَلِّمْ عَلَيْهِ',latin:'Yâ rabbi shalli \'alâ Muhammad, yâ rabbi shalli wa sallim \'alaih',arti:'Ya Tuhanku, limpahkanlah shalawat kepada Muhammad, ya Tuhanku, limpahkanlah shalawat dan salam kepadanya.'},
-{label:'Bagian 2',arab:'يَا رَبِّ بَلِّغْهُ الْوَسِيلَةْ ، يَا رَبِّ خُصَّهُ بِالْفَضِيلَةْ',latin:'Yâ rabbi ballighhul wasîlah, yâ rabbi khusshahu bil fadhîlah',arti:'Ya Tuhanku, sampaikanlah kepadanya wasilah, ya Tuhanku, khususkanlah ia dengan keutamaan.'},
-{label:'Bagian 3',arab:'يَا رَبِّ وَارْضَ عَنِ الصَّحَابَةْ ، يَا رَبِّ وَارْضَ عَنِ السُّلَالَةْ',latin:'Yâ rabbi wardhâ \'anish shahâbah, yâ rabbi wardhâ \'anus sulâlah',arti:'Ya Tuhanku, ridhailah para sahabat, ya Tuhanku, ridhailah keturunan (keluarga) beliau.'},
-{label:'Bagian 4',arab:'يَا رَبِّ وَارْضَ عَنِ الْمَشَايِخْ ، يَا رَبِّ فَارْحَمْ وَالِدِينَا',latin:'Yâ rabbi wardhâ \'anil masyâyikh, yâ rabbi farham wâlidainâ',arti:'Ya Tuhanku, ridhailah para masyaikh, ya Tuhanku, sayangilah kedua orang tua kami.'},
-{label:'Bagian 5',arab:'يَا رَبِّ وَارْحَمْنَا جَمِيْعًا ، يَا رَبِّ وَارْحَمْ كُلَّ مُسْلِمْ',latin:'Yâ rabbi warhamnâ jamî\'â, yâ rabbi warham kulla muslim',arti:'Ya Tuhanku, sayangilah kami semua, ya Tuhanku, sayangilah setiap muslim.'},
-{label:'Bagian 6',arab:'يَا رَبِّ وَاغْفِرْ لِكُلِّ مُذْنِبْ ، يَا رَبِّ لَا تَقْطَعْ رَجَانَا',latin:'Yâ rabbi waghfir likulli mudznib, yâ rabbi lâ taqtha\' rajânâ',arti:'Ya Tuhanku, ampunilah setiap orang yang berdosa, ya Tuhanku, janganlah putuskan harapan kami.'},
-{label:'Bagian 7',arab:'يَا رَبِّ يَا سَامِعْ دُعَانَا ، يَا رَبِّ بَلِّغْنَا نَزُوْرُهْ',latin:'Yâ rabbi yâ sâmi\' du\'ânâ, yâ rabbi ballighnâ nazûruh',arti:'Ya Tuhanku, wahai Yang mendengar doa kami, ya Tuhanku, sampaikanlah kami untuk berziarah kepadanya.'},
-{label:'Bagian 8',arab:'يَا رَبِّ تَغْشَانَا بِنُوْرِهِ ، يَا رَبِّ حِفْظَانُكَ وَأَمَانُكَ',latin:'Yâ rabbi taghsyânâ binûrih, yâ rabbi hifzhânuka wa amânuka',arti:'Ya Tuhanku, selimutilah kami dengan cahaya beliau, ya Tuhanku, penjagaan-Mu dan keamanan-Mu.'},
-{label:'Bagian 9',arab:'يَا رَبِّ وَاسْكِنَّا جِنَانَكَ ، يَا رَبِّ أَجِرْنَا مِنْ عَذَابِكَ',latin:'Yâ rabbi waskinnâ jinânaka, yâ rabbi ajirnâ min \'adzâbika',arti:'Ya Tuhanku, tempatkanlah kami di surga-Mu, ya Tuhanku, lindungilah kami dari siksa-Mu.'},
-{label:'Bagian 10',arab:'يَا رَبِّ وَارْزُقْنَا الشَّهَادَةْ ، يَا رَبِّ حِطْنَا بِالسَّعَادَةْ',latin:'Yâ rabbi warzuqnâsy syahâdah, yâ rabbi hithnâ bis sa\'âdah',arti:'Ya Tuhanku, anugerahkanlah kami syahadah, ya Tuhanku, inclusionilah kami dengan kebahagiaan.'},
-{label:'Bagian 11',arab:'يَا رَبِّ وَاصْلِحْ كُلَّ مُصْلِحْ ، يَا رَبِّ وَاكْفِ كُلَّ مُؤْذِيْ',latin:'Yâ rabbi wa ashlih kulla mushlih, yâ rabbi wakfi kulla mu\'dzî',arti:'Ya Tuhanku, perbaikilah setiap orang yang berbuat baik, ya Tuhanku, cukupilah (lindungilah) dari setiap orang yang menyakiti.'},
-{label:'Bagian 12',arab:'يَا رَبِّ نَخْتِمْ بِالْمُشَفَّعْ ، يَا رَبِّ صَلِّ عَلَيْهِ وَسَلِّمْ',latin:'Yâ rabbi nakhtim bil musyaffa\', yâ rabbi shalli \'alaih wa sallim',arti:'Ya Tuhanku, kami tutup dengan (mendapat) syafaat, ya Tuhanku, limpahkanlah shalawat dan salam kepadanya.'}
-],
-penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
-}
-]},
-{id:'sholawat-badar',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Badar 4 bagian',desc:'Dipopulerkan oleh Syekh Yusuf al-Makassari.',sholawat:[
-{judul:'ﷺ Sholawat Badar (4 Variasi)',icon:'🕌',ref:'Berbagai Sumber',
-bagian:[
-{label:'Variasi 1',arab:'صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى طهَ رَسُوْلِ اللهِ',latin:'Sholaatullaah salaamullaah ‘alaa Thoohaa rosuulillaah',arti:'Rahmat dan keselamatan Allah, semoga tetap tercurah kepada Nabi Thoha, utusan Allah.'},
-{label:'Variasi 2',arab:'صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى يس حَبِيْبِ اللهِ',latin:'Sholaatullaah salaamullaah ‘alaa Yaa Siin habiibillaah',arti:'Rahmat dan keselamatan Allah, semoga tetap tercurah kepada Nabi Yasin, kekasih Allah.'},
-{label:'Variasi 3',arab:'تَوَسَّلْنَا بِبِسْمِ اللهِ وَبِالْهَادِي رَسُوْلِ اللهِ',latin:'Tawassalnaa bibismillaah wa bil haadii rosuulillaah',arti:'Kami berwasilah dengan menyebut nama Allah dan kepada Sang Pemberi Petunjuk, utusan Allah.'},
-{label:'Variasi 4',arab:'وَكُلِّ مُجَاهِدٍ للهِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Wa kulli mujaahidin lillaahi bi ahlil badri yaa Allaah',arti:'Dan kepada setiap orang yang berjihad karena Allah, demi keberkahan para sahabat Ahli Badar, wahai Allah.'}
-],
-penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
-}
-]},
-{id:'sholawat-badar2', jenis:'sholawat',icon:'ﷺ',nama:'Sholawat badar Versi 2',desc:'Sholawat pujian kepada para sahabat Perang Badar.',sholawat:[
-{judul:'ﷺ Sholawat Badar Versi 2',icon:'ﷺ',ref:'Majmu\' Syarif',
-bagian:[
-{label:'Bagian 1',arab:'صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى طهَ رَسُولِ اللهِ ❁ صَلَاةُ اللهِ سَلَامُ اللهِ عَلَى يسَ حَبِيبِ اللهِ',latin:'Shalātullāhi salāmullāhi \'alā Ṭāhā rasūlillāh ❁ Shalātullāhi salāmullāhi \'alā Yāsīn ḥabībillāh',arti:'Rahmat dan keselamatan Allah kepada Thaha, utusan Allah ❁ Rahmat dan keselamatan Allah kepada Yasin, kekasih Allah.'},
-{label:'Bagian 2',arab:'تَوَسَّلْنَا بِبِسْمِ اللهِ وَبِالْهَادِي رَسُولِ اللهِ ❁ وَكُلِّ مُجَاهِدٍ لِلَّهِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Tawassalnā bibismillāhi wa bil-hādī rasūlillāh ❁ Wa kulli mujāhidin lillāhi bi ahlil-badri yā Allāh',arti:'Kami berwasilah dengan Basmalah dan kepada Nabi pemberi petunjuk ❁ Dan kepada setiap mujahid demi Ahli Badar, ya Allah.'},
-{label:'Bagian 3',arab:'إِلَهِي سَلِّمِ الْأُمَّةَ مِنَ الْآفَاتِ وَالنِّقْمَةِ ❁ وَمِنْ هَمٍّ وَمِنْ غُمَّةٍ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Ilāhi sallimil ummah minal āfāti wan-niqmah ❁ Wa min hammin wa min ghummah bi ahlil badri yā Allāh',arti:'Ya Tuhanku, selamatkanlah umat dari bencana dan siksaan ❁ Dan dari rasa gelisah serta kesedihan demi Ahli Badar, ya Allah.'},
-{label:'Bagian 4',arab:'إِلَهِي نَجِّنَا وَاكْشِفْ جَمِيعَ أَذِيَّةٍ وَاصْرِفْ ❁ مَكَائِدَ الْعِدَا وَالْطُفْ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Ilāhi najjinā waksyif jamī\'a adziyyatin waṣrif ❁ Makā\'idal \'idā wal-thuf bi ahlil badri yā Allāh',arti:'Ya Tuhanku, selamatkanlah kami dan singkirkanlah segala gangguan ❁ Serta palingkanlah tipu daya musuh, dan berilah kelembutan demi Ahli Badar, ya Allah.'},
-{label:'Bagian 5',arab:'إِلَهِي نَفِّسِ الْكُرَبَا مِنَ الْعَاصِينَ وَالْعَطْبَا ❁ وَكُلِّ بَلِيَّةٍ وَوَبَا بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Ilāhi naffisil kurbā minal \'āshīna wal-\'athbā ❁ Wa kulli baliyyatin wa wabā bi ahlil badri yā Allāh',arti:'Ya Tuhanku, hilangkanlah kesusahan dari orang durhaka dan kerusakan ❁ Dan dari segala musibah serta wabah demi Ahli Badar, ya Allah.'},
-{label:'Bagian 6',arab:'فَكَمْ مِنْ رَحْمَةٍ حَصَلَتْ وَكَمْ مِنْ ذِلَّةٍ فَصَلَتْ ❁ وَكَمْ مِنْ نِعْمَةٍ وَصَلَتْ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Fakam min raḥmatin ḥashalat wa kam min dzillatin fashalah ❁ Wa kam min ni\'matin washalat bi ahlil badri yā Allāh',arti:'Betapa banyak rahmat yang diperoleh, dan kehinaan yang lenyap ❁ Dan betapa banyak nikmat yang sampai demi Ahli Badar, ya Allah.'},
-{label:'Bagian 7',arab:'وَكَمْ أَغْنَيْتَ ذَا الْعُمْرِ وَكَمْ أَوْلَيْتَ ذَا الْفَقْرِ ❁ وَكَمْ عَافَيْتَ ذَا الْوِزْرِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Wa kam aghnaita dzal \'umri wa kam aulaita dzal faqri ❁ Wa kam \'āfaita dzal wizri bi ahlil badri yā Allāh',arti:'Betapa banyak Engkau beri kekayaan dan anugerah kepada fakir ❁ Dan keselamatan kepada yang berdosa demi Ahli Badar, ya Allah.'},
-{label:'Bagian 8',arab:'لَقَدْ ضَاقَتْ عَلَى الْقَلْبِ جَمِيعُ الْأَرْضِ مَعْ رَحْبِ ❁ فَانْجِ مِنَ الْبَلَا الصَّعْبِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Laqad dhāqat \'alal qalbi jamī\'ul ardhi ma\'a raḥbi ❁ Fanji minal balāsh-sha\'bi bi ahlil badri yā Allāh',arti:'Sungguh terasa sempit di hati meskipun bumi luas ❁ Maka selamatkanlah dari bencana yang sulit demi Ahli Badar, ya Allah.'},
-{label:'Bagian 9',arab:'أَتَيْنَا طَالِبِي الرِّفْقِ وَجُلِّ الْخَيْرِ وَالسَّعْدِ ❁ فَوَسِّعْ مِنْحَةَ الْأَيْدِي بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Atainā thālibir rifqi wa jullil khairi was-sa\'di ❁ Fawassi\' minḥatal aidī bi ahlil badri yā Allāh',arti:'Kami datang memohon kelembutan dan kebaikan serta keberuntungan ❁ Maka lapangkanlah anugerah-Mu demi Ahli Badar, ya Allah.'},
-{label:'Bagian 10',arab:'فَلَا تَرْدُدْ مَعَ الْخَيْبَةِ بَلِ اجْعَلْنَا عَلَى الطَّيْبَةِ ❁ أَيَا ذَا الْعِزِّ وَالْهَيْبَةِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Falā tardud ma\'al khaibah balij\'alnā \'alath-thaibah ❁ Ayā dzal \'izzi wal-haibah bi ahlil badri yā Allāh',arti:'Janganlah tolak kami dengan kegagalan, jadikanlah kami dalam keadaan baik ❁ Wahai Dzat yang memiliki keagungan demi Ahli Badar, ya Allah.'},
-{label:'Bagian 11',arab:'وَإِنْ تَرْدُدْ فَمَنْ نَأْتِي بِنَيْلِ جَمِيعِ حَاجَاتِي ❁ أَيَا جَالِيَ الْمُلِمَّاتِ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Wa in tardud faman na\'tī binaili jamī\'i hājātinā ❁ Ayā jāliyal mulimmāti bi ahlil badri yā Allāh',arti:'Dan jika Engkau menolak, kepada siapa kami datang untuk meraih hajat ❁ Wahai Dzat yang menghilangkan musibah demi Ahli Badar, ya Allah.'},
-{label:'Bagian 12',arab:'إِلَهِي اغْفِرْ وَأَكْرِمْنَا بِنَيْلِ مَطَالِبٍ مِنَّا ❁ وَدَفْعِ مَسَاءَةٍ عَنَّا بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Ilāhīghfir wa akrimnā binaili mathālibin minnā ❁ Wa daf\'i masā\'atin \'annā bi ahlil badri yā Allāh',arti:'Ya Tuhanku, ampunilah dan muliakanlah kami dengan tercapainya permohonan ❁ Dan tolaklah keburukan dari kami demi Ahli Badar, ya Allah.'},
-{label:'Bagian 13',arab:'إِلَهِي أَنْتَ ذُو لُطْفٍ وَذُو فَضْلٍ وَذُو عَطْفٍ ❁ وَكَمْ مِنْ كُرْبَةٍ تَنْفِي بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Ilāhi anta dzū luthfin wa dzū fadhlin wa dzū \'athfin ❁ Wa kam min kurbatin tanfī bi ahlil badri yā Allāh',arti:'Ya Tuhanku, Engkau Maha Lembut, Maha Memberi Keutamaan, Maha Penyayang ❁ Dan betapa banyak kesusahan yang Engkau hilangkan demi Ahli Badar, ya Allah.'},
-{label:'Bagian 14',arab:'وَصَلِّ عَلَى النَّبِيِّ الْبَرِّ بِلَا عَدٍّ وَلَا حَصْرِ ❁ وَآلِ سَادَةٍ غُرِّ بِأَهْلِ الْبَدْرِ يَا اللهُ',latin:'Wa shalli \'alan nabiyyil barri bilā \'addin wa lā hashri ❁ Wa āli sādatin ghurri bi ahlil badri yā Allāh',arti:'Limpahkanlah rahmat kepada Nabi yang berbakti tanpa batas ❁ Dan kepada keluarga serta para pemimpin mulia demi Ahli Badar, ya Allah.'}
-],
-penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
-}
-]},
-{id:'sholawat-ibadallah-rijallallah',jenis:'sholawat',icon:'ﷺ',nama:'Sholawat Rijallallah',desc:'Meskipun syair ini ditujukan kepada para wali ("Wahai hamba Allah, tolonglah kami"), tujuan akhirnya dalam akidah Ahlussunnah wal Jamaah tetaplah Allah SWT. Para wali dimohonkan pertolongannya hanya sebagai wasilah (perantara) karena kedekatan mereka kepada Allah, sedangkan yang sesungguhnya mengabulkan hajat dan memberi pertolongan hanyalah Allah semata  Syair ini sangat dianjurkan dibaca dengan adab, kerendahan hati, dan niat yang lurus.',sholawat:[
-{judul:'ﷺ Sholawat Rijallallah',icon:'🕌',ref:'Manaqib Syeikh Abdul Qadir Jilani RA',
-bagian:[
-{label:'Bagian 1: Pendek',arab:'عِبَادَ اللهِ رِجَالَ اللَّهِ أَغِيْثُوْنَا لِأَجْلِ اللَّهِ ❁ وَكُوْنُوْا عَوْنَنَا لِلَّهِ عَسَى نَحْظَى بِفَضْلِ اللَّهِ',latin:'‘Ibādallāhi rijālallāh, aghītsūnā li-ajlillāh ❁ Wa kūnū ‘aunanā lillāh, ‘asā nahdhā bifadhlillāh',arti:'Wahai hamba-hamba Allah, wahai para pejuang (wali) Allah. Tolonglah kami karena Allah. Jadilah engkau penolong kami dalam segala ibadah kepada Allah, semoga kami beruntung mendapatkan karunia Allah.'},
-{label:'Bagian 2: Lengkap',arab:'وَيَا أَقْطَابُ وَيَا أَنْجَابُ وَيَا سَادَاتٌ وَيَا أَحْبَابُ ❁ وَأَنْتُمْ يَا أُولِي الْأَلْبَابِ تَعَالَوْا وَانْصُرُوا لِلَّهِ',latin:'Wa yā aqthābu wa yā anjāb, wa yā sādātun wa yā aḥbāb ❁ Wa antum yā ulil-albāb, ta‘ālau wanṣurū lillāh',arti:'Wahai para wali Qutub (poros agama), wahai para wali pilihan, wahai para pemimpin kami, dan wahai para kekasih Allah. Kalian semua wahai orang-orang yang berakal sempurna, datanglah dan tolonglah kami karena Allah.'},
-{label:'Bagian 3: Pendek',arab:'سَأَلْنَاكُمْ سَأَلْنَاكُمْ وَلِلزُّلْفَى رَجَوْنَاكُمْ ❁ وَفِي أَمْرٍ قَصَدْنَاكُمْ فَشُدُّوْا عَزْمَكُمْ لِلَّهِ',latin:'Sa’alnākum sa’alnākum, wa liz-zulfā rajaunākum ❁ Wa fī amrin qashadnākum, fasyuddū ‘azmakum lillāh',arti:'Kami memohon kepada kalian, kami sungguh memohon kepada kalian. Untuk mendapatkan kedekatan (zulfah) kepada rahmat Allah, kami mengharapkan kalian. Dalam segala urusan, kami bermaksud (bertawasul) kepada kalian, maka kuatkanlah tekad kalian untuk menolong kami karena Allah.'},
-{label:'Bagian 4: Lengkap',arab:'فَيَا رَبِّي بِسَادَتِي تَحَقَّقْ لِي إِشَارَتِي ❁ عَسَى تَأْتِي بِشَارَتِي وَيَصْفُو وَقْتُنَا لِلَّهِ',latin:'Fa yā rabbī bisādatī, taḥaqqaq lī isyāratī ❁ ‘Asā ta’tī bisyāratī, wa yashfū waqtunā lillāh',arti:'Wahai Tuhanku, dengan perantara para pembesar (wali)ku, wujudkanlah segala maksud dan isyaratku. Semoga datang kabar gembira bagiku, dan menjadi suci (tenang) waktu kehidupan kami hanya untuk Allah.'},
-{label:'Bagian 5: Pendek',arab:'بِكَشْفِ الْحُجُبِ عَنْ عَيْنِي وَرَفْعِ الْبَيْنِ مِنْ بَيْنِي ❁ وَطَمْسِ الْكَيْفِ وَالْأَيْنِ بِنُورِ الْوَجْهِ يَا اللَّهُ',latin:'Bikasyfil-ḥujubi ‘an ‘ainī, wa raf‘il-baini min bainī ❁ Wa thamsil-kaifi wal-aini, binūril-wajhi yā Allāh',arti:'Dengan terbukanya tabir hijab dari pandangan mata hatiku, terangkatnya jarak pemisah antara aku dengan-Mu. Terhapusnya sifat \'bagaimana\' (kaif) dan \'di mana\' (ain) dari sifat-Mu, berkat cahaya Dzat-Mu, wahai Allah.'},
-{label:'Bagian 6: Lengkap',arab:'صَلَاةُ اللهِ مَوْلَانَا عَلَى مَنْ بِالْهُدَى جَانَا ❁ وَمَنْ بِالْحَقِّ أَوْلَانَا شَفِيْعِ الْخَلْقِ عِنْدَ اللَّهِ',latin:'Shalātullāhi maulānā, ‘alā man bil-hudā jānā ❁ Wa man bil-ḥaqqi aulānā, syafī‘il-khalqi ‘indallāh',arti:'Semoga sholawat Allah, wahai Tuan kami, tercurah kepada orang yang datang membawa petunjuk kepada kami (Nabi Muhammad SAW). Dan kepada orang yang memberikan kebenaran kepada kami, yaitu pemberi syafaat bagi seluruh makhluk di sisi Allah.'}
-],
-penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
-}
-]},
-{id:'sholawa-khatmil-quran',jenis:'sholawat',icon:'ﷺ',nama:'Khatmil Quran',desc:'Amalam Aswaja',sholawat:[
-{judul:'ﷺ Khatmil Quran',icon:'🕌',ref:'Amalam Aswaja',
-bagian:[
-{label:'Basmalah: Pendek',arab:'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ',latin:'Bismillahiraahmaanirraahiim',arti:'Wahai hamba-hamba Allah, wahai para pejuang (wali) Allah. Tolonglah kami karena Allah. Jadilah engkau penolong kami dalam segala ibadah kepada Allah, semoga kami beruntung mendapatkan karunia Allah.'},
-{label:'Tawwasul1: Lengkap',arab:'وَيَا أَقْطَابُ وَيَا أَنْجَابُ وَيَا سَادَاتٌ وَيَا أَحْبَابُ ❁ وَأَنْتُمْ يَا أُولِي الْأَلْبَابِ تَعَالَوْا وَانْصُرُوا لِلَّهِ',latin:'Wa yā aqthābu wa yā anjāb, wa yā sādātun wa yā aḥbāb ❁ Wa antum yā ulil-albāb, ta‘ālau wanṣurū lillāh',arti:'Wahai para wali Qutub (poros agama), wahai para wali pilihan, wahai para pemimpin kami, dan wahai para kekasih Allah. Kalian semua wahai orang-orang yang berakal sempurna, datanglah dan tolonglah kami karena Allah.'},
-],
-penutup:{arab:'وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ',latin:'Wa shallallâhu \'alâ sayyidinâ Muhammad wa \'alâ âlihi wa shahbihi wa sallam',arti:'Semoga Allah melimpahkan sholawat dan salam kepada junjungan kami Nabi Muhammad, keluarganya, dan sahabatnya.'}
-}
-]},
-{id:'syiir-ya-lal-wathan',jenis:'syiir',icon:'🎶',nama:'Syiir Ya Lal Wathan',desc:'Syiir nasional-religius karya KH. Anwar Mansyur Pekalongan.',syiir:[
-{judul:'🎶 Syiir Ya Lal Wathan',arab:'يَا لَلْوَطَنْ يَا لَلْوَطَنْ يَا لَلْوَطَنْ\nمَوْلَانَا النَّبِيُّ شَفِيْعُ الْأُمَم\nعَلَى اللهِ صَلَّ يَا لَلْوَطَنْ',latin:'Yâ lal wathan yâ lal wathan yâ lal wathan\nMaulânân nabiyyu syafî\'ul umam\n\'Alallâhi shalla yâ lal wathan',arti:'Demi tanah air, demi tanah air, demi tanah air\nTuan kami Nabi, penolong umat\nKepada Allah bersholawatlah, demi tanah air',ref:'KH. Anwar Mansyur · Pekalongan'}
-]},
-{id:'syiir-tholaal-badru',jenis:'syiir',icon:'🎶',nama:'Syiir Thola\'al Badru',desc:'Syiir penyambutan Nabi Muhammad saat hijrah ke Madinah.',syiir:[
-{judul:'🎶 Thola\'al Badru \'Alaina',arab:'طَلَعَ الْبَدْرُ عَلَيْنَا *** مِنْ ثَنِيَّاتِ الْوَدَاعِ\nوَجَبَ الشُّكْرُ عَلَيْنَا *** مَا دَعَا لِلَّهِ دَاعِ',latin:'Thola\'al badru \'alainâ *** min tsaniyyâtil wadâ\'\nWajabas syukru \'alainâ *** mâ da\'â lillâhi dâ\'',arti:'Bulan purnama telah terbit kepada kami *** dari bukit-bukit Wada\'\nWajib bersyukur atas kami *** selama ada yang menyeru kepada Allah',ref:'Syiir Klasik · Abad ke-7 M'}
-]},
-{id:'syiir-ahlan-wa-sahlan',jenis:'syiir',icon:'ﷺ',nama:'Syiir Ahlan Wa Sahlan',desc:'Syiir penyambutan bulan Ramadhan.',syiir:[
-{judul:'🎶 Ahlan Wa Sahlan',arab:'أَهْلًا وَسَهْلًا يَا شَهْرَ رَمَضَانْ *** أَهْلًا وَسَهْلًا يَا شَهْرَ الْإِحْسَانْ\nمَرْحَبًا مَرْحَبًا بِالشَّهْرِ الْكَرِيْمْ *** شَهْرِ الصِّيَامِ وَقِرَاءَةِ الْقُرْآنْ',latin:'Ahlan wa sahlan yâ syahra Ramadhân *** ahlan wa sahlan yâ syahral ihsân\nMarhaban marhaban bisy syahril karîm *** syahris shiyâmi wa qirâ\'atil qur\'ân',arti:'Selamat datang wahai bulan Ramadhan *** selamat datang wahai bulan kebaikan\nSelamat datang, selamat datang wahai bulan mulia *** bulan puasa dan bacaan Al-Qur\'an',ref:'Syiir Penyambutan Ramadhan'}
-]}
-];
+var currentFilter='all';
+var currentKitabId=null;
 
-var currentFilter = 'all';
-function filterKategori(filter, btn){
-currentFilter = filter;
-var tabs = document.querySelectorAll('.filter-tab');
-for(var i=0;i<tabs.length;i++) tabs[i].classList.remove('active');
-btn.classList.add('active');
-renderList();
-var filterNames = {'all':'📋 Semua Kategori','doa':'🤲 Doa Saja','sholawat':'ﷺ Sholawat Saja','syiir':'🎶 Syiir Saja'};
-var filterIcons = {'all':'📋','doa':'🤲','sholawat':'ﷺ','syiir':'🎶'};
-var activeBtns = document.querySelectorAll('.split-btn.active');
-for(var i=0;i<activeBtns.length;i++) activeBtns[i].classList.remove('active');
-var detail = document.getElementById('detailPanel');
-var totalItems = hitungTotalFilter(filter);
-detail.innerHTML = '<button class="sidebar-toggle-btn" id="btnBukaSidebar" onclick="bukaSidebar()"><span class="toggle-icon">☰</span><span>Buka Daftar Kategori</span></button>' +
-'<div class="split-welcome">' +
-'<div class="welcome-icon">' + filterIcons[filter] + '</div>' +
-'<h3>Filter: ' + filterNames[filter] + '</h3>' +
-'<p>Menampilkan <strong style="color:#c9a84c;">' + totalItems + ' kategori</strong>.<br>Klik salah satu kategori di panel sebelah kiri untuk melihat isinya.</p>' +
-'</div>' +
-'<div id="dynamicTagButtons"></div>' +
-'<div class="sub-info" style="margin-top:30px;">' +
-'<strong>📌 Keutamaan Doa & Sholawat:</strong><br>' +
-'• Doa adalah otak ibadah — senjata utama seorang mukmin<br>' +
-'• Bersholawat sekali kepada Nabi ﷺ, Allah bersholawat 10 kali<br>' +
-'• Orang yang paling banyak bersholawat paling berhak mendapat syafaat' +
-'</div>';
-detail.scrollTop = 0;
-renderTagButtons();
-updateBtnBukaSidebarVisibility();
-var statusText = document.getElementById('filterStatusText');
-if(statusText) statusText.textContent = 'Aktif: ' + filterNames[filter];
-showToast(filterNames[filter] + ' (' + totalItems + ' kategori)');
+function getAllItems(){
+var out=[];
+for(var i=0;i<namaKitab.length;i++){
+var its=namaKitab[i].items||[];
+for(var j=0;j<its.length;j++) out.push(its[j]);
 }
-
-// ✅ FUNGSI BARU: Atur visibilitas tombol "Buka Sidebar"
-function updateBtnBukaSidebarVisibility(){
-var btn = document.getElementById('btnBukaSidebar');
-if(!btn) return;
-// Hanya tampilkan di mobile
-btn.style.display = isMobile() ? 'inline-flex' : 'none';
+return out;
 }
-
-function hitungTotalFilter(filter){
-if(filter === 'all') return doaKategoriData.length + sholawatKategoriData.length;
-else if(filter === 'doa') return doaKategoriData.length;
-else if(filter === 'sholawat'){
-var count = 0;
-for(var i=0;i<sholawatKategoriData.length;i++) if(sholawatKategoriData[i].jenis === 'sholawat') count++;
-return count;
-} else if(filter === 'syiir'){
-var count = 0;
-for(var i=0;i<sholawatKategoriData.length;i++) if(sholawatKategoriData[i].jenis === 'syiir') count++;
-return count;
+function hitungItemJenis(jenis){
+var n=0;
+var all=getAllItems();
+for(var i=0;i<all.length;i++){
+if(jenis==='all'||all[i].jenis===jenis) n++;
 }
-return 0;
+return n;
+}
+function itemsFiltered(kitab){
+var out=[];
+var its=kitab.items||[];
+for(var i=0;i<its.length;i++){
+if(currentFilter==='all'||its[i].jenis===currentFilter) out.push(its[i]);
+}
+return out;
+}
+function showToast(pesan){
+var t=document.getElementById('toast');if(!t)return;
+t.innerText=pesan;t.classList.add('show');
+clearTimeout(window._toastTimer);
+window._toastTimer=setTimeout(function(){t.classList.remove('show');},3000);
 }
 function updateTabCounters(){
-var totalAll = doaKategoriData.length + sholawatKategoriData.length;
-var totalDoa = doaKategoriData.length;
-var totalSholawat = 0, totalSyiir = 0;
-for(var i=0;i<sholawatKategoriData.length;i++){
-if(sholawatKategoriData[i].jenis === 'sholawat') totalSholawat++;
-else if(sholawatKategoriData[i].jenis === 'syiir') totalSyiir++;
+var a=document.getElementById('countAll'),b=document.getElementById('countDoa'),
+c=document.getElementById('countSholawat'),d=document.getElementById('countSyiir');
+if(a)a.textContent=hitungItemJenis('all');
+if(b)b.textContent=hitungItemJenis('doa');
+if(c)c.textContent=hitungItemJenis('sholawat');
+if(d)d.textContent=hitungItemJenis('syiir');
 }
-var elAll = document.getElementById('countAll');
-var elDoa = document.getElementById('countDoa');
-var elSholawat = document.getElementById('countSholawat');
-var elSyiir = document.getElementById('countSyiir');
-if(elAll) elAll.textContent = totalAll;
-if(elDoa) elDoa.textContent = totalDoa;
-if(elSholawat) elSholawat.textContent = totalSholawat;
-if(elSyiir) elSyiir.textContent = totalSyiir;
+
+function isRangkaian(item){
+var e=item.elemen||[];
+return (e.length>1)||(item.penutup&&item.penutup.arab);
 }
+
+function renderItem(item){
+return isRangkaian(item)?renderRangkaian(item):renderTunggal(item);
+}
+function renderTunggal(item){
+var j=item.jenis, cfg=JENIS[j]||JENIS.doa;
+var e=(item.elemen&&item.elemen[0])?item.elemen[0]:{};
+var clsArti=cfg.card+'-desc';
+var clsRef=cfg.card+'-ref';
+var badgeClass='sholawat-badge';
+if(j==='syiir') badgeClass+=' syair';
+else if(j==='sholawat') badgeClass+=' hijau';
+var h='<div class="'+cfg.card+'-item-card">';
+h+='<h4>'+cfg.icon+' '+item.nama+'<span class="'+badgeClass+'">'+cfg.badge+'</span></h4>';
+h+='<div class="'+cfg.card+'-arab">'+(e.arab||'')+'</div>';
+if(e.latin) h+='<div class="'+cfg.card+'-latin-text"><strong>Latin:</strong> '+e.latin+'</div>';
+if(e.arti)  h+='<div class="'+clsArti+'"><strong>Arti:</strong> '+e.arti+'</div>';
+var ref=e.ref||'';
+if(ref) h+='<div class="'+clsRef+'">📖 '+ref+'</div>';
+h+='</div>';
+return h;
+}
+function renderRangkaian(item){
+var j=item.jenis, cfg=JENIS[j]||JENIS.doa;
+var elemen=item.elemen||[];
+var namaElemen=j==='syiir'?'BAIT':'ELEMEN';
+var h='<div class="'+cfg.card+'-rangkaian-card">';
+h+='<div class="rangkaian-header"><div class="rangkaian-icon">'+(item.icon||cfg.icon)+'</div>';
+h+='<h4>'+item.nama+'</h4>';
+h+='<span class="rangkaian-badge">'+cfg.label.toUpperCase()+' · '+elemen.length+' '+namaElemen+'</span></div>';
+for(var i=0;i<elemen.length;i++){
+var b=elemen[i],n=i+1;
+var defaultLabel=j==='syiir'?('Bait '+n):('Bagian '+n);
+h+='<div class="'+cfg.card+'-bagian-item">';
+h+='<div class="bagian-label"><span class="bagian-num">'+n+'</span>'+(b.label?b.label:defaultLabel)+'</div>';
+h+='<div class="bagian-arab">'+(b.arab||'')+'</div>';
+if(b.latin) h+='<div class="bagian-latin">'+b.latin+'</div>';
+if(b.arti)  h+='<div class="bagian-arti">'+b.arti+'</div>';
+if(b.ref)   h+='<div style="color:#888;font-size:0.75rem;margin-top:4px;font-style:italic;">📖 '+b.ref+'</div>';
+h+='</div>';
+}
+if(item.penutup&&item.penutup.arab){
+h+='<div class="'+cfg.card+'-rangkaian-penutup">';
+h+='<div class="penutup-label">🌟 PENUTUP 🌟</div>';
+h+='<div class="penutup-arab">'+item.penutup.arab+'</div>';
+if(item.penutup.latin) h+='<div class="penutup-latin">'+item.penutup.latin+'</div>';
+if(item.penutup.arti)  h+='<div class="penutup-arti">'+item.penutup.arti+'</div>';
+h+='</div>';
+}
+h+='</div>';
+return h;
+}
+
 function renderList(){
-var search = (document.getElementById('searchInput').value || '').toLowerCase();
-var doaContainer = document.getElementById('doaListContainer');
-var sholawatContainer = document.getElementById('sholawatListContainer');
-var doaHtml = '';
-var showDoa = (currentFilter === 'all' || currentFilter === 'doa');
-if(showDoa){
-var doaCount = 0, matchedDoa = [];
-for(var i=0;i<doaKategoriData.length;i++){
-var k = doaKategoriData[i];
-var match = !search || k.nama.toLowerCase().indexOf(search)!==-1;
-if(match){ doaCount++; matchedDoa.push(k); }
+var search=(document.getElementById('searchInput').value||'').toLowerCase();
+var box=document.getElementById('kitabListContainer');
+var html='',total=0;
+for(var i=0;i<namaKitab.length;i++){
+var k=namaKitab[i];
+var items=itemsFiltered(k);
+var matchKitab=!search||k.nama.toLowerCase().indexOf(search)!==-1;
+var matched=[];
+for(var j=0;j<items.length;j++){
+var it=items[j];
+var m=!search||matchKitab||it.nama.toLowerCase().indexOf(search)!==-1;
+if(m) matched.push(it);
 }
-if(doaCount > 0){
-doaHtml += '<h4>🤲 Kategori Doa <span class="section-count">' + doaCount + '</span></h4>';
-for(var i=0;i<matchedDoa.length;i++){
-var k = matchedDoa[i];
-doaHtml += '<button class="split-btn" data-id="'+k.id+'" data-type="doa" onclick="tampilkanKategori(\''+k.id+'\',\'doa\',this)">';
-doaHtml += '<span class="btn-icon">'+k.icon+'</span>';
-doaHtml += '<span class="btn-text">'+k.nama+'</span>';
-doaHtml += '<span class="btn-count">'+k.doa.length+'</span>';
-doaHtml += '</button>';
-}
-} else if(search){
-doaHtml += '<h4>🤲 Kategori Doa</h4>';
-doaHtml += '<div class="empty-state"><div class="empty-icon">🔍</div><h4>Tidak Ditemukan</h4><p>Tidak ada kategori doa yang cocok dengan pencarian "'+search+'"</p></div>';
-}
-}
-doaContainer.innerHTML = doaHtml;
-var sholHtml = '';
-var showSholawat = (currentFilter === 'all' || currentFilter === 'sholawat');
-var showSyiir = (currentFilter === 'all' || currentFilter === 'syiir');
-if(showSholawat){
-var sholCount = 0, matchedSholawat = [];
-for(var i=0;i<sholawatKategoriData.length;i++){
-var k = sholawatKategoriData[i];
-if(k.jenis !== 'sholawat') continue;
-var match = !search || k.nama.toLowerCase().indexOf(search)!==-1;
-if(match){ sholCount++; matchedSholawat.push(k); }
-}
-if(sholCount > 0){
-sholHtml += '<h4>ﷺ Kategori Sholawat <span class="section-count">' + sholCount + '</span></h4>';
-for(var i=0;i<matchedSholawat.length;i++){
-var k = matchedSholawat[i];
-sholHtml += '<button class="split-btn" data-id="'+k.id+'" data-type="sholawat" onclick="tampilkanKategori(\''+k.id+'\',\'sholawat\',this)">';
-sholHtml += '<span class="btn-icon">'+k.icon+'</span>';
-sholHtml += '<span class="btn-text">'+k.nama+'</span>';
-sholHtml += '<span class="btn-count">'+k.sholawat.length+'</span>';
-sholHtml += '</button>';
-}
-} else if(search){
-sholHtml += '<h4>ﷺ Kategori Sholawat</h4>';
-sholHtml += '<div class="empty-state"><div class="empty-icon">🔍</div><h4>Tidak Ditemukan</h4><p>Tidak ada sholawat yang cocok dengan pencarian "'+search+'"</p></div>';
+if(matched.length===0) continue;
+total+=matched.length;
+html+='<h4>'+k.icon+' '+k.nama+' <span class="section-count">'+matched.length+'</span></h4>';
+html+='<div class="kitab-sub">'+k.desc+'</div>';
+for(var j=0;j<matched.length;j++){
+var it=matched[j];
+var cfg=JENIS[it.jenis]||JENIS.doa;
+html+='<button class="split-btn" data-kitab="'+k.id+'" data-item="'+(it.id||'')+'" onclick="tampilkanItem(\''+k.id+'\',\''+(it.id||'')+'\',this)">';
+html+='<span class="btn-icon">'+cfg.icon+'</span>';
+html+='<span class="btn-text">'+it.nama+'</span>';
+html+='<span class="btn-count">'+((it.elemen||[]).length)+'</span>';
+html+='</button>';
 }
 }
-if(showSyiir){
-var syiirCount = 0, matchedSyiir = [];
-for(var i=0;i<sholawatKategoriData.length;i++){
-var k = sholawatKategoriData[i];
-if(k.jenis !== 'syiir') continue;
-var items = k.syiir || [];
-var match = !search || k.nama.toLowerCase().indexOf(search)!==-1;
-if(match){ syiirCount++; matchedSyiir.push(k); }
+if(total===0){
+html='<div class="empty-state"><div class="empty-icon">🔍</div><h4>Tidak Ditemukan</h4><p>Tidak ada kitab / judul yang cocok'+(search?' dengan "'+search+'"':' pada filter ini')+'.</p></div>';
 }
-if(syiirCount > 0){
-sholHtml += '<h4>🎶 Kategori Syiir <span class="section-count">' + syiirCount + '</span></h4>';
-for(var i=0;i<matchedSyiir.length;i++){
-var k = matchedSyiir[i];
-var items = k.syiir || [];
-sholHtml += '<button class="split-btn" data-id="'+k.id+'" data-type="syiir" onclick="tampilkanKategori(\''+k.id+'\',\'syiir\',this)">';
-sholHtml += '<span class="btn-icon">'+k.icon+'</span>';
-sholHtml += '<span class="btn-text">'+k.nama+'</span>';
-sholHtml += '<span class="btn-count">'+items.length+'</span>';
-sholHtml += '</button>';
-}
-} else if(search && !showSholawat){
-sholHtml += '<h4>🎶 Kategori Syiir</h4>';
-sholHtml += '<div class="empty-state"><div class="empty-icon">🔍</div><h4>Tidak Ditemukan</h4><p>Tidak ada syiir yang cocok dengan pencarian "'+search+'"</p></div>';
-}
-}
-sholawatContainer.innerHTML = sholHtml;
+box.innerHTML=html;
 }
 
-// ============================================================
-// ✅ FUNGSI DIPERBARUI: AUTO-HIDE SIDEBAR DI MOBILE
-// ============================================================
-function tampilkanKategori(id, type, btn){
-var allBtns = document.querySelectorAll('.split-btn.active');
+/* ============================================================
+   ✅ FUNGSI tampilkanItem DIPERBAIKI
+   - Tambah mekanisme fallback: cari by nama jika id tidak ditemukan
+   - Tampilkan pesan error jelas jika item tetap tidak ditemukan
+   ============================================================ */
+function tampilkanItem(kid,iid,btn){
+var allBtns=document.querySelectorAll('.split-btn.active');
 for(var i=0;i<allBtns.length;i++) allBtns[i].classList.remove('active');
-btn.classList.add('active');
-var detail = document.getElementById('detailPanel');
-var html = '<button class="show-sidebar-btn" onclick="kembaliWelcome()">☰ Kembali ke Daftar Kategori</button>';
-var filterNames = {'doa':{icon:'🤲',label:'Doa'},'sholawat':{icon:'ﷺ',label:'Sholawat'},'syiir':{icon:'🎶',label:'Syiir'}};
-var filterInfo = filterNames[type];
-if(type === 'doa'){
-var k = null;
-for(var i=0;i<doaKategoriData.length;i++) if(doaKategoriData[i].id === id){ k = doaKategoriData[i]; break; }
-if(!k) return;
-html += '<div class="filter-status"><div class="fs-icon">'+filterInfo.icon+'</div><div class="fs-text">'+filterInfo.label+' · '+k.nama+'</div><div class="fs-count">'+k.doa.length+' item</div></div>';
-html += '<h3 style="color:#e8d48b;font-size:1.4rem;margin-bottom:8px;">'+k.icon+' '+k.nama+'</h3>';
-html += '<p style="color:#888;font-size:0.9rem;margin-bottom:20px;">'+k.desc+'</p>';
-for(var i=0;i<k.doa.length;i++){
-var d = k.doa[i];
-if(d.bagian && d.bagian.length > 0) html += renderDoaRangkaian(d);
-else html += renderDoaTunggal(d);
-}
-} else if(type === 'sholawat' || type === 'syiir'){
-var k = null;
-for(var i=0;i<sholawatKategoriData.length;i++) if(sholawatKategoriData[i].id === id){ k = sholawatKategoriData[i]; break; }
-if(!k) return;
-var items = type === 'sholawat' ? k.sholawat : (k.syiir || []);
-html += '<div class="filter-status"><div class="fs-icon">'+filterInfo.icon+'</div><div class="fs-text">'+filterInfo.label+' · '+k.nama+'</div><div class="fs-count">'+items.length+' item</div></div>';
-html += '<h3 style="color:#e8d48b;font-size:1.4rem;margin-bottom:8px;">'+k.icon+' '+k.nama+'</h3>';
-html += '<p style="color:#888;font-size:0.9rem;margin-bottom:20px;">'+k.desc+'</p>';
-for(var i=0;i<items.length;i++){
-var s = items[i];
-if(s.bagian && s.bagian.length > 0){
-html += renderSholawatRangkaian(s);
-} else {
-html += '<div class="sholawat-item-card">';
-html += '<h4>'+s.judul+'<span class="sholawat-badge'+(type==='syiir'?' syair':'')+'">'+(type==='syiir'?'SYIIR':'SHOLAWAT')+'</span></h4>';
-if(type === 'syiir'){
-html += '<div class="sholawat-arab syiir-verse">'+s.arab+'</div>';
-if(s.latin) html += '<div class="syiir-latin-verse"><strong>Latin:</strong> '+s.latin+'</div>';
-if(s.arti) html += '<div class="syiir-translation"><strong>Arti:</strong> '+s.arti+'</div>';
-} else {
-html += '<div class="sholawat-arab">'+s.arab+'</div>';
-if(s.latin) html += '<div class="sholawat-latin-text"><strong>Latin:</strong> '+s.latin+'</div>';
-if(s.arti) html += '<div class="sholawat-desc"><strong>Arti:</strong> '+s.arti+'</div>';
-}
-if(s.ref) html += '<div class="sholawat-ref">📖 '+s.ref+'</div>';
-html += '</div>';
-}
-}
-}
-detail.innerHTML = html;
-detail.classList.add('content-fade-in');
-setTimeout(function(){ detail.classList.remove('content-fade-in'); }, 350);
-detail.scrollTop = 0;
+if(btn) btn.classList.add('active');
 
-// ✅ FITUR BARU: Di mobile, otomatis sembunyikan sidebar & scroll ke konten
+// Cari kitab
+var k=null;
+for(var i=0;i<namaKitab.length;i++) if(namaKitab[i].id===kid){k=namaKitab[i];break;}
+if(!k){
+showToast('❌ Kitab tidak ditemukan: '+kid);
+return;
+}
+
+// Cari item
+var it=null;
+var its=k.items||[];
+
+// 1) Cari by id dulu
+if(iid){
+for(var i=0;i<its.length;i++) if(its[i].id===iid){it=its[i];break;}
+}
+
+// 2) Fallback: jika tidak ketemu by id, cari by index tombol (urutan)
+if(!it && btn){
+var allBtnsInKitab=btn.parentNode.querySelectorAll('.split-btn[data-kitab="'+kid+'"]');
+var idx=-1;
+for(var i=0;i<allBtnsInKitab.length;i++){
+if(allBtnsInKitab[i]===btn){idx=i;break;}
+}
+if(idx>=0 && idx<its.length){
+it=its[idx];
+}
+}
+
+// 3) Jika tetap tidak ketemu, tampilkan pesan error
+if(!it){
+showToast('❌ Item tidak ditemukan dalam kitab ini');
+return;
+}
+
+currentKitabId=kid;
+var cfg=JENIS[it.jenis]||JENIS.doa;
+var d=document.getElementById('detailPanel');
+var h='<button class="show-sidebar-btn" onclick="kembaliWelcome()">☰ Kembali ke Daftar Kitab</button>';
+h+='<div class="filter-status"><div class="fs-icon">'+k.icon+'</div><div class="fs-text">'+k.nama+' · '+cfg.label+'</div><div class="fs-count">'+(it.elemen||[]).length+' elemen</div></div>';
+h+='<h3 style="color:#e8d48b;font-size:1.4rem;margin-bottom:8px;">'+cfg.icon+' '+it.nama+'</h3>';
+h+='<p style="color:#888;font-size:0.9rem;margin-bottom:20px;font-style:italic;">'+it.desc+'</p>';
+h+=renderItem(it);
+d.innerHTML=h;
+d.classList.add('content-fade-in');
+setTimeout(function(){d.classList.remove('content-fade-in');},350);
+d.scrollTop=0;
 if(isMobile()){
-var container = document.getElementById('splitContainer');
-container.classList.remove('sidebar-shown');
-setTimeout(function(){
-detail.scrollIntoView({behavior:'smooth', block:'start'});
-}, 150);
+document.getElementById('splitContainer').classList.remove('sidebar-shown');
+setTimeout(function(){d.scrollIntoView({behavior:'smooth',block:'start'});},150);
 }
-}
-
-function renderDoaTunggal(d){
-var html = '<div class="doa-item-card">';
-html += '<h4>🤲 '+d.judul+'</h4>';
-html += '<div class="doa-arab">'+d.arab+'</div>';
-if(d.latin) html += '<div class="doa-latin-text">'+d.latin+'</div>';
-if(d.arti) html += '<div class="doa-arti"><strong>Arti:</strong> '+d.arti+'</div>';
-if(d.ref) html += '<div class="doa-ref">📖 '+d.ref+'</div>';
-html += '</div>';
-return html;
-}
-function renderDoaRangkaian(d){
-var html = '';
-var iconRangkaian = d.icon || '📿';
-var jumlahBagian = d.bagian.length;
-html += '<div class="doa-rangkaian-card">';
-html += '<div class="rangkaian-header"><div class="rangkaian-icon">'+iconRangkaian+'</div><h4>'+d.judul+'</h4><span class="rangkaian-badge">RANGKAIAN · '+jumlahBagian+' BAGIAN</span></div>';
-for(var j=0;j<d.bagian.length;j++){
-var b = d.bagian[j];
-var nomor = j+1;
-html += '<div class="doa-bagian-item">';
-html += '<div class="bagian-label"><span class="bagian-num">'+nomor+'</span>'+((b.label)?b.label:'Bagian '+nomor)+'</div>';
-html += '<div class="bagian-arab">'+b.arab+'</div>';
-if(b.latin) html += '<div class="bagian-latin">'+b.latin+'</div>';
-if(b.arti) html += '<div class="bagian-arti">'+b.arti+'</div>';
-html += '</div>';
-}
-if(d.penutup){
-html += '<div class="doa-rangkaian-penutup">';
-html += '<div class="penutup-label">🌟 PENUTUP 🌟</div>';
-html += '<div class="penutup-arab">'+d.penutup.arab+'</div>';
-if(d.penutup.latin) html += '<div class="penutup-latin">'+d.penutup.latin+'</div>';
-if(d.penutup.arti) html += '<div class="penutup-arti">'+d.penutup.arti+'</div>';
-html += '</div>';
-}
-if(d.ref) html += '<div class="rangkaian-ref">📖 '+d.ref+'</div>';
-html += '</div>';
-return html;
-}
-function renderSholawatRangkaian(s){
-var html = '';
-var iconRangkaian = s.icon || '';
-var jumlahBagian = s.bagian.length;
-html += '<div class="sholawat-rangkaian-card">';
-html += '<div class="rangkaian-header">';
-html += '<div class="rangkaian-icon">'+iconRangkaian+'</div>';
-html += '<h4>'+s.judul+'</h4>';
-html += '<span class="rangkaian-badge">SHOLAWAT · '+jumlahBagian+' BAGIAN</span>';
-html += '</div>';
-for(var j=0;j<s.bagian.length;j++){
-var b = s.bagian[j];
-var nomor = j+1;
-html += '<div class="sholawat-bagian-item">';
-html += '<div class="bagian-label"><span class="bagian-num">'+nomor+'</span>'+((b.label)?b.label:'Bagian '+nomor)+'</div>';
-html += '<div class="bagian-arab">'+b.arab+'</div>';
-if(b.latin) html += '<div class="bagian-latin">'+b.latin+'</div>';
-if(b.arti) html += '<div class="bagian-arti">'+b.arti+'</div>';
-html += '</div>';
-}
-if(s.penutup){
-html += '<div class="sholawat-rangkaian-penutup">';
-html += '<div class="penutup-label">🌟 PENUTUP 🌟</div>';
-html += '<div class="penutup-arab">'+s.penutup.arab+'</div>';
-if(s.penutup.latin) html += '<div class="penutup-latin">'+s.penutup.latin+'</div>';
-if(s.penutup.arti) html += '<div class="penutup-arti">'+s.penutup.arti+'</div>';
-html += '</div>';
-}
-if(s.ref) html += '<div class="rangkaian-ref">📖 '+s.ref+'</div>';
-html += '</div>';
-return html;
+showToast(cfg.label+' dibuka');
 }
 
 function kembaliWelcome(){
-var allBtns = document.querySelectorAll('.split-btn.active');
+var allBtns=document.querySelectorAll('.split-btn.active');
 for(var i=0;i<allBtns.length;i++) allBtns[i].classList.remove('active');
-var detail = document.getElementById('detailPanel');
-var filterNames = {'all':{icon:'📋',label:'Semua Kategori'},'doa':{icon:'🤲',label:'Doa'},'sholawat':{icon:'ﷺ',label:'Sholawat'},'syiir':{icon:'🎶',label:'Syiir'}};
-var info = filterNames[currentFilter];
-var total = hitungTotalFilter(currentFilter);
-detail.innerHTML = '<button class="sidebar-toggle-btn" id="btnBukaSidebar" onclick="bukaSidebar()"><span class="toggle-icon">☰</span><span>Buka Daftar Kategori</span></button>' +
-'<div class="split-welcome">' +
-'<div class="welcome-icon">' + info.icon + '</div>' +
-'<h3>Filter: ' + info.label + '</h3>' +
-'<p>Menampilkan <strong style="color:#c9a84c;">' + total + ' kategori</strong>.<br>Klik salah satu kategori di panel sebelah kiri untuk melihat isinya.<br><br><em>"Dan Tuhanmu berfirman: Berdoalah kepada-Ku, niscaya akan Aku perkenankan bagimu."</em><br>— QS. Ghafir: 60</p>' +
-'</div>' +
-'<div id="dynamicTagButtons"></div>' +
-'<div class="sub-info" style="margin-top:30px;">' +
-'<strong>📌 Keutamaan Doa & Sholawat:</strong><br>' +
-'• Doa adalah otak ibadah — senjata utama seorang mukmin<br>' +
-'• Bersholawat sekali kepada Nabi ﷺ, Allah bersholawat 10 kali<br>' +
-'• Orang yang paling banyak bersholawat paling berhak mendapat syafaat' +
-'</div>';
-detail.scrollTop = 0;
+var names={'all':'Semua Kategori','doa':'Doa','sholawat':'Sholawat','syiir':'Syiir'};
+var icons={'all':'📋','doa':'🤲','sholawat':'ﷺ','syiir':'🎶'};
+var total=hitungItemJenis(currentFilter);
+var d=document.getElementById('detailPanel');
+d.innerHTML='<button class="sidebar-toggle-btn" id="btnBukaSidebar" onclick="bukaSidebar()"><span class="toggle-icon">☰</span><span>Buka Daftar Kitab</span></button>'+
+'<div class="split-welcome"><div class="welcome-icon">'+icons[currentFilter]+'</div>'+
+'<h3>Filter: '+names[currentFilter]+'</h3>'+
+'<p>Menampilkan <strong style="color:#c9a84c;">'+total+' item</strong> dari seluruh kitab.<br>Klik salah satu di panel kiri untuk membacanya.<br><br><em>"Berdoalah kepada-Ku, niscaya akan Aku perkenankan bagimu."</em><br>— QS. Ghafir: 60</p></div>'+
+'<div id="dynamicTagButtons"></div>'+
+'<div class="sub-info" style="margin-top:30px;"><strong>📌 Keutamaan Doa & Sholawat:</strong><br>• Doa adalah otak ibadah<br>• Sholawat 1x → Allah rahmati 10x<br>• Paling banyak sholawat = paling berhak syafaat</div>';
+d.scrollTop=0;
 renderTagButtons();
 updateBtnBukaSidebarVisibility();
-
-// ✅ Di mobile, kembali ke tampilan daftar
-if(isMobile()){
-bukaSidebar();
-}
+if(isMobile()) bukaSidebar();
 }
 
-function showToast(pesan){
-var toast = document.getElementById('toast');
-if(!toast) return;
-toast.innerText = pesan;
-toast.classList.add('show');
-clearTimeout(window._toastTimer);
-window._toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 3000);
-}
-
-// ✅ Listener resize: atur ulang tampilan saat orientasi/ukuran berubah
-window.addEventListener('resize', function(){
+function filterKategori(filter,btn){
+currentFilter=filter;
+var tabs=document.querySelectorAll('.filter-tab');
+for(var i=0;i<tabs.length;i++) tabs[i].classList.remove('active');
+btn.classList.add('active');
+renderList();
+var names={'all':'📋 Semua Kategori','doa':'🤲 Doa Saja','sholawat':'ﷺ Sholawat Saja','syiir':'🎶 Syiir Saja'};
+var icons={'all':'📋','doa':'🤲','sholawat':'ﷺ','syiir':'🎶'};
+var active=document.querySelectorAll('.split-btn.active');
+for(var i=0;i<active.length;i++) active[i].classList.remove('active');
+var total=hitungItemJenis(filter);
+var d=document.getElementById('detailPanel');
+d.innerHTML='<button class="sidebar-toggle-btn" id="btnBukaSidebar" onclick="bukaSidebar()"><span class="toggle-icon">☰</span><span>Buka Daftar Kitab</span></button>'+
+'<div class="split-welcome"><div class="welcome-icon">'+icons[filter]+'</div>'+
+'<h3>Filter: '+names[filter]+'</h3>'+
+'<p>Menampilkan <strong style="color:#c9a84c;">'+total+' item</strong>.<br>Klik salah satu di panel kiri untuk melihat isinya.</p></div>'+
+'<div id="dynamicTagButtons"></div>'+
+'<div class="sub-info" style="margin-top:30px;"><strong>📌 Keutamaan Doa & Sholawat:</strong><br>• Doa adalah otak ibadah<br>• Sholawat 1x → Allah rahmati 10x<br>• Paling banyak sholawat = paling berhak syafaat</div>';
+d.scrollTop=0;
+renderTagButtons();
 updateBtnBukaSidebarVisibility();
-});
+var st=document.getElementById('filterStatusText');
+if(st) st.textContent='Aktif: '+names[filter];
+showToast(names[filter]+' ('+total+' item)');
+}
 
+window.addEventListener('resize',updateBtnBukaSidebarVisibility);
 updateTabCounters();
 renderList();
 renderTagButtons();
